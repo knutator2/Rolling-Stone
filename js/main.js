@@ -9,6 +9,7 @@ $(document).ready(function () {
     var storedMarkers = [];
     var focusedMarkerPair = {};
     var focusedLine = {};
+    var markerlayers = new L.featureGroup([]);
     
     function parseCoordinateString(raw_coordinates) {
         var coordinates = raw_coordinates.split(',');
@@ -96,7 +97,10 @@ $(document).ready(function () {
                 originMarker.on('popupclose', onMarkerClosePopup);
                 //originMarker.on('popup', onMarkerClick);
                 storedMarkers.push({'origin' : originMarker, 'found' : marker});
+                markerlayers.addLayer(originMarker);
+                markerlayers.addLayer(marker);
             }
         }); 
+        map.fitBounds(markerlayers.getBounds());
     });
 });
