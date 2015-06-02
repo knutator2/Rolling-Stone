@@ -1,4 +1,22 @@
 /**
+* App Style
+*/
+html, body, .page-content, .wrapper {
+    height: 100%;
+}
+
+.map {
+    height: 91%;
+}
+
+.detail-overlay {
+    background-color: white;
+    z-index: 100;
+    position: absolute;
+    right: 20px;
+    top: 120px;
+}
+/**
  * Site header
  */
 .site-header {
