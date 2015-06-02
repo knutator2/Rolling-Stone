@@ -75,9 +75,7 @@ $(document).ready(function () {
     $.getJSON('js/metadata.json', function(data) {
         
 
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map); 
+        L.tileLayer('https://{s}.tiles.mapbox.com/v4/knutator.l8m1lim1/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoia251dGF0b3IiLCJhIjoiRlEzWmFjUSJ9.JLn3oQ3FbbCsjtuxQCpFjQ').addTo(map); 
         $.each(data, function(index, el) {
             if (el.coordinate && el.origin_coordinate) {
                 var coordinates = parseCoordinateString(el.coordinate);
