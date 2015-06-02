@@ -1,6 +1,11 @@
 $(document).ready(function () {  
    
-    var map = L.map('map').setView([52.886525, 14.139851], 5); 
+    var map = new L.map('map', {
+        fullscreenControl: true,
+        fullscreenControlOptions: {
+            position: 'topleft'
+        }
+    }).setView([52.886525, 14.139851], 7); 
     var storedMarkers = [];
     var focusedMarkerPair = {};
     var focusedLine = {};
