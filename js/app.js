@@ -1,6 +1,1 @@
-var RollingStone = angular.module('RollingStone', [], function($interpolateProvider) {
-    $interpolateProvider.startSymbol('[[');
-    $interpolateProvider.endSymbol(']]');
-});
-
-console.log(RollingStone.config);
+var myApp = angular.module('RollingStone', ['leaflet-directive', 'stoneparsingservice']);
