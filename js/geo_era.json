@@ -1,0 +1,68 @@
+[
+	{
+		"id" : 0,
+		"name" : "Tertiär",
+		"start" : 65,
+		"end": 2.6
+	},
+	{
+		"id" : 1,
+		"name" : "Kreide",
+		"start" : 145,
+		"end": 66
+	},
+	{
+		"id" : 2,
+		"name" : "Jura",
+		"start" : 201.3,
+		"end": 145
+	},
+	{
+		"id" : 3,
+		"name" : "Perm",
+		"start" : 298.9,
+		"end": 252.2
+	},
+	{
+		"id" : 4,
+		"name" : "Trias",
+		"start" : 252.2,
+		"end": 201.3
+	},
+	{
+		"id" : 5,
+		"name" : "Devon",
+		"start" : 419.2,
+		"end": 358.9
+	},
+	{
+		"id" : 6,
+		"name" : "Silur",
+		"start" : 443.4,
+		"end": 419.2
+	},
+	{
+		"id" : 7,
+		"name" : "Ordovizium",
+		"start" : 485.4,
+		"end": 443.4
+	},
+	{
+		"id" : 8,
+		"name" : "Kambrium",
+		"start" : 541,
+		"end": 485.4
+	},
+	{
+		"id" : 9,
+		"name" : "Präkambrium",
+		"start" : 4600,
+		"end": 541
+	},
+	{
+		"id" : 9,
+		"name" : "Devon bis Trias",
+		"start" : 419.2,
+		"end": 201.3
+	}
+]
