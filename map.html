@@ -1,0 +1,16 @@
+<div class="home" ng-controller="MapController">
+	<div class="map" >
+		<leaflet 
+			markers="stones"
+			tiles="mapboxtiles" 
+			center="center" 
+			width="100%" 
+			height="100%"
+			event-broadcast="events"></leaflet>
+	</div>
+	<stoneoverlay stone="currentStone"></stoneoverlay>
+	<div class="graph">
+		<a href="#graph" class="btn btn-danger btn-lg">Graph</a>
+	</div>
+	
+</div>
