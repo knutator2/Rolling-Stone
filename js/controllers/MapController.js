@@ -1,5 +1,4 @@
- myApp
-    .controller("MapController", ['$scope', '$http', '$timeout', 'StonesService',
+ myApp.controller("MapController", ['$scope', '$http', '$timeout', 'StonesService',
     	function($scope, $http, $timeout, StonesService) {
     angular.extend($scope, {
  		center: 
@@ -67,7 +66,7 @@
 
     // $timeout(function() { $scope.updateMarkers(); }, 3000);
 
- 	$scope.name = "AngularJS";
+ 	$scope.name = "Map";
   $scope.currentStone = {};
   $scope.storedMarkers = [];
  	$scope.focusedMarkerPair = {};
