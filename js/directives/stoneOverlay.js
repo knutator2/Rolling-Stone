@@ -8,7 +8,7 @@ myApp.directive('stoneoverlay', function() {
 		templateUrl: 'js/directives/stoneOverlay.html',
 		link : function (scope, element, attrs) {
 			scope.action = function() {
-				alert('TODO: schow More Page');
+				alert('TODO: show More Page');
 			}
 		}
 	};
