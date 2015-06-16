@@ -1,6 +1,6 @@
 [
     {
-        "invntory_id.": "G 99-13",
+        "inventory_id.": "G 99-13",
         "museum_id": 172597,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=172597",
         "img": "StadtmuseumBerlin_GeologischeSammlung_G-99-13_MichaelSetzpfandt.jpg",
@@ -23,7 +23,7 @@
         "FIELD26": "9,10,19"
     },
     {
-        "invntory_id.": "G 99-14",
+        "inventory_id.": "G 99-14",
         "museum_id": 172601,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=172601",
         "img": "StadtmuseumBerlin_GeologischeSammlung_G-99-14_MichaelSetzpfandt.jpg",
@@ -47,7 +47,7 @@
         "FIELD26": "9,10,18"
     },
     {
-        "invntory_id.": "G 99-15",
+        "inventory_id.": "G 99-15",
         "museum_id": 172605,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=172605",
         "img": "StadtmuseumBerlin_GeologischeSammlung_G-99-15_MichaelSetzpfandt.jpg",
@@ -71,7 +71,7 @@
         "FIELD26": "11,16"
     },
     {
-        "invntory_id.": "G 99-16",
+        "inventory_id.": "G 99-16",
         "museum_id": 172609,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=172609",
         "img": "StadtmuseumBerlin_GeologischeSammlung_G-99-16_MichaelSetzpfandt.jpg",
@@ -94,7 +94,7 @@
         "FIELD26": "9,23,27"
     },
     {
-        "invntory_id.": "G 99-17",
+        "inventory_id.": "G 99-17",
         "museum_id": 172613,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=172613",
         "img": "StadtmuseumBerlin_GeologischeSammlung_G-99-17_MichaelSetzpfandt.jpg",
@@ -116,7 +116,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "G 99-19",
+        "inventory_id.": "G 99-19",
         "museum_id": 172628,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=172628",
         "img": "StadtmuseumBerlin_GeologischeSammlung_G-99-19_MichaelSetzpfandt.jpg",
@@ -139,7 +139,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "G 99-20",
+        "inventory_id.": "G 99-20",
         "museum_id": 172631,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=172631",
         "img": "StadtmuseumBerlin_GeologischeSammlung_G-99-20_MichaelSetzpfandt.jpg",
@@ -161,7 +161,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "G 99-21",
+        "inventory_id.": "G 99-21",
         "museum_id": 172635,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=172635",
         "img": "StadtmuseumBerlin_GeologischeSammlung_G-99-21_MichaelSetzpfandt.jpg",
@@ -184,7 +184,7 @@
         "FIELD26": "9,10,18"
     },
     {
-        "invntory_id.": "SM 2012-1570",
+        "inventory_id.": "SM 2012-1570",
         "museum_id": 424540,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424540",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1570.jpg",
@@ -208,7 +208,7 @@
         "FIELD26": "16,23"
     },
     {
-        "invntory_id.": "SM 2012-1571",
+        "inventory_id.": "SM 2012-1571",
         "museum_id": 424541,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424541",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1571.jpg",
@@ -232,7 +232,7 @@
         "FIELD26": "16,23"
     },
     {
-        "invntory_id.": "SM 2012-1572",
+        "inventory_id.": "SM 2012-1572",
         "museum_id": 424542,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424542",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1572.jpg",
@@ -256,7 +256,7 @@
         "FIELD26": "16,23"
     },
     {
-        "invntory_id.": "SM 2012-1573",
+        "inventory_id.": "SM 2012-1573",
         "museum_id": 424543,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424543",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1573.jpg",
@@ -279,7 +279,7 @@
         "FIELD26": "16,23"
     },
     {
-        "invntory_id.": "SM 2012-1574",
+        "inventory_id.": "SM 2012-1574",
         "museum_id": 424544,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424544",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1574.jpg",
@@ -303,7 +303,7 @@
         "FIELD26": "16,23"
     },
     {
-        "invntory_id.": "SM 2012-1575",
+        "inventory_id.": "SM 2012-1575",
         "museum_id": 424545,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424545",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1575.jpg",
@@ -326,7 +326,7 @@
         "FIELD26": "16,23"
     },
     {
-        "invntory_id.": "SM 2012-1576",
+        "inventory_id.": "SM 2012-1576",
         "museum_id": 424546,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424546",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1576.jpg",
@@ -349,7 +349,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1577",
+        "inventory_id.": "SM 2012-1577",
         "museum_id": 424547,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424547",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1577.jpg",
@@ -371,7 +371,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1578",
+        "inventory_id.": "SM 2012-1578",
         "museum_id": 424548,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424548",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1578.jpg",
@@ -393,7 +393,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1579",
+        "inventory_id.": "SM 2012-1579",
         "museum_id": 424549,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424549",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1579.jpg",
@@ -415,7 +415,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1580",
+        "inventory_id.": "SM 2012-1580",
         "museum_id": 424550,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424550",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1580.jpg",
@@ -437,7 +437,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1582",
+        "inventory_id.": "SM 2012-1582",
         "museum_id": 424552,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424552",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1582_MichaelSetzpfandt.jpg",
@@ -460,7 +460,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1583",
+        "inventory_id.": "SM 2012-1583",
         "museum_id": 424553,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424553",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1583.jpg",
@@ -482,7 +482,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1584",
+        "inventory_id.": "SM 2012-1584",
         "museum_id": 424554,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424554",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1584.jpg",
@@ -504,7 +504,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1585",
+        "inventory_id.": "SM 2012-1585",
         "museum_id": 424555,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424555",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1585.jpg",
@@ -526,7 +526,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1586",
+        "inventory_id.": "SM 2012-1586",
         "museum_id": 424556,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424556",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1586.jpg",
@@ -548,7 +548,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1587",
+        "inventory_id.": "SM 2012-1587",
         "museum_id": 424557,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424557",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1587.jpg",
@@ -571,7 +571,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1588",
+        "inventory_id.": "SM 2012-1588",
         "museum_id": 424558,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424558",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1588.jpg",
@@ -593,7 +593,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1589",
+        "inventory_id.": "SM 2012-1589",
         "museum_id": 424559,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424559",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1589.jpg",
@@ -615,7 +615,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1590",
+        "inventory_id.": "SM 2012-1590",
         "museum_id": 424560,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424560",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1590.jpg",
@@ -637,7 +637,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1591",
+        "inventory_id.": "SM 2012-1591",
         "museum_id": 424561,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424561",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1591.jpg",
@@ -660,7 +660,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1592",
+        "inventory_id.": "SM 2012-1592",
         "museum_id": 424562,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424562",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1592.jpg",
@@ -683,7 +683,7 @@
         "FIELD26": "2,9,23"
     },
     {
-        "invntory_id.": "SM 2012-1593",
+        "inventory_id.": "SM 2012-1593",
         "museum_id": 424563,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424563",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1593.jpg",
@@ -705,7 +705,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1594",
+        "inventory_id.": "SM 2012-1594",
         "museum_id": 424564,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424564",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1594.jpg",
@@ -727,7 +727,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1595",
+        "inventory_id.": "SM 2012-1595",
         "museum_id": 424565,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424565",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1595_MichaelSetzpfandt.jpg",
@@ -749,7 +749,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1596",
+        "inventory_id.": "SM 2012-1596",
         "museum_id": 424566,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424566",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1596.jpg",
@@ -771,7 +771,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1597",
+        "inventory_id.": "SM 2012-1597",
         "museum_id": 424567,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424567",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1597.jpg",
@@ -793,7 +793,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1598 1-2",
+        "inventory_id.": "SM 2012-1598 1-2",
         "museum_id": 424568,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424568",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1598-1-2.jpg",
@@ -815,7 +815,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1599",
+        "inventory_id.": "SM 2012-1599",
         "museum_id": 424569,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424569",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1599.jpg",
@@ -837,7 +837,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1600",
+        "inventory_id.": "SM 2012-1600",
         "museum_id": 424570,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424570",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1600.jpg",
@@ -860,7 +860,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1601",
+        "inventory_id.": "SM 2012-1601",
         "museum_id": 424571,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424571",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1601.jpg",
@@ -882,7 +882,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1602",
+        "inventory_id.": "SM 2012-1602",
         "museum_id": 424572,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424572",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1602.jpg",
@@ -904,7 +904,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1603",
+        "inventory_id.": "SM 2012-1603",
         "museum_id": 424573,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424573",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1603.jpg",
@@ -926,7 +926,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1604",
+        "inventory_id.": "SM 2012-1604",
         "museum_id": 424574,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424574",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1604.jpg",
@@ -948,7 +948,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2012-1605",
+        "inventory_id.": "SM 2012-1605",
         "museum_id": 424575,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424575",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1605.jpg",
@@ -970,7 +970,7 @@
         "FIELD26": "9,14,23"
     },
     {
-        "invntory_id.": "SM 2012-1606",
+        "inventory_id.": "SM 2012-1606",
         "museum_id": 424576,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424576",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1606.jpg",
@@ -992,7 +992,7 @@
         "FIELD26": "9,14"
     },
     {
-        "invntory_id.": "SM 2012-1607",
+        "inventory_id.": "SM 2012-1607",
         "museum_id": 424577,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424577",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1607.jpg",
@@ -1014,7 +1014,7 @@
         "FIELD26": "9,14,23"
     },
     {
-        "invntory_id.": "SM 2012-1608",
+        "inventory_id.": "SM 2012-1608",
         "museum_id": 424578,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424578",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1608.jpg",
@@ -1036,7 +1036,7 @@
         "FIELD26": "9,18,23"
     },
     {
-        "invntory_id.": "SM 2012-1609 1-3",
+        "inventory_id.": "SM 2012-1609 1-3",
         "museum_id": 424579,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424579",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1609-1-3.jpg",
@@ -1059,7 +1059,7 @@
         "FIELD26": "16,25"
     },
     {
-        "invntory_id.": "SM 2012-1610",
+        "inventory_id.": "SM 2012-1610",
         "museum_id": 424582,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424582",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1610.jpg",
@@ -1082,7 +1082,7 @@
         "FIELD26": "16,25"
     },
     {
-        "invntory_id.": "SM 2012-1611",
+        "inventory_id.": "SM 2012-1611",
         "museum_id": 424585,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424585",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1611.jpg",
@@ -1104,7 +1104,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-1612",
+        "inventory_id.": "SM 2012-1612",
         "museum_id": 424590,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424590",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1612.jpg",
@@ -1126,7 +1126,7 @@
         "FIELD26": "1,9"
     },
     {
-        "invntory_id.": "SM 2012-1613 1-2",
+        "inventory_id.": "SM 2012-1613 1-2",
         "museum_id": 424599,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424599",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1613-1-2.jpg",
@@ -1149,7 +1149,7 @@
         "FIELD26": "1,9"
     },
     {
-        "invntory_id.": "SM 2012-1614",
+        "inventory_id.": "SM 2012-1614",
         "museum_id": 424600,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424600",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1614.jpg",
@@ -1172,7 +1172,7 @@
         "FIELD26": "1,9"
     },
     {
-        "invntory_id.": "SM 2012-1615",
+        "inventory_id.": "SM 2012-1615",
         "museum_id": 424601,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424601",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1615.jpg",
@@ -1194,7 +1194,7 @@
         "FIELD26": "1,9"
     },
     {
-        "invntory_id.": "SM 2012-1616",
+        "inventory_id.": "SM 2012-1616",
         "museum_id": 424602,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424602",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1616.jpg",
@@ -1217,7 +1217,7 @@
         "FIELD26": "1,9"
     },
     {
-        "invntory_id.": "SM 2012-1617",
+        "inventory_id.": "SM 2012-1617",
         "museum_id": 424603,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424603",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1617.jpg",
@@ -1239,7 +1239,7 @@
         "FIELD26": "1,9"
     },
     {
-        "invntory_id.": "SM 2012-1618",
+        "inventory_id.": "SM 2012-1618",
         "museum_id": 424604,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424604",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1618.jpg",
@@ -1262,7 +1262,7 @@
         "FIELD26": "1,9"
     },
     {
-        "invntory_id.": "SM 2012-1619",
+        "inventory_id.": "SM 2012-1619",
         "museum_id": 424605,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424605",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1619.jpg",
@@ -1284,7 +1284,7 @@
         "FIELD26": "1,9"
     },
     {
-        "invntory_id.": "SM 2012-1620",
+        "inventory_id.": "SM 2012-1620",
         "museum_id": 424606,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424606",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1620.jpg",
@@ -1307,7 +1307,7 @@
         "FIELD26": "1,7,9"
     },
     {
-        "invntory_id.": "SM 2012-1621 1-2",
+        "inventory_id.": "SM 2012-1621 1-2",
         "museum_id": 424607,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424607",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1621-1-2.jpg",
@@ -1330,7 +1330,7 @@
         "FIELD26": "1,9"
     },
     {
-        "invntory_id.": "SM 2012-1622",
+        "inventory_id.": "SM 2012-1622",
         "museum_id": 424608,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=424608",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-1622.jpg",
@@ -1352,7 +1352,7 @@
         "FIELD26": "1,9"
     },
     {
-        "invntory_id.": "SM 2012-2818",
+        "inventory_id.": "SM 2012-2818",
         "museum_id": 429746,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429746",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2818.jpg",
@@ -1374,7 +1374,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2819",
+        "inventory_id.": "SM 2012-2819",
         "museum_id": 429747,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429747",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2819.jpg",
@@ -1396,7 +1396,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2821",
+        "inventory_id.": "SM 2012-2821",
         "museum_id": 429751,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429751",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2821.jpg",
@@ -1418,7 +1418,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2823",
+        "inventory_id.": "SM 2012-2823",
         "museum_id": 429754,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429754",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2823.jpg",
@@ -1440,7 +1440,7 @@
         "FIELD26": "9,24"
     },
     {
-        "invntory_id.": "SM 2012-2824 1-2",
+        "inventory_id.": "SM 2012-2824 1-2",
         "museum_id": 429755,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429755",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2824-1-2.jpg",
@@ -1462,7 +1462,7 @@
         "FIELD26": "9,24"
     },
     {
-        "invntory_id.": "SM 2012-2825",
+        "inventory_id.": "SM 2012-2825",
         "museum_id": 429756,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429756",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2825.jpg",
@@ -1484,7 +1484,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2827",
+        "inventory_id.": "SM 2012-2827",
         "museum_id": 429840,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429840",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2827.jpg",
@@ -1506,7 +1506,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2828",
+        "inventory_id.": "SM 2012-2828",
         "museum_id": 429841,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429841",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2828.jpg",
@@ -1529,7 +1529,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2829",
+        "inventory_id.": "SM 2012-2829",
         "museum_id": 429843,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429843",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2829.jpg",
@@ -1552,7 +1552,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2830",
+        "inventory_id.": "SM 2012-2830",
         "museum_id": 429844,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429844",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2830_MichaelSetzpfandt.jpg",
@@ -1574,7 +1574,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2831",
+        "inventory_id.": "SM 2012-2831",
         "museum_id": 429845,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429845",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2831.jpg",
@@ -1596,7 +1596,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2832 1-2",
+        "inventory_id.": "SM 2012-2832 1-2",
         "museum_id": 429846,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429846",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2832-1-2.jpg",
@@ -1618,7 +1618,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2834",
+        "inventory_id.": "SM 2012-2834",
         "museum_id": 429848,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429848",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2834.jpg",
@@ -1640,7 +1640,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2835",
+        "inventory_id.": "SM 2012-2835",
         "museum_id": 429849,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429849",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2835.jpg",
@@ -1662,7 +1662,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2836 1-2",
+        "inventory_id.": "SM 2012-2836 1-2",
         "museum_id": 429850,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429850",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2836-1-2.jpg",
@@ -1684,7 +1684,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2837",
+        "inventory_id.": "SM 2012-2837",
         "museum_id": 429852,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429852",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2837.jpg",
@@ -1707,7 +1707,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2839",
+        "inventory_id.": "SM 2012-2839",
         "museum_id": 429855,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429855",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2839.jpg",
@@ -1729,7 +1729,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2840",
+        "inventory_id.": "SM 2012-2840",
         "museum_id": 429856,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429856",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2840_MichaelSetzpfandt.jpg",
@@ -1751,7 +1751,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2841 1-2",
+        "inventory_id.": "SM 2012-2841 1-2",
         "museum_id": 429857,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429857",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2841-1-2_MichaelSetzpfandt.jpg",
@@ -1773,7 +1773,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2842",
+        "inventory_id.": "SM 2012-2842",
         "museum_id": 429858,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429858",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2842.jpg",
@@ -1795,7 +1795,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2843",
+        "inventory_id.": "SM 2012-2843",
         "museum_id": 429859,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429859",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2843.jpg",
@@ -1817,7 +1817,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2846 1-2",
+        "inventory_id.": "SM 2012-2846 1-2",
         "museum_id": 429862,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429862",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2846-1-2.jpg",
@@ -1839,7 +1839,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2847",
+        "inventory_id.": "SM 2012-2847",
         "museum_id": 429863,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429863",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2847.jpg",
@@ -1861,7 +1861,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2849",
+        "inventory_id.": "SM 2012-2849",
         "museum_id": 429865,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429865",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2849.jpg",
@@ -1883,7 +1883,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2852",
+        "inventory_id.": "SM 2012-2852",
         "museum_id": 429868,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429868",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2852.jpg",
@@ -1906,7 +1906,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2853",
+        "inventory_id.": "SM 2012-2853",
         "museum_id": 429869,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429869",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2853.jpg",
@@ -1929,7 +1929,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2854",
+        "inventory_id.": "SM 2012-2854",
         "museum_id": 429870,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429870",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2854.jpg",
@@ -1952,7 +1952,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2855 1-2",
+        "inventory_id.": "SM 2012-2855 1-2",
         "museum_id": 429871,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429871",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2855-1-2.jpg",
@@ -1974,7 +1974,7 @@
         "FIELD26": "6,9"
     },
     {
-        "invntory_id.": "SM 2012-2856",
+        "inventory_id.": "SM 2012-2856",
         "museum_id": 429872,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429872",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2856.jpg",
@@ -1996,7 +1996,7 @@
         "FIELD26": "6,9"
     },
     {
-        "invntory_id.": "SM 2012-2857",
+        "inventory_id.": "SM 2012-2857",
         "museum_id": 429873,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429873",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2857.jpg",
@@ -2018,7 +2018,7 @@
         "FIELD26": "6,9"
     },
     {
-        "invntory_id.": "SM 2012-2858",
+        "inventory_id.": "SM 2012-2858",
         "museum_id": 429875,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429875",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2858.jpg",
@@ -2040,7 +2040,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2859",
+        "inventory_id.": "SM 2012-2859",
         "museum_id": 429876,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429876",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2859.jpg",
@@ -2062,7 +2062,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2860",
+        "inventory_id.": "SM 2012-2860",
         "museum_id": 429877,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429877",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2860.jpg",
@@ -2084,7 +2084,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2861",
+        "inventory_id.": "SM 2012-2861",
         "museum_id": 429878,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429878",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2861.jpg",
@@ -2106,7 +2106,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2862",
+        "inventory_id.": "SM 2012-2862",
         "museum_id": 429879,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429879",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2862.jpg",
@@ -2128,7 +2128,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2863 1-2",
+        "inventory_id.": "SM 2012-2863 1-2",
         "museum_id": 429880,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429880",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2863-1-2.jpg",
@@ -2150,7 +2150,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2864",
+        "inventory_id.": "SM 2012-2864",
         "museum_id": 429898,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429898",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2864.jpg",
@@ -2172,7 +2172,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2865",
+        "inventory_id.": "SM 2012-2865",
         "museum_id": 429899,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429899",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2865.jpg",
@@ -2195,7 +2195,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2866",
+        "inventory_id.": "SM 2012-2866",
         "museum_id": 429900,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429900",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2866.jpg",
@@ -2219,7 +2219,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2867",
+        "inventory_id.": "SM 2012-2867",
         "museum_id": 429901,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429901",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2867_MichaelSetzpfandt.jpg",
@@ -2242,7 +2242,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2868",
+        "inventory_id.": "SM 2012-2868",
         "museum_id": 429902,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429902",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2868_MichaelSetzpfandt.jpg",
@@ -2265,7 +2265,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2869",
+        "inventory_id.": "SM 2012-2869",
         "museum_id": 429903,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429903",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2869.jpg",
@@ -2288,7 +2288,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2870 1-2",
+        "inventory_id.": "SM 2012-2870 1-2",
         "museum_id": 429904,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429904",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2870-1-2_MichaelSetzpfandt.jpg",
@@ -2311,7 +2311,7 @@
         "FIELD26": "6,9"
     },
     {
-        "invntory_id.": "SM 2012-2871",
+        "inventory_id.": "SM 2012-2871",
         "museum_id": 429905,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429905",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2871_MichaelSetzpfandt.jpg",
@@ -2335,7 +2335,7 @@
         "FIELD26": "6,9"
     },
     {
-        "invntory_id.": "SM 2012-2872",
+        "inventory_id.": "SM 2012-2872",
         "museum_id": 429906,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429906",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2872.jpg",
@@ -2359,7 +2359,7 @@
         "FIELD26": "6,9"
     },
     {
-        "invntory_id.": "SM 2012-2873",
+        "inventory_id.": "SM 2012-2873",
         "museum_id": 429907,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429907",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2873.jpg",
@@ -2382,7 +2382,7 @@
         "FIELD26": "6,9"
     },
     {
-        "invntory_id.": "SM 2012-2874",
+        "inventory_id.": "SM 2012-2874",
         "museum_id": 429908,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429908",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2874.jpg",
@@ -2405,7 +2405,7 @@
         "FIELD26": "9,12"
     },
     {
-        "invntory_id.": "SM 2012-2876",
+        "inventory_id.": "SM 2012-2876",
         "museum_id": 429910,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429910",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2876.jpg",
@@ -2428,7 +2428,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-2877",
+        "inventory_id.": "SM 2012-2877",
         "museum_id": 429911,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=429911",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-2877.jpg",
@@ -2450,7 +2450,7 @@
         "FIELD26": "9,24"
     },
     {
-        "invntory_id.": "SM 2012-3172",
+        "inventory_id.": "SM 2012-3172",
         "museum_id": 430583,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=430583",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-3172_MichaelSetzpfandt.jpg",
@@ -2473,7 +2473,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-4232",
+        "inventory_id.": "SM 2012-4232",
         "museum_id": 437174,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=437174",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-4232.jpg",
@@ -2496,7 +2496,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2012-4233",
+        "inventory_id.": "SM 2012-4233",
         "museum_id": 437176,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=437176",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-4233.jpg",
@@ -2519,7 +2519,7 @@
         "FIELD26": "9,15"
     },
     {
-        "invntory_id.": "SM 2012-4234",
+        "inventory_id.": "SM 2012-4234",
         "museum_id": 437178,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=437178",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-4234.jpg",
@@ -2541,7 +2541,7 @@
         "FIELD26": "23"
     },
     {
-        "invntory_id.": "SM 2012-4276",
+        "inventory_id.": "SM 2012-4276",
         "museum_id": 437926,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=437926",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-4276_MichaelSetzpfandt.jpg",
@@ -2563,7 +2563,7 @@
         "FIELD26": "8,9,15"
     },
     {
-        "invntory_id.": "SM 2012-4277",
+        "inventory_id.": "SM 2012-4277",
         "museum_id": 437932,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=437932",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-4277_MichaelSetzpfandt.jpg",
@@ -2585,7 +2585,7 @@
         "FIELD26": "9,15"
     },
     {
-        "invntory_id.": "SM 2012-4278",
+        "inventory_id.": "SM 2012-4278",
         "museum_id": 437936,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=437936",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-4278_MichaelSetzpfandt.jpg",
@@ -2607,7 +2607,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-4280",
+        "inventory_id.": "SM 2012-4280",
         "museum_id": 437945,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=437945",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-4280_MichaelSetzpfandt.jpg",
@@ -2629,7 +2629,7 @@
         "FIELD26": "15,16"
     },
     {
-        "invntory_id.": "SM 2012-4281",
+        "inventory_id.": "SM 2012-4281",
         "museum_id": 437956,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=437956",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-4281_MichaelSetzpfandt.jpg",
@@ -2651,7 +2651,7 @@
         "FIELD26": "9,28"
     },
     {
-        "invntory_id.": "SM 2012-4282",
+        "inventory_id.": "SM 2012-4282",
         "museum_id": 437962,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=437962",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-4282_MichaelSetzpfandt.jpg",
@@ -2674,7 +2674,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-4283",
+        "inventory_id.": "SM 2012-4283",
         "museum_id": 437968,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=437968",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-4283.jpg",
@@ -2697,7 +2697,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-4284",
+        "inventory_id.": "SM 2012-4284",
         "museum_id": 437970,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=437970",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-4284_MichaelSetzpfandt.jpg",
@@ -2721,7 +2721,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2012-4285 1-2",
+        "inventory_id.": "SM 2012-4285 1-2",
         "museum_id": 437971,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=437971",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2012-4285-1-2_MichaelSetzpfandt.jpg",
@@ -2743,7 +2743,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-0200",
+        "inventory_id.": "SM 2013-0200",
         "museum_id": 448463,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448463",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0200.jpg",
@@ -2765,7 +2765,7 @@
         "FIELD26": "9,24"
     },
     {
-        "invntory_id.": "SM 2013-0201",
+        "inventory_id.": "SM 2013-0201",
         "museum_id": 448464,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448464",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0201.jpg",
@@ -2788,7 +2788,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-0202",
+        "inventory_id.": "SM 2013-0202",
         "museum_id": 448465,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448465",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0202.jpg",
@@ -2810,7 +2810,7 @@
         "FIELD26": "13,17"
     },
     {
-        "invntory_id.": "SM 2013-0204",
+        "inventory_id.": "SM 2013-0204",
         "museum_id": 448467,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448467",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0204.jpg",
@@ -2833,7 +2833,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-0205",
+        "inventory_id.": "SM 2013-0205",
         "museum_id": 448468,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448468",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0205.jpg",
@@ -2856,7 +2856,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-0209 1-3",
+        "inventory_id.": "SM 2013-0209 1-3",
         "museum_id": 448472,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448472",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0209-1-3.jpg",
@@ -2878,7 +2878,7 @@
         "FIELD26": "9,24,2"
     },
     {
-        "invntory_id.": "SM 2013-0210",
+        "inventory_id.": "SM 2013-0210",
         "museum_id": 448473,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448473",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0210.jpg",
@@ -2901,7 +2901,7 @@
         "FIELD26": "9,17"
     },
     {
-        "invntory_id.": "SM 2013-0211 1-2",
+        "inventory_id.": "SM 2013-0211 1-2",
         "museum_id": 448474,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448474",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0211-1-2.jpg",
@@ -2924,7 +2924,7 @@
         "FIELD26": "9,17"
     },
     {
-        "invntory_id.": "SM 2013-0212",
+        "inventory_id.": "SM 2013-0212",
         "museum_id": 448475,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448475",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0212.jpg",
@@ -2947,7 +2947,7 @@
         "FIELD26": "9,17"
     },
     {
-        "invntory_id.": "SM 2013-0215",
+        "inventory_id.": "SM 2013-0215",
         "museum_id": 448478,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448478",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0215.jpg",
@@ -2969,7 +2969,7 @@
         "FIELD26": "9,24"
     },
     {
-        "invntory_id.": "SM 2013-0216",
+        "inventory_id.": "SM 2013-0216",
         "museum_id": 448479,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448479",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0216.jpg",
@@ -2992,7 +2992,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-0217",
+        "inventory_id.": "SM 2013-0217",
         "museum_id": 448481,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448481",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0217.jpg",
@@ -3014,7 +3014,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-0218",
+        "inventory_id.": "SM 2013-0218",
         "museum_id": 448482,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448482",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0218.jpg",
@@ -3036,7 +3036,7 @@
         "FIELD26": "13"
     },
     {
-        "invntory_id.": "SM 2013-0219",
+        "inventory_id.": "SM 2013-0219",
         "museum_id": 448486,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448486",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0219.jpg",
@@ -3058,7 +3058,7 @@
         "FIELD26": "13"
     },
     {
-        "invntory_id.": "SM 2013-0220",
+        "inventory_id.": "SM 2013-0220",
         "museum_id": 448487,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448487",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0220.jpg",
@@ -3080,7 +3080,7 @@
         "FIELD26": "13"
     },
     {
-        "invntory_id.": "SM 2013-0221",
+        "inventory_id.": "SM 2013-0221",
         "museum_id": 448488,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448488",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0221.jpg",
@@ -3102,7 +3102,7 @@
         "FIELD26": "13"
     },
     {
-        "invntory_id.": "SM 2013-0223",
+        "inventory_id.": "SM 2013-0223",
         "museum_id": 448490,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448490",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0223.jpg",
@@ -3124,7 +3124,7 @@
         "FIELD26": "13"
     },
     {
-        "invntory_id.": "SM 2013-0224",
+        "inventory_id.": "SM 2013-0224",
         "museum_id": 448491,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448491",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0224.jpg",
@@ -3146,7 +3146,7 @@
         "FIELD26": "13"
     },
     {
-        "invntory_id.": "SM 2013-0226",
+        "inventory_id.": "SM 2013-0226",
         "museum_id": 448495,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448495",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0226.jpg",
@@ -3168,7 +3168,7 @@
         "FIELD26": "13"
     },
     {
-        "invntory_id.": "SM 2013-0227",
+        "inventory_id.": "SM 2013-0227",
         "museum_id": 448496,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448496",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0227.jpg",
@@ -3190,7 +3190,7 @@
         "FIELD26": "13"
     },
     {
-        "invntory_id.": "SM 2013-0228",
+        "inventory_id.": "SM 2013-0228",
         "museum_id": 448497,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448497",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0228.jpg",
@@ -3212,7 +3212,7 @@
         "FIELD26": "13"
     },
     {
-        "invntory_id.": "SM 2013-0229",
+        "inventory_id.": "SM 2013-0229",
         "museum_id": 448498,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448498",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0229.jpg",
@@ -3235,7 +3235,7 @@
         "FIELD26": "13"
     },
     {
-        "invntory_id.": "SM 2013-0230",
+        "inventory_id.": "SM 2013-0230",
         "museum_id": 448500,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448500",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0230.jpg",
@@ -3257,7 +3257,7 @@
         "FIELD26": "13"
     },
     {
-        "invntory_id.": "SM 2013-0231",
+        "inventory_id.": "SM 2013-0231",
         "museum_id": 448501,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448501",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0231.jpg",
@@ -3280,7 +3280,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-0232 1-2",
+        "inventory_id.": "SM 2013-0232 1-2",
         "museum_id": 448502,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448502",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0232-1-2.jpg",
@@ -3301,7 +3301,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-0233 1-2",
+        "inventory_id.": "SM 2013-0233 1-2",
         "museum_id": 448503,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448503",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0233-1-2.jpg",
@@ -3323,7 +3323,7 @@
         "FIELD26": "5,9"
     },
     {
-        "invntory_id.": "SM 2013-0234",
+        "inventory_id.": "SM 2013-0234",
         "museum_id": 448504,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448504",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0234.jpg",
@@ -3345,7 +3345,7 @@
         "FIELD26": "5,9"
     },
     {
-        "invntory_id.": "SM 2013-0235 1-2",
+        "inventory_id.": "SM 2013-0235 1-2",
         "museum_id": 448507,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448507",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0235-1-2.jpg",
@@ -3367,7 +3367,7 @@
         "FIELD26": "13"
     },
     {
-        "invntory_id.": "SM 2013-0236 1-2",
+        "inventory_id.": "SM 2013-0236 1-2",
         "museum_id": 448508,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448508",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0236-1-2.jpg",
@@ -3389,7 +3389,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-0240",
+        "inventory_id.": "SM 2013-0240",
         "museum_id": 448575,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448575",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0240.jpg",
@@ -3412,7 +3412,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-0241",
+        "inventory_id.": "SM 2013-0241",
         "museum_id": 448576,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448576",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0241.jpg",
@@ -3435,7 +3435,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-0242",
+        "inventory_id.": "SM 2013-0242",
         "museum_id": 448577,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448577",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0242.jpg",
@@ -3458,7 +3458,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-0246",
+        "inventory_id.": "SM 2013-0246",
         "museum_id": 448613,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=448613",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-0246.jpg",
@@ -3481,7 +3481,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-5966",
+        "inventory_id.": "SM 2013-5966",
         "museum_id": 470494,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=470494",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-5966.jpg",
@@ -3503,7 +3503,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-5970",
+        "inventory_id.": "SM 2013-5970",
         "museum_id": 470497,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=470497",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-5970.jpg",
@@ -3526,7 +3526,7 @@
         "FIELD26": "4,9,14"
     },
     {
-        "invntory_id.": "SM 2013-5972 1-2",
+        "inventory_id.": "SM 2013-5972 1-2",
         "museum_id": 470500,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=470500",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-5972-1-2.jpg",
@@ -3549,7 +3549,7 @@
         "FIELD26": "4,9,14"
     },
     {
-        "invntory_id.": "SM 2013-5983 1-2",
+        "inventory_id.": "SM 2013-5983 1-2",
         "museum_id": 470511,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=470511",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-5983-1-2.jpg",
@@ -3571,7 +3571,7 @@
         "FIELD26": "9,14"
     },
     {
-        "invntory_id.": "SM 2013-6015",
+        "inventory_id.": "SM 2013-6015",
         "museum_id": 470577,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=470577",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6015.jpg",
@@ -3593,7 +3593,7 @@
         "FIELD26": "9,16"
     },
     {
-        "invntory_id.": "SM 2013-6022",
+        "inventory_id.": "SM 2013-6022",
         "museum_id": 470597,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=470597",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6022.jpg",
@@ -3615,7 +3615,7 @@
         "FIELD26": "9,16"
     },
     {
-        "invntory_id.": "SM 2013-6023",
+        "inventory_id.": "SM 2013-6023",
         "museum_id": 470600,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=470600",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6023.jpg",
@@ -3637,7 +3637,7 @@
         "FIELD26": "9,16"
     },
     {
-        "invntory_id.": "SM 2013-6051",
+        "inventory_id.": "SM 2013-6051",
         "museum_id": 470650,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=470650",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6051.jpg",
@@ -3659,7 +3659,7 @@
         "FIELD26": "4,16"
     },
     {
-        "invntory_id.": "SM 2013-6052",
+        "inventory_id.": "SM 2013-6052",
         "museum_id": 470651,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=470651",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6052.jpg",
@@ -3681,7 +3681,7 @@
         "FIELD26": "4,16"
     },
     {
-        "invntory_id.": "SM 2013-6053",
+        "inventory_id.": "SM 2013-6053",
         "museum_id": 470653,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=470653",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6053.jpg",
@@ -3703,7 +3703,7 @@
         "FIELD26": "4,16"
     },
     {
-        "invntory_id.": "SM 2013-6054",
+        "inventory_id.": "SM 2013-6054",
         "museum_id": 470655,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=470655",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6054.jpg",
@@ -3725,7 +3725,7 @@
         "FIELD26": "4,16"
     },
     {
-        "invntory_id.": "SM 2013-6055",
+        "inventory_id.": "SM 2013-6055",
         "museum_id": 470656,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=470656",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6055.jpg",
@@ -3748,7 +3748,7 @@
         "FIELD26": "4,16"
     },
     {
-        "invntory_id.": "SM 2013-6122",
+        "inventory_id.": "SM 2013-6122",
         "museum_id": 470802,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=470802",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6122.jpg",
@@ -3771,7 +3771,7 @@
         "FIELD26": "3,16"
     },
     {
-        "invntory_id.": "SM 2013-6567",
+        "inventory_id.": "SM 2013-6567",
         "museum_id": 472554,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472554",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6567.jpg",
@@ -3793,7 +3793,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6570",
+        "inventory_id.": "SM 2013-6570",
         "museum_id": 472557,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472557",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6570.jpg",
@@ -3815,7 +3815,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6599",
+        "inventory_id.": "SM 2013-6599",
         "museum_id": 472615,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472615",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6599.jpg",
@@ -3837,7 +3837,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6600",
+        "inventory_id.": "SM 2013-6600",
         "museum_id": 472616,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472616",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6600.jpg",
@@ -3859,7 +3859,7 @@
         "FIELD26": "9,15,23"
     },
     {
-        "invntory_id.": "SM 2013-6601",
+        "inventory_id.": "SM 2013-6601",
         "museum_id": 472617,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472617",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6601.jpg",
@@ -3881,7 +3881,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6602",
+        "inventory_id.": "SM 2013-6602",
         "museum_id": 472618,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472618",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6602.jpg",
@@ -3903,7 +3903,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6603 1-2",
+        "inventory_id.": "SM 2013-6603 1-2",
         "museum_id": 472619,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472619",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6603-1-2.jpg",
@@ -3925,7 +3925,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6604",
+        "inventory_id.": "SM 2013-6604",
         "museum_id": 472621,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472621",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6604.jpg",
@@ -3947,7 +3947,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6605",
+        "inventory_id.": "SM 2013-6605",
         "museum_id": 472623,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472623",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6605.jpg",
@@ -3970,7 +3970,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6606",
+        "inventory_id.": "SM 2013-6606",
         "museum_id": 472624,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472624",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6606.jpg",
@@ -3992,7 +3992,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6607",
+        "inventory_id.": "SM 2013-6607",
         "museum_id": 472625,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472625",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6607.jpg",
@@ -4014,7 +4014,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6608",
+        "inventory_id.": "SM 2013-6608",
         "museum_id": 472626,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472626",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6608.jpg",
@@ -4036,7 +4036,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6609 1-2",
+        "inventory_id.": "SM 2013-6609 1-2",
         "museum_id": 472627,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472627",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6609-1-2.jpg",
@@ -4058,7 +4058,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6610 1-2",
+        "inventory_id.": "SM 2013-6610 1-2",
         "museum_id": 472628,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472628",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6610-1-2.jpg",
@@ -4080,7 +4080,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6611",
+        "inventory_id.": "SM 2013-6611",
         "museum_id": 472629,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472629",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6611.jpg",
@@ -4103,7 +4103,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6612",
+        "inventory_id.": "SM 2013-6612",
         "museum_id": 472630,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=472630",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6612.jpg",
@@ -4125,7 +4125,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-6875",
+        "inventory_id.": "SM 2013-6875",
         "museum_id": 474073,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474073",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6875.jpg",
@@ -4149,7 +4149,7 @@
         "FIELD26": "7,9,15,23"
     },
     {
-        "invntory_id.": "SM 2013-6876",
+        "inventory_id.": "SM 2013-6876",
         "museum_id": 474074,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474074",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6876.jpg",
@@ -4173,7 +4173,7 @@
         "FIELD26": "7,9,15,23"
     },
     {
-        "invntory_id.": "SM 2013-6877",
+        "inventory_id.": "SM 2013-6877",
         "museum_id": 474075,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474075",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6877.jpg",
@@ -4196,7 +4196,7 @@
         "FIELD26": "9,15,16,22"
     },
     {
-        "invntory_id.": "SM 2013-6878",
+        "inventory_id.": "SM 2013-6878",
         "museum_id": 474076,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474076",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6878.jpg",
@@ -4219,7 +4219,7 @@
         "FIELD26": "9,14,15,16"
     },
     {
-        "invntory_id.": "SM 2013-6879",
+        "inventory_id.": "SM 2013-6879",
         "museum_id": 474077,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474077",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6879.jpg",
@@ -4242,7 +4242,7 @@
         "FIELD26": "9,14,15,16"
     },
     {
-        "invntory_id.": "SM 2013-6880",
+        "inventory_id.": "SM 2013-6880",
         "museum_id": 474078,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474078",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6880.jpg",
@@ -4265,7 +4265,7 @@
         "FIELD26": "9,15,16"
     },
     {
-        "invntory_id.": "SM 2013-6881",
+        "inventory_id.": "SM 2013-6881",
         "museum_id": 474079,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474079",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6881.jpg",
@@ -4288,7 +4288,7 @@
         "FIELD26": "9,13,14,15,16"
     },
     {
-        "invntory_id.": "SM 2013-6882 1-2",
+        "inventory_id.": "SM 2013-6882 1-2",
         "museum_id": 474080,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474080",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6882-1-2.jpg",
@@ -4311,7 +4311,7 @@
         "FIELD26": "9,15,16"
     },
     {
-        "invntory_id.": "SM 2013-6883 1-2",
+        "inventory_id.": "SM 2013-6883 1-2",
         "museum_id": 474081,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474081",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6883-1-2.jpg",
@@ -4334,7 +4334,7 @@
         "FIELD26": "9,15,16"
     },
     {
-        "invntory_id.": "SM 2013-6884",
+        "inventory_id.": "SM 2013-6884",
         "museum_id": 474082,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474082",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6884.jpg",
@@ -4357,7 +4357,7 @@
         "FIELD26": "9,14,15,16,23,24"
     },
     {
-        "invntory_id.": "SM 2013-6885",
+        "inventory_id.": "SM 2013-6885",
         "museum_id": 474083,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474083",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6885.jpg",
@@ -4380,7 +4380,7 @@
         "FIELD26": "7,9,15,26"
     },
     {
-        "invntory_id.": "SM 2013-6886",
+        "inventory_id.": "SM 2013-6886",
         "museum_id": 474084,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474084",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6886.jpg",
@@ -4403,7 +4403,7 @@
         "FIELD26": "7,9,11,15"
     },
     {
-        "invntory_id.": "SM 2013-6887",
+        "inventory_id.": "SM 2013-6887",
         "museum_id": 474085,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474085",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6887.jpg",
@@ -4425,7 +4425,7 @@
         "FIELD26": "7,9,15,26"
     },
     {
-        "invntory_id.": "SM 2013-6888",
+        "inventory_id.": "SM 2013-6888",
         "museum_id": 474086,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474086",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6888.jpg",
@@ -4447,7 +4447,7 @@
         "FIELD26": "9,15,26"
     },
     {
-        "invntory_id.": "SM 2013-6889",
+        "inventory_id.": "SM 2013-6889",
         "museum_id": 474087,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474087",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6889.jpg",
@@ -4469,7 +4469,7 @@
         "FIELD26": "9,15"
     },
     {
-        "invntory_id.": "SM 2013-6890",
+        "inventory_id.": "SM 2013-6890",
         "museum_id": 474088,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474088",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6890.jpg",
@@ -4491,7 +4491,7 @@
         "FIELD26": "9,15"
     },
     {
-        "invntory_id.": "SM 2013-6891",
+        "inventory_id.": "SM 2013-6891",
         "museum_id": 474089,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474089",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6891.jpg",
@@ -4514,7 +4514,7 @@
         "FIELD26": "9,15"
     },
     {
-        "invntory_id.": "SM 2013-6892",
+        "inventory_id.": "SM 2013-6892",
         "museum_id": 474090,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474090",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6892.jpg",
@@ -4536,7 +4536,7 @@
         "FIELD26": "8,9,15,26"
     },
     {
-        "invntory_id.": "SM 2013-6893",
+        "inventory_id.": "SM 2013-6893",
         "museum_id": 474091,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474091",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6893.jpg",
@@ -4559,7 +4559,7 @@
         "FIELD26": "8,15,16,26"
     },
     {
-        "invntory_id.": "SM 2013-6894",
+        "inventory_id.": "SM 2013-6894",
         "museum_id": 474092,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474092",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6894.jpg",
@@ -4583,7 +4583,7 @@
         "FIELD26": "8,15,16,26"
     },
     {
-        "invntory_id.": "SM 2013-6895",
+        "inventory_id.": "SM 2013-6895",
         "museum_id": 474093,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474093",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6895.jpg",
@@ -4607,7 +4607,7 @@
         "FIELD26": "8,15,16,26"
     },
     {
-        "invntory_id.": "SM 2013-6897",
+        "inventory_id.": "SM 2013-6897",
         "museum_id": 474095,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474095",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6897.jpg",
@@ -4630,7 +4630,7 @@
         "FIELD26": "8,15,16,26"
     },
     {
-        "invntory_id.": "SM 2013-6898",
+        "inventory_id.": "SM 2013-6898",
         "museum_id": 474096,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474096",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6898.jpg",
@@ -4652,7 +4652,7 @@
         "FIELD26": "8,9,15"
     },
     {
-        "invntory_id.": "SM 2013-6899",
+        "inventory_id.": "SM 2013-6899",
         "museum_id": 474097,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474097",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6899.jpg",
@@ -4674,7 +4674,7 @@
         "FIELD26": "8,9,15"
     },
     {
-        "invntory_id.": "SM 2013-6900",
+        "inventory_id.": "SM 2013-6900",
         "museum_id": 474100,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474100",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6900.jpg",
@@ -4698,7 +4698,7 @@
         "FIELD26": "8,9,15,26"
     },
     {
-        "invntory_id.": "SM 2013-6901",
+        "inventory_id.": "SM 2013-6901",
         "museum_id": 474101,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474101",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6901.jpg",
@@ -4720,7 +4720,7 @@
         "FIELD26": "8,9,15"
     },
     {
-        "invntory_id.": "SM 2013-6902",
+        "inventory_id.": "SM 2013-6902",
         "museum_id": 474104,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474104",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6902.jpg",
@@ -4743,7 +4743,7 @@
         "FIELD26": "8,9,15"
     },
     {
-        "invntory_id.": "SM 2013-6903",
+        "inventory_id.": "SM 2013-6903",
         "museum_id": 474105,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=474105",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-6903.jpg",
@@ -4766,7 +4766,7 @@
         "FIELD26": "8,9,15,26"
     },
     {
-        "invntory_id.": "SM 2013-7164",
+        "inventory_id.": "SM 2013-7164",
         "museum_id": 481047,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481047",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7164.jpg",
@@ -4788,7 +4788,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-7165",
+        "inventory_id.": "SM 2013-7165",
         "museum_id": 481049,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481049",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7165.jpg",
@@ -4810,7 +4810,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-7166",
+        "inventory_id.": "SM 2013-7166",
         "museum_id": 481050,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481050",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7166.jpg",
@@ -4832,7 +4832,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-7167",
+        "inventory_id.": "SM 2013-7167",
         "museum_id": 481051,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481051",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7167.jpg",
@@ -4854,7 +4854,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-7168",
+        "inventory_id.": "SM 2013-7168",
         "museum_id": 481054,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481054",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7168.jpg",
@@ -4876,7 +4876,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-7169",
+        "inventory_id.": "SM 2013-7169",
         "museum_id": 481055,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481055",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7169.jpg",
@@ -4898,7 +4898,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-7170 1-6",
+        "inventory_id.": "SM 2013-7170 1-6",
         "museum_id": 481057,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481057",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7170-1-6.jpg",
@@ -4921,7 +4921,7 @@
         "FIELD26": "8,9,26"
     },
     {
-        "invntory_id.": "SM 2013-7171 1-3",
+        "inventory_id.": "SM 2013-7171 1-3",
         "museum_id": 481059,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481059",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7171-1-3.jpg",
@@ -4945,7 +4945,7 @@
         "FIELD26": "9,12,15"
     },
     {
-        "invntory_id.": "SM 2013-7173",
+        "inventory_id.": "SM 2013-7173",
         "museum_id": 481065,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481065",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7173.jpg",
@@ -4968,7 +4968,7 @@
         "FIELD26": "3,9,20"
     },
     {
-        "invntory_id.": "SM 2013-7174",
+        "inventory_id.": "SM 2013-7174",
         "museum_id": 481066,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481066",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7174.jpg",
@@ -4990,7 +4990,7 @@
         "FIELD26": "3,9,20"
     },
     {
-        "invntory_id.": "SM 2013-7175 1-2",
+        "inventory_id.": "SM 2013-7175 1-2",
         "museum_id": 481067,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481067",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7175-1-2.jpg",
@@ -5012,7 +5012,7 @@
         "FIELD26": "3,9,20"
     },
     {
-        "invntory_id.": "SM 2013-7177",
+        "inventory_id.": "SM 2013-7177",
         "museum_id": 481069,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481069",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7177.jpg",
@@ -5035,7 +5035,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-7178 1-2",
+        "inventory_id.": "SM 2013-7178 1-2",
         "museum_id": 481070,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481070",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7178-1-2.jpg",
@@ -5057,7 +5057,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-7179",
+        "inventory_id.": "SM 2013-7179",
         "museum_id": 481071,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481071",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7179.jpg",
@@ -5079,7 +5079,7 @@
         "FIELD26": "9,28"
     },
     {
-        "invntory_id.": "SM 2013-7180",
+        "inventory_id.": "SM 2013-7180",
         "museum_id": 481072,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481072",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7180.jpg",
@@ -5101,7 +5101,7 @@
         "FIELD26": "9,28"
     },
     {
-        "invntory_id.": "SM 2013-7183 1-2",
+        "inventory_id.": "SM 2013-7183 1-2",
         "museum_id": 481090,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481090",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7183-1-2.jpg",
@@ -5124,7 +5124,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-7184 1-2",
+        "inventory_id.": "SM 2013-7184 1-2",
         "museum_id": 481091,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481091",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7184-1-2.jpg",
@@ -5147,7 +5147,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-7185 1-2",
+        "inventory_id.": "SM 2013-7185 1-2",
         "museum_id": 481092,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481092",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7185-1-2.jpg",
@@ -5170,7 +5170,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-7186",
+        "inventory_id.": "SM 2013-7186",
         "museum_id": 481093,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481093",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7186.jpg",
@@ -5192,7 +5192,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-7187",
+        "inventory_id.": "SM 2013-7187",
         "museum_id": 481094,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481094",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7187.jpg",
@@ -5214,7 +5214,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-7188",
+        "inventory_id.": "SM 2013-7188",
         "museum_id": 481095,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481095",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7188.jpg",
@@ -5236,7 +5236,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-7190 1-3",
+        "inventory_id.": "SM 2013-7190 1-3",
         "museum_id": 481097,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481097",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7190-1-3.jpg",
@@ -5259,7 +5259,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-7191",
+        "inventory_id.": "SM 2013-7191",
         "museum_id": 481098,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481098",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7191.jpg",
@@ -5281,7 +5281,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-7192",
+        "inventory_id.": "SM 2013-7192",
         "museum_id": 481100,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481100",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7192.jpg",
@@ -5303,7 +5303,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-7193",
+        "inventory_id.": "SM 2013-7193",
         "museum_id": 481101,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481101",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7193.jpg",
@@ -5325,7 +5325,7 @@
         "FIELD26": "23"
     },
     {
-        "invntory_id.": "SM 2013-7194",
+        "inventory_id.": "SM 2013-7194",
         "museum_id": 481102,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481102",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7194.jpg",
@@ -5347,7 +5347,7 @@
         "FIELD26": "23"
     },
     {
-        "invntory_id.": "SM 2013-7195",
+        "inventory_id.": "SM 2013-7195",
         "museum_id": 481103,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481103",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7195.jpg",
@@ -5369,7 +5369,7 @@
         "FIELD26": "23"
     },
     {
-        "invntory_id.": "SM 2013-7196 1-3",
+        "inventory_id.": "SM 2013-7196 1-3",
         "museum_id": 481104,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481104",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7196-1-3.jpg",
@@ -5391,7 +5391,7 @@
         "FIELD26": "23"
     },
     {
-        "invntory_id.": "SM 2013-7197",
+        "inventory_id.": "SM 2013-7197",
         "museum_id": 481105,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481105",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7197.jpg",
@@ -5414,7 +5414,7 @@
         "FIELD26": "23"
     },
     {
-        "invntory_id.": "SM 2013-7198",
+        "inventory_id.": "SM 2013-7198",
         "museum_id": 481106,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481106",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7198.jpg",
@@ -5436,7 +5436,7 @@
         "FIELD26": "23"
     },
     {
-        "invntory_id.": "SM 2013-7200 1-2",
+        "inventory_id.": "SM 2013-7200 1-2",
         "museum_id": 481107,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481107",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7200-1-2.jpg",
@@ -5458,7 +5458,7 @@
         "FIELD26": "23"
     },
     {
-        "invntory_id.": "SM 2013-7292",
+        "inventory_id.": "SM 2013-7292",
         "museum_id": 481991,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=481991",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7292.jpg",
@@ -5480,7 +5480,7 @@
         "FIELD26": "15,16"
     },
     {
-        "invntory_id.": "SM 2013-7293",
+        "inventory_id.": "SM 2013-7293",
         "museum_id": 482001,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=482001",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7293.jpg",
@@ -5503,7 +5503,7 @@
         "FIELD26": "15,16"
     },
     {
-        "invntory_id.": "SM 2013-7294",
+        "inventory_id.": "SM 2013-7294",
         "museum_id": 482002,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=482002",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7294.jpg",
@@ -5525,7 +5525,7 @@
         "FIELD26": "15,16"
     },
     {
-        "invntory_id.": "SM 2013-7295 1-2",
+        "inventory_id.": "SM 2013-7295 1-2",
         "museum_id": 482003,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=482003",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7295-1-2.jpg",
@@ -5548,7 +5548,7 @@
         "FIELD26": "15,16"
     },
     {
-        "invntory_id.": "SM 2013-7296 1-2",
+        "inventory_id.": "SM 2013-7296 1-2",
         "museum_id": 482005,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=482005",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7296-1-2.jpg",
@@ -5570,7 +5570,7 @@
         "FIELD26": "15,16"
     },
     {
-        "invntory_id.": "SM 2013-7362 1-2",
+        "inventory_id.": "SM 2013-7362 1-2",
         "museum_id": 482522,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=482522",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-7362-1-2.jpg",
@@ -5592,7 +5592,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2013-8079",
+        "inventory_id.": "SM 2013-8079",
         "museum_id": 505631,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=505631",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-8079.jpg",
@@ -5616,7 +5616,7 @@
         "FIELD26": "9,11"
     },
     {
-        "invntory_id.": "SM 2013-8080",
+        "inventory_id.": "SM 2013-8080",
         "museum_id": 505636,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=505636",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-8080.jpg",
@@ -5638,7 +5638,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-8081",
+        "inventory_id.": "SM 2013-8081",
         "museum_id": 505642,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=505642",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-8081.jpg",
@@ -5660,7 +5660,7 @@
         "FIELD26": "9"
     },
     {
-        "invntory_id.": "SM 2013-8093",
+        "inventory_id.": "SM 2013-8093",
         "museum_id": 505863,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=505863",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2013-8093.jpg",
@@ -5683,7 +5683,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2014-1543",
+        "inventory_id.": "SM 2014-1543",
         "museum_id": 526691,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=526691",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1543.jpg",
@@ -5706,7 +5706,7 @@
         "FIELD26": "11,16"
     },
     {
-        "invntory_id.": "SM 2014-1544",
+        "inventory_id.": "SM 2014-1544",
         "museum_id": 526698,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=526698",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1544.jpg",
@@ -5730,7 +5730,7 @@
         "FIELD26": "11,16"
     },
     {
-        "invntory_id.": "SM 2014-1545",
+        "inventory_id.": "SM 2014-1545",
         "museum_id": 526703,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=526703",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1545.jpg",
@@ -5753,7 +5753,7 @@
         "FIELD26": "11,16"
     },
     {
-        "invntory_id.": "SM 2014-1548",
+        "inventory_id.": "SM 2014-1548",
         "museum_id": 526717,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=526717",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1548.jpg",
@@ -5777,7 +5777,7 @@
         "FIELD26": "11,16"
     },
     {
-        "invntory_id.": "SM 2014-1549",
+        "inventory_id.": "SM 2014-1549",
         "museum_id": 526718,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=526718",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1549.jpg",
@@ -5801,7 +5801,7 @@
         "FIELD26": "11,16"
     },
     {
-        "invntory_id.": "SM 2014-1550",
+        "inventory_id.": "SM 2014-1550",
         "museum_id": 526732,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=526732",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1550.jpg",
@@ -5825,7 +5825,7 @@
         "FIELD26": "11,16"
     },
     {
-        "invntory_id.": "SM 2014-1551",
+        "inventory_id.": "SM 2014-1551",
         "museum_id": 526737,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=526737",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1551.jpg",
@@ -5849,7 +5849,7 @@
         "FIELD26": "11,16"
     },
     {
-        "invntory_id.": "SM 2014-1554",
+        "inventory_id.": "SM 2014-1554",
         "museum_id": 526822,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=526822",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1554.jpg",
@@ -5873,7 +5873,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-1555",
+        "inventory_id.": "SM 2014-1555",
         "museum_id": 526823,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=526823",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1555.jpg",
@@ -5897,7 +5897,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-1561",
+        "inventory_id.": "SM 2014-1561",
         "museum_id": 526966,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=526966",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1561.jpg",
@@ -5921,7 +5921,7 @@
         "FIELD26": "11,16"
     },
     {
-        "invntory_id.": "SM 2014-1562",
+        "inventory_id.": "SM 2014-1562",
         "museum_id": 526967,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=526967",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1562.jpg",
@@ -5944,7 +5944,7 @@
         "FIELD26": "11,16"
     },
     {
-        "invntory_id.": "SM 2014-1563",
+        "inventory_id.": "SM 2014-1563",
         "museum_id": 526968,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=526968",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1563.jpg",
@@ -5967,7 +5967,7 @@
         "FIELD26": "11,16"
     },
     {
-        "invntory_id.": "SM 2014-1564",
+        "inventory_id.": "SM 2014-1564",
         "museum_id": 526971,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=526971",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1564.jpg",
@@ -5991,7 +5991,7 @@
         "FIELD26": "11,16"
     },
     {
-        "invntory_id.": "SM 2014-1565",
+        "inventory_id.": "SM 2014-1565",
         "museum_id": 526972,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=526972",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1565.jpg",
@@ -6015,7 +6015,7 @@
         "FIELD26": "11,16"
     },
     {
-        "invntory_id.": "SM 2014-1647",
+        "inventory_id.": "SM 2014-1647",
         "museum_id": 528489,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=528489",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1647.jpg",
@@ -6038,7 +6038,7 @@
         "FIELD26": "11,16"
     },
     {
-        "invntory_id.": "SM 2014-1736",
+        "inventory_id.": "SM 2014-1736",
         "museum_id": 529522,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=529522",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1736.jpg",
@@ -6061,7 +6061,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-1737",
+        "inventory_id.": "SM 2014-1737",
         "museum_id": 529524,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=529524",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1737.jpg",
@@ -6085,7 +6085,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-1824",
+        "inventory_id.": "SM 2014-1824",
         "museum_id": 529943,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=529943",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1824.jpg",
@@ -6108,7 +6108,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-1825",
+        "inventory_id.": "SM 2014-1825",
         "museum_id": 529944,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=529944",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1825.jpg",
@@ -6131,7 +6131,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-1826",
+        "inventory_id.": "SM 2014-1826",
         "museum_id": 529945,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=529945",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1826.jpg",
@@ -6154,7 +6154,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-1845",
+        "inventory_id.": "SM 2014-1845",
         "museum_id": 530361,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=530361",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1845.jpg",
@@ -6177,7 +6177,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-1846",
+        "inventory_id.": "SM 2014-1846",
         "museum_id": 530364,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=530364",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1846.jpg",
@@ -6199,7 +6199,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-1906 1-3",
+        "inventory_id.": "SM 2014-1906 1-3",
         "museum_id": 530586,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=530586",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1906-1-3.jpg",
@@ -6221,7 +6221,7 @@
         "FIELD26": "3,9,21"
     },
     {
-        "invntory_id.": "SM 2014-1907",
+        "inventory_id.": "SM 2014-1907",
         "museum_id": 530593,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=530593",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1907.jpg",
@@ -6243,7 +6243,7 @@
         "FIELD26": "3,9,21"
     },
     {
-        "invntory_id.": "SM 2014-1938",
+        "inventory_id.": "SM 2014-1938",
         "museum_id": 530719,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=530719",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1938.jpg",
@@ -6267,7 +6267,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-1940",
+        "inventory_id.": "SM 2014-1940",
         "museum_id": 530721,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=530721",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1940.jpg",
@@ -6291,7 +6291,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-1941",
+        "inventory_id.": "SM 2014-1941",
         "museum_id": 530722,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=530722",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1941.jpg",
@@ -6315,7 +6315,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-1953",
+        "inventory_id.": "SM 2014-1953",
         "museum_id": 530760,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=530760",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-1953.jpg",
@@ -6338,7 +6338,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-2111",
+        "inventory_id.": "SM 2014-2111",
         "museum_id": 532111,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=532111",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-2111.jpg",
@@ -6361,7 +6361,7 @@
         "FIELD26": "9,21"
     },
     {
-        "invntory_id.": "SM 2014-2112",
+        "inventory_id.": "SM 2014-2112",
         "museum_id": 532117,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=532117",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-2112.jpg",
@@ -6384,7 +6384,7 @@
         "FIELD26": "9,21"
     },
     {
-        "invntory_id.": "SM 2014-2113",
+        "inventory_id.": "SM 2014-2113",
         "museum_id": 532124,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=532124",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-2113.jpg",
@@ -6407,7 +6407,7 @@
         "FIELD26": "9,21"
     },
     {
-        "invntory_id.": "SM 2014-2115",
+        "inventory_id.": "SM 2014-2115",
         "museum_id": 532135,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=532135",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-2115.jpg",
@@ -6430,7 +6430,7 @@
         "FIELD26": "9,21"
     },
     {
-        "invntory_id.": "SM 2014-2124",
+        "inventory_id.": "SM 2014-2124",
         "museum_id": 532231,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=532231",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-2124.jpg",
@@ -6454,7 +6454,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-2125",
+        "inventory_id.": "SM 2014-2125",
         "museum_id": 532232,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=532232",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-2125.jpg",
@@ -6478,7 +6478,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-2126",
+        "inventory_id.": "SM 2014-2126",
         "museum_id": 532233,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=532233",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-2126.jpg",
@@ -6502,7 +6502,7 @@
         "FIELD26": "16,21"
     },
     {
-        "invntory_id.": "SM 2014-2579",
+        "inventory_id.": "SM 2014-2579",
         "museum_id": 535842,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=535842",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-2579.jpg",
@@ -6526,7 +6526,7 @@
         "FIELD26": "7,9,23"
     },
     {
-        "invntory_id.": "SM 2014-2580",
+        "inventory_id.": "SM 2014-2580",
         "museum_id": 535847,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=535847",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-2580.jpg",
@@ -6549,7 +6549,7 @@
         "FIELD26": "7,9,23"
     },
     {
-        "invntory_id.": "SM 2014-2582",
+        "inventory_id.": "SM 2014-2582",
         "museum_id": 535866,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=535866",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-2582.jpg",
@@ -6572,7 +6572,7 @@
         "FIELD26": "7,9,23"
     },
     {
-        "invntory_id.": "SM 2014-2598",
+        "inventory_id.": "SM 2014-2598",
         "museum_id": 536047,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=536047",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-2598.jpg",
@@ -6596,7 +6596,7 @@
         "FIELD26": "9,23"
     },
     {
-        "invntory_id.": "SM 2014-2649",
+        "inventory_id.": "SM 2014-2649",
         "museum_id": 537117,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=537117",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-2649.jpg",
@@ -6619,7 +6619,7 @@
         "commentary": "Diplocraterion parallelum (RICHTER, 1926) ist ein Spurenfossil aus dem sandigen Unterkambrium Südskandinaviens (ca. 540 Mio. Jahre). Es handelt sich um eine U-förmige Grabröhre von 1,8 – 3 cm width, deren senkrechte Abschnitte parallel verlaufen. Zwischen den beiden Schenkeln des Baues befindet sich eine Spreite aus Versatzlamellen, die durch die Grab- und Fraßtätigkeit des Tieres entstand. Die Öffnungen der Röhre sind meist trichterförmig. In der Aufsicht zeigt sich ein charakteristisches Hantelmuster aus den beiden runden Querschnitten der Wohnröhre und der schmalen Spreite dazwischen. Die Spreite erodiert schneller als das Gestein, so dass eine depth Rinne entsteht. In Schweden heißt das Gestein daher Krågsten (Krähenstein), da mehrere erodierte Spreiten zusammen an Fußabdrücke von Krähen erinnern. Diese Spuren sind beim vorliegenden Stück sehr gut ausgeimget."
     },
     {
-        "invntory_id.": "SM 2014-3198",
+        "inventory_id.": "SM 2014-3198",
         "museum_id": 541691,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=541691",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-3198.jpg",
@@ -6643,7 +6643,7 @@
         "FIELD26": "22,23"
     },
     {
-        "invntory_id.": "SM 2014-3199",
+        "inventory_id.": "SM 2014-3199",
         "museum_id": 541693,
         "link": "https://sammlung-online.stadtmuseum.de/index.html?objektid=541693",
         "img": "StadtmuseumBerlin_GeologischeSammlung_SM-2014-3199.jpg",
