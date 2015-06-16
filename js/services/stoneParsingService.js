@@ -14,10 +14,8 @@ service.factory('StonesService', ['$resource', '$http', function($resource, $htt
 		get: function() {
 			if ( !promise ) {
 				promise = $http.get('js/metadata.json').then(function (response) {
-					console.log("serviceresponse = " + response);
 					var items = [];
 					angular.forEach(response.data, function(el, index) {
-						console.log('cycled');
 		        		if (el.coordinate && el.origin_coordinate) {
 		        			var coordinates = parseCoordinateString(el.coordinate);
       						var origin_coordinates = parseCoordinateString(el.origin_coordinate);
