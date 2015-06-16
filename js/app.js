@@ -3,15 +3,15 @@ var myApp = angular.module('RollingStone', ['leaflet-directive', 'stoneparsingse
 myApp.config(function($routeProvider) {
 	$routeProvider
 		.when('/', {
-			templateUrl: 'map.html',
+			templateUrl: 'js/views/map.html',
 			controller: 'MapController'
 		})
 		.when('/map', {
-			templateUrl: 'map.html',
+			templateUrl: 'js/views/map.html',
 			controller: 'MapController'
 		})
 		.when('/graph', {
-			templateUrl: 'graph.html',
+			templateUrl: 'js/views/graph.html',
 			controller: 'GraphController'
 		});
 });
