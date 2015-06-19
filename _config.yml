@@ -9,6 +9,8 @@ baseurl: "/Rolling-Stone"
 url: "http://knutator2.github.io"
 twitter_username: jekyllrb
 github_username:  jekyll
+include:
+  - .nojekyll
 
 # Build settings
 markdown: kramdown
