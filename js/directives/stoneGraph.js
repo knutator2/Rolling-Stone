@@ -8,40 +8,25 @@ myApp.directive('stonegraph', function() {
 		replace: true,
 		templateUrl : 'js/directives/stoneGraph.html',
 		link : function (scope, element, attrs) {
-			scope.init = initGraph;
+			scope.init = initGraph(scope.active, scope.stones);
 		}
 	};
 });
 
-function initGraph() {
+function initGraph(coreElement, stones) {
 
+	console.log("init Graph");
+	console.log(coreElement);
+	console.log(stones);
 	var dataset = {
         nodes: [
                 { name: "Adam" },
                 { name: "Bob" },
                 { name: "Carrie" },
-                // { name: "Donovan" },
-                // { name: "Edward" },
-                // { name: "Felicity" },
-                // { name: "George" },
-                // { name: "Hannah" },
-                // { name: "Iris" },
-                // { name: "Jerry" }
         ],
         edges: [
                 { source: 0, target: 1 },
                 { source: 0, target: 2 },
-                // { source: 0, target: 3 },
-                // { source: 0, target: 4 },
-                // { source: 1, target: 5 },
-                // { source: 2, target: 5 },
-                // { source: 2, target: 5 },
-                // { source: 3, target: 4 },
-                // { source: 5, target: 8 },
-				// { source: 5, target: 9 },
-				// { source: 6, target: 7 },
-				// { source: 7, target: 8 },
-				// { source: 8, target: 9 }
 		]
 	};
 
@@ -63,17 +48,20 @@ function initGraph() {
 		.append("svg")
 		.attr("width", w)
 		.attr("height", h)
-		.append("g")
-		.call(zoom);
 
+	//background rectangle for detecting zooming and dragging of the whole graph
 	var rect = svg.append("rect")
     	.attr("width", w)
     	.attr("height", h)
     	.style("fill", "none")
-    	.style("pointer-events", "all");
+    	.style("pointer-events", "all")
+    	.call(zoom);
 
-	var container = svg.append("g");
-
+	// container layer for nodes and edges
+	var container = svg
+		.append("g")
+		.attr('width', w)
+		.attr('height', h);
 
 	var force = d3.layout.force()
 		.nodes(dataset.nodes)
@@ -104,18 +92,8 @@ function initGraph() {
 		})
 		.call(force.drag);
 
-	// force.on("tick", function() {
+	force.on("tick", function() {
 
-	// 	edges.attr("x1", function(d) { return d.source.x; })
-	// 		.attr("y1", function(d) { return d.source.y; })
-	// 		.attr("x2", function(d) { return d.target.x; })
-	// 		.attr("y2", function(d) { return d.target.y; });
-
-	// 	nodes.attr("x", function(d) { return d.x; })
-	// 		.attr("y", function(d) { return d.y; });
-	// });
-
-	force.on("start", function() {
 		edges.attr("x1", function(d) { return d.source.x; })
 			.attr("y1", function(d) { return d.source.y; })
 			.attr("x2", function(d) { return d.target.x; })
@@ -123,7 +101,17 @@ function initGraph() {
 
 		nodes.attr("x", function(d) { return d.x; })
 			.attr("y", function(d) { return d.y; });
-	})
+	});
+
+	// force.on("start", function() {
+	// 	edges.attr("x1", function(d) { return d.source.x; })
+	// 		.attr("y1", function(d) { return d.source.y; })
+	// 		.attr("x2", function(d) { return d.target.x; })
+	// 		.attr("y2", function(d) { return d.target.y; });
+
+	// 	nodes.attr("x", function(d) { return d.x; })
+	// 		.attr("y", function(d) { return d.y; });
+	// })
 
 	function zoomed() {
 	  container.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
