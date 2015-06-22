@@ -115,31 +115,6 @@ function initGraph() {
 		createExpansionButton(this, "100,0, 150,50, 100,100");	
 	});
 
-	var nodes = {};
-	// var nodes = nodeGroups.selectAll()
-	// 	.data(dataset.nodes)
-	// 	.enter()
-	// 	.append("rect")
-	// 		.attr("width", 100)
-	// 		.attr("height", 100)
-	// 		.style("fill", function(d, i) {
-	// 			return colors(i);
-	// 		})
-	// 	.call(force.drag);
-
-	// var triangleUps = nodeGroups.selectAll("polygon")
-	// 	.data(dataset.nodes)
-	// 	.enter()
-	// 	.append("polygon")
-	// 	 	.style("stroke", "black")
-	// 	 	.style("fill", "none")
-	// 	 	.attr("points", function(d) { 
-	// 	 	 	console.log("polygon:"); 
-	// 	 	 	console.log(d); 
-	// 	 	 	return d.px + "," + d.py + "," + d.px + 50 + "," + d.py + 50 + "," + d.px + 100 + "," + d.py; 
-	// 	 	});
-		
-
 	force.on("tick", function() {
 
 		edges.attr("x1", function(d) { return d.source.x; })
@@ -149,16 +124,6 @@ function initGraph() {
 
 		nodeGroups.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 	});
-
-	// force.on("start", function() {
-	// 	edges.attr("x1", function(d) { return d.source.x; })
-	// 		.attr("y1", function(d) { return d.source.y; })
-	// 		.attr("x2", function(d) { return d.target.x; })
-	// 		.attr("y2", function(d) { return d.target.y; });
-
-	// 	nodes.attr("x", function(d) { return d.x; })
-	// 		.attr("y", function(d) { return d.y; });
-	// })
 
 	function zoomed() {
 	  container.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
