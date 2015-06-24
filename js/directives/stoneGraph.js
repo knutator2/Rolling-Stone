@@ -178,19 +178,6 @@ function StoneGraph(el, core, stones) {
             .attr("width", "100px")
             .attr("height", "100px");
 
-        // nodeEnter.append("text")
-        //     .attr("class", "nodetext")
-        //     .attr("dx", 12)
-        //     .attr("dy", ".35em")
-        //     .text(function(d) {return d.id});
-
-		// nodeEnter.append("rect")
-		//  		.attr("width", 100)
-		//  		.attr("height", 100)
-		//  		.style("fill", function(d, i) {
-		//  			return colors(i);
-		//  		});
-
 		// 	//triangle up
  		nodeEnter.append("polygon")
 	 	 		.style("stroke", "black")
