@@ -5,6 +5,18 @@ html, body, .page-content, .wrapper, .home {
     height: 100%;
 }
 
+.stone-graph {
+    height: 70%;
+}
+
+.link { stroke: #ccc; }
+.nodetext { pointer-events: none; font: 10px sans-serif; }
+
+.graph {
+    height: 90%;
+    border: 1px solid black;
+}
+
 .map {
     height: 91%;
 }
