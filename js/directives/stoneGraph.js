@@ -1,17 +1,3 @@
-var dataset = {
-        nodes: [
-                { name: "Adam" },
-                { name: "Bob" },
-                { name: "Carrie" },
-        ],
-        edges: [
-                { source: 0, target: 1 },
-                { source: 0, target: 2 },
-		]
-	};
-
-var force = {};
-
 function StoneGraph(el, core, stones) {
 
 	
@@ -159,8 +145,13 @@ function StoneGraph(el, core, stones) {
         var link = container.selectAll("line.link")
             .data(links, function(d) { return d.source.id + "-" + d.target.id; });
 
-        link.enter().insert("line")
+        var linkEnter = link.enter();//.append("g");
+
+        linkEnter.insert("line")
             .attr("class", "link");
+
+     	// linkEnter.append('text')
+     	// 	.text('mytext');
 
         link.exit().remove();
 
