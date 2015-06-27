@@ -1,2 +1,4 @@
 _site
 .sass-cache
+
+js/bower_components
