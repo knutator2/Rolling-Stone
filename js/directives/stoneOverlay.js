@@ -12,7 +12,7 @@ myApp.directive('stoneoverlay', function() {
 				console.log(scope.stone);
 				console.log(scope.overlayIsActive);
 				// alert('TODO: show More Page');
-			}
+			};
 		}
 	};
 });
