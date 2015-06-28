@@ -1,5 +1,5 @@
- myApp.controller("MapController", ['$scope', '$http', '$timeout', 'StonesService',
-    	function($scope, $http, $timeout, StonesService) {
+ myApp.controller("MapController", ['$scope', '$http', '$timeout', 'StonesService', 'leafletData',
+    	function($scope, $http, $timeout, StonesService, leafletData) {
     angular.extend($scope, {
  		center: 
  		{
@@ -89,6 +89,21 @@
                 focus: false,
                 draggable: false};
  	};
+
+  $scope.buttonsAdded = false;
+
+  leafletData.getMap().then(function(map) {
+    if ($scope.buttonsAdded === false) {
+      L.easyButton('fa fa-search-plus', 
+              function () {alert('hello!');},
+             '',
+             map
+            );
+      $scope.buttonsAdded = true;
+      console.log('added button');  
+    }
+    
+  });
 }]);	
     
 		// $http.get('js/metadata.json').then(function(data) {
