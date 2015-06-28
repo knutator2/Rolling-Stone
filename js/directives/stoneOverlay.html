@@ -1,6 +1,6 @@
-<div class="detail-overlay stone-overlay active">
+<div class="detail-overlay stone-overlay" ng-class="{active:overlayIsActive}">
 	<img ng-attr-src="img/{{ stone.img }}"></p>
-    <!-- <button  ng-click="overlayIsActive=false"></button> -->
+    <button ng-click="overlayIsActive=false"></button>
 	<p>{{ stone.title }}</p>
 	<p>{{ stone.material }}</p>
 	<p>{{stone.date_in_mya}} million years ago</p>
