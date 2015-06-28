@@ -1,4 +1,4 @@
-<div class="home" ng-controller="MapController">
+<div class="home">
 	<div class="page-wrapper">
 		<stoneoverlay stone="currentStone" overlay-is-active="stoneOverlayIsActive" ></stoneoverlay>
 		<stoneselector stone="currentStone"></stoneselector>
@@ -6,7 +6,8 @@
 			<leaflet 
 			markers="stones"
 			tiles="mapboxtiles" 
-			center="center" 
+			center="center"
+			defaults="defaults" 
 			width="100%" 
 			height="100%"
 			event-broadcast="events"></leaflet>
