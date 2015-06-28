@@ -1,7 +1,7 @@
 <div class="home" ng-controller="MapController">
 	<div class="page-wrapper">
 		<stoneoverlay stone="currentStone" overlayIsActive="stoneOverlayIsActive" ></stoneoverlay>
-		<stoneselector />
+		<stoneselector stone="currentStone"></stoneselector>
 		<div class="map" >
 			<leaflet 
 			markers="stones"
