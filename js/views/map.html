@@ -1,16 +1,16 @@
 <div class="home" ng-controller="MapController">
-	<div class="map" >
-		<leaflet 
+	<div class="page-wrapper">
+		<stoneoverlay stone="currentStone" overlayIsActive="stoneOverlayIsActive" ></stoneoverlay>
+		<stoneselector />
+		<div class="map" >
+			<leaflet 
 			markers="stones"
 			tiles="mapboxtiles" 
 			center="center" 
 			width="100%" 
 			height="100%"
 			event-broadcast="events"></leaflet>
+		</div>
 	</div>
-	<stoneoverlay stone="currentStone"></stoneoverlay>
-	<div class="graph">
-		
-		<a ng-href="#graph?stone={{currentStone.museum_id}}" class="btn btn-danger btn-lg">Graph</a>
-	</div>
+
 </div>

@@ -18,22 +18,24 @@ html, body, .page-content, .wrapper, .home {
 }
 
 .map {
-    height: 91%;
+    height: 100%;
+    width: 100%;
 }
 
-.detail-overlay {
-    background-color: white;
-    z-index: 100;
-    position: absolute;
-    right: 20px;
-    top: 120px;
-}
+//TODO: what's this?
+// .detail-overlay {
+//     background-color: white;
+//     z-index: 100;
+//     position: absolute;
+//     right: 20px;
+//     top: 120px;
+// }
 
 /* make our pages be full width and full height */
 /* positioned absolutely so that the pages can overlap each other as they enter and leave */
 .page        {
     bottom:0; 
-    padding-top:200px;
+    padding-top:62px;
     position:absolute; 
     text-align:center;
     top:0;  

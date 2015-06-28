@@ -1,0 +1,17 @@
+.page-wrapper {
+    display: flex;
+    height: 100%;
+
+    .detail-overlay {
+        width: 0;
+        transition: width 0.3s ease-in-out;
+
+        &.active {
+            width: 400px;
+        }
+    } 
+
+    .page-wrapper.active {
+        
+    }
+} 

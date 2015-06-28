@@ -68,6 +68,7 @@
 
  	$scope.name = "Map";
   $scope.currentStone = {};
+  $scope.stoneOverlayIsActive = {};
   $scope.storedMarkers = [];
  	$scope.focusedMarkerPair = {};
  	$scope.focusedLine = {};
@@ -75,7 +76,9 @@
  	$scope.map = {};
   $scope.$on('leafletDirectiveMarker.click', function(event, args){
         $scope.currentStone = args.leafletObject.options;
+        $scope.stoneOverlayIsActive = args.leafletObject.options;
         console.log($scope.currentStone);
+        console.log($scope.stoneOverlayIsActive);
   });
 
  	$scope.updateMarkers = function() {
