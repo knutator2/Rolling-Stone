@@ -1,0 +1,30 @@
+.link-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: lightgrey;
+    height: 2em;
+    margin-top: 1em;
+    border-radius: 0.5em;
+    text-decoration: none;
+
+    &:active,
+    &:hover {
+        text-decoration: none;
+        background-color: grey;
+    }
+}
+
+.link-primary {
+    background-color: lightblue;
+
+    &:active,
+    &:hover {
+        background-color: aliceblue;
+    }
+}
+
+.link-secondary {
+    //TODO: Add some awesome colors! 
+}

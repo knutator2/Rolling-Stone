@@ -3,13 +3,18 @@
     height: 100%;
 
     .detail-overlay {
-        width: 0;
-        transition: width 0.3s ease-in-out;
+        transition: flex-basis 0.3s ease-in-out;
+        overflow: hidden;
+        flex: 1 0 0;
 
         &.active {
-            width: 400px;
+            flex: 1 0 320px;
         }
-    } 
+    }
+
+    .map {
+        flex-shrink: 1;
+    }
 
     .page-wrapper.active {
         

@@ -1,3 +1,47 @@
-.stone-overlay {
-    background-color: yellow;
+.detail-overlay {
+    .detail-overlay-content {
+        width: 320px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        position: relative;
+
+        .button-close {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border: none;
+            background: none;
+            font-size: 1.3em;
+            outline: none;
+
+            &:active {
+                color: grey;
+            }
+        }
+
+        .detail-overlay-image-wrapper {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+
+            &.detail-overlay-image {
+
+            }
+        }
+
+        .detail-overlay-chunk {
+            position: relative;
+
+            .icon {
+                left: 0;
+            }
+
+            p {
+                text-align: left;
+                padding-left: 30px;
+            }
+        }
+    }
 }
