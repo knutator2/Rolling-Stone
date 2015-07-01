@@ -1,33 +1,37 @@
 <div class="detail-overlay stone-overlay" ng-class="{active:overlayIsActive}">
     <div class="detail-overlay-content">
-        <button class="button-close" ng-click="overlayIsActive=false">X</button>
+        <button class="button-close icon icon-type-zoom-out" ng-click="overlayIsActive=false"></button>
         <div class="detail-overlay-image-wrapper">
             <img class="detail-overlay-image" ng-attr-src="img/{{ stone.img }}"></p>
         </div>
-        <h2>{{ stone.title }}</h2>
+        <h2 class="detail-overlay-headline">{{ stone.title }}</h2>
 
         <div class="detail-overlay-chunk">
-            <span class="icon icon-material" />
+            <span class="icon icon-type-zoom-out icon-type-material" />
             <p>{{ stone.material }}</p>
         </div>
 
         <div class="detail-overlay-chunk">
-            <span class="icon icon-geological-era" />
+            <span class="icon icon-type-geological-era" />
             <p>{{ stone.geological_era }}</p>
         </div>
 
         <div class="detail-overlay-chunk">
-            <span class="icon icon-origin" />
+            <span class="icon icon-type-origin" />
             <p>{{ stone.origin }}</p>
         </div>
 
         <div class="detail-overlay-chunk">
-            <span class="icon icon-location" />
+            <span class="icon icon-type-location" />
             <p>{{ stone.location }}</p>
         </div>
                 
-        <a href="#" class="link-large link-primary"><span class="link-text">Graph</span></a>
-        <a href="#" class="link-large link-secondary" ng-click="action()"><span class="link-text">mehr</span></a>
+        <a href="#" class="link-large link-primary">
+            <span class="link-text icon-button icon-button-type-graph">Graph</span>
+        </a>
+        <a href="#" class="link-large link-secondary" ng-click="action()">
+            <span class="link-text icon-button icon-button-type-graph">mehr</span>
+        </a>
     </div>
 
 </div>

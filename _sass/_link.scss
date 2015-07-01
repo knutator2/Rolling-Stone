@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     background-color: lightgrey;
-    height: 2em;
+    height: 40px;
     margin-top: 1em;
     border-radius: 0.5em;
     text-decoration: none;
@@ -27,4 +27,8 @@
 
 .link-secondary {
     //TODO: Add some awesome colors! 
+}
+
+.link-text {
+    position: relative;
 }

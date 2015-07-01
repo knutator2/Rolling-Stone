@@ -1,6 +1,26 @@
 .icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    // TODO: Remove dummy background image
+    background-image: url('../img/icon/icon_zoom-out.svg');
+    background-size: contain;
+}
+
+.icon-button:before {
+    content: "";
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: green;
+    background-size: cover;
+    left: -25px;
+    top: 2px;
+}
+
+.icon-button-type-graph:before {
+    background-image: url('../img/icon/icon_zoom-out.svg');
+}
+
+.icon-type-zoom-out {
+    background-image: url('../img/icon/icon_zoom-out.svg');
 }
