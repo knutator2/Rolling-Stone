@@ -2,8 +2,6 @@
     width: 40px;
     height: 40px;
     min-width: 40px;
-    // TODO: Remove dummy background image
-    background-image: url('../img/icon/icon_zoom-out.svg');
     background-size: contain;
 }
 
@@ -18,9 +16,31 @@
 }
 
 .icon-button-type-graph:before {
-    background-image: url('../img/icon/icon_zoom-out.svg');
+    background-image: url('../img/assets/Graph_ini.svg');
 }
 
 .icon-type-zoom-out {
-    background-image: url('../img/icon/icon_zoom-out.svg');
+    background-image: url('../img/assets/Zoom_out_ini.svg');
+}
+
+.icon-type-close {
+    background-image: url('../img/assets/Close_ini.svg');
+}
+
+.icon-type-herkunft {
+    background-image: url('../img/assets/Pin_Gestein Herkunft_ini.svg');
+}
+
+.icon-type-fundort {
+    background-image: url('../img/assets/Pin_Gestein Fundort_ini.svg');
+    height: 48px;
+}
+
+.icon-type-erdzeitalter {
+    background-image: url('../img/assets/Graph_Erdzeitalter.svg');
+}
+
+.icon-type-gesteinsart {
+    background-image: url('../img/assets/Graph_Gesteinsart.svg');
+    height: 29px;
 }
