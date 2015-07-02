@@ -4,11 +4,21 @@
 
     .detail-overlay {
         transition: flex-basis 0.3s ease-in-out;
-        overflow: hidden;
+        overflow: scroll;
         flex: 1 0 0;
 
         &.active {
             flex: 1 0 320px;
+        }
+    }
+
+    .detail-selector {
+        transition: flex-basis 0.3s ease-in-out;
+        overflow: scroll;
+        flex: 1 0 0;
+
+        &.active {
+            flex: 1 0 160px;
         }
     }
 

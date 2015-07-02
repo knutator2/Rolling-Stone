@@ -1,3 +1,47 @@
-.stone-selector {
-    background-color: orange;
+.detail-selector {
+    box-shadow: inset 0px 0px 2px 0px;
+
+    .detail-selector-content {
+        width: 160px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        position: relative;
+
+        .detail-selector-headline {
+        
+        }
+
+        .detail-selector-list {
+            list-style: none;
+            margin-left: 0;
+
+            .detail-selector-list-item {
+                margin-bottom: 10px;
+                position: relative;
+
+                &:hover {
+                    .detail-selector-list-item-flyout {
+                        display: block;
+
+                    }
+                }
+
+                .detail-selector-list-item-image {
+                    width: 100%;
+                }
+
+                .detail-selector-list-item-flyout {
+                    display: none;
+
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+
+                    color: white;
+                    background-color: rgba(0,0,0, 0.5);
+                }
+            }
+        }
+    }
 }
