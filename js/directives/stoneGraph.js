@@ -1,8 +1,8 @@
 StoneConnection = {
-    ORIGIN : "origin",
-    DESTINATION : "destination",
-    KIND : "kind",
-    PERIOD : "period"
+    ORIGIN : 1,
+    DESTINATION : 2,
+    KIND : 3,
+    PERIOD : 4
 }
 
 function StoneGraph(el, core, stones) {
@@ -42,14 +42,35 @@ function StoneGraph(el, core, stones) {
             }
 
         }
+        return result;
     }
 
     //TODO: Normalize Stone Array
     function get_next_stone_id(stone_id, connection_type) {
-        var new_stone = self.available_stones[0];
-        self.available_stones.splice(0,2);
-        console.log(new_stone);
-        return new_stone["inventory_id."];
+        var propertyname = get_stone_property_by_connection(connection_type);
+        var current_stone = self.getStone(stone_id);
+        var propertyvalue = current_stone[propertyname]
+        var candidates = _.filter(self.available_stones, function(obj) {
+            return obj[propertyname] == propertyvalue;
+        });
+        if (candidates.length > 0) {
+            var index = Math.floor((Math.random() * candidates.length));
+            var new_stone = candidates[index];
+            index = _.findIndex(self.stones, {"inventory_id.": new_stone["inventory_id."]});
+            console.log('index: ' + index);
+            self.available_stones.splice(index,2)
+            return new_stone["inventory_id."];
+        }
+        
+        // for (var i = 0; i < self.available_stones.length; i=i+2) {
+        //     var candidate = self.available_stones[i];
+        //     if (candidate[propertyname] == current_stone[propertyname]) {
+        //         self.available_stones.splice(i,2);
+        //         console.log("Current: " + stone_id + ", Next: " + candidate["inventory_id."]);
+        //         return candidate["inventory_id."];
+        //     }
+        // }
+        alert('next stone failed!!!');
     }
 	
     // Add and remove elements on the graph object
@@ -203,7 +224,7 @@ function StoneGraph(el, core, stones) {
  	}
 
  	var expand = function(d, type) {
-        var next_stone_id = get_next_stone_id(d.data)
+        var next_stone_id = get_next_stone_id(d.data, type)
  		addNode(next_stone_id);
         console.log("add link between" + d.data + " and " + next_stone_id);
         self.addLink(d.data, next_stone_id);
@@ -278,7 +299,7 @@ function StoneGraph(el, core, stones) {
 
 		// 	//triangle up
         var triangleUp = nodeEnter.append('g')
-            .on("click", expand)
+            .on("click", expand_by_origin)
             .on("mouseover", triangleOriginMouseOver)
             .on("mouseout", triangleOriginMouseOut);
 
@@ -301,7 +322,7 @@ function StoneGraph(el, core, stones) {
 
 	 	// 	//triangle left
         var triangleLeft = nodeEnter.append('g')
-            .on("click", expand)
+            .on("click", expand_by_destination)
             .on("mouseover", triangleDestinationMouseOver)
             .on("mouseout", triangleDestinationMouseOut);
 
@@ -324,7 +345,7 @@ function StoneGraph(el, core, stones) {
 
 	 	// 	//triangle down
         var triangleDown = nodeEnter.append('g')
-            .on("click", expand)
+            .on("click", expand_by_period)
             .on("mouseover", trianglePeriodMouseOver)
             .on("mouseout", trianglePeriodMouseOut);
 
@@ -346,7 +367,7 @@ function StoneGraph(el, core, stones) {
 
 	 	// 	//triangle right
         var triangleRight = nodeEnter.append('g')
-            .on("click", expand)
+            .on("click", expand_by_kind)
             .on("mouseover", triangleKindMouseOver)
             .on("mouseout", triangleKindMouseOut);
 
