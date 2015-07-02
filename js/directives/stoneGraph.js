@@ -95,12 +95,12 @@ function StoneGraph(el, core, stones) {
         }
     }
 
-    this.addLink = function (sourceId, targetId) {
+    this.addLink = function (sourceId, targetId, type) {
         var sourceNode = findNode(sourceId);
         var targetNode = findNode(targetId);
 
         if((sourceNode !== undefined) && (targetNode !== undefined)) {
-            links.push({"source": sourceNode, "target": targetNode});
+            links.push({"source": sourceNode, "target": targetNode, "type":type});
             update();
         }
     }
@@ -227,7 +227,7 @@ function StoneGraph(el, core, stones) {
         var next_stone_id = get_next_stone_id(d.data, type)
  		addNode(next_stone_id);
         console.log("add link between" + d.data + " and " + next_stone_id);
-        self.addLink(d.data, next_stone_id);
+        self.addLink(d.data, next_stone_id, type);
  	}
 
     var expand_by_origin = function(d) {
@@ -390,12 +390,33 @@ function StoneGraph(el, core, stones) {
     	//node.exit().remove();
 
         force.on("tick", function() {
-          link.attr("x1", function(d) { return d.source.x; })
-              .attr("y1", function(d) { return d.source.y; })
-              .attr("x2", function(d) { return d.target.x; })
-              .attr("y2", function(d) { return d.target.y; });
+            link.attr("x1", function(d) { console.log(d); return d.source.x; })
+                .attr("y1", function(d) { return d.source.y; })
+                .attr("x2", function(d) { return d.target.x; })
+                .attr("y2", function(d) { return d.target.y; })
+                .attr('transform', function(d) { 
+                    var x = 0;
+                    var y = 0;
+                    switch(d.type) {
+                        case StoneConnection.ORIGIN:
+                            x+=50;
+                            break;
+                        case StoneConnection.DESTINATION:
+                            y+=50;
+                            break;
+                        case StoneConnection.PERIOD:
+                            y+=100;
+                            x+=50;
+                            break;
+                        case StoneConnection.KIND:
+                            x+=100;
+                            y+=50;
+                            break;
+                    }
+                    return 'translate(' + x + ',' + y + ')'; 
+                });
 
-          node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+            node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
         });
 
         // Restart the force layout.
