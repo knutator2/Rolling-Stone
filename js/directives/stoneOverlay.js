@@ -3,7 +3,8 @@ myApp.directive('stoneoverlay', function() {
 		restrict: 'E',
 		scope : {
 			stone: '=',
-			overlayIsActive: '='
+			overlayIsActive: '=',
+			selectorIsActive: '='
 		},
 		replace: true,
 		templateUrl: 'js/directives/stoneOverlay.html',

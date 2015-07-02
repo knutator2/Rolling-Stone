@@ -16,7 +16,7 @@
                 logic: 'emit'
             }
         },
- 		stones: {
+ 		pins: {
             osloMarker: {
                 lat: 59.91,
                 lng: 10.75,
@@ -33,12 +33,13 @@
  		}
  	});
 
- 	var stones = StonesService.get();
-  console.log(stones);
-  stones.then(function(response) {
+ 	var pins = StonesService.getPins();
+  console.log(pins);
+  pins.then(function(response) {
  	 	//add pins to map
     console.log(response);
-    $scope.stones = response;
+
+    $scope.pins = response;
     angular.forEach(response, function(el) {
       // var coordinates = parseCoordinateString(el.coordinate);
       // var origin_coordinates = parseCoordinateString(el.origin_coordinate);
@@ -68,22 +69,32 @@
 
  	$scope.name = "Map";
   $scope.currentStone = {};
+  $scope.stoneGroup = {};
   $scope.stoneOverlayIsActive = false;
+  $scope.stoneSelectorIsActive = false;
   $scope.storedMarkers = [];
  	$scope.focusedMarkerPair = {};
  	$scope.focusedLine = {};
  	$scope.markerlayers = new L.featureGroup([]);
  	$scope.map = {};
   $scope.$on('leafletDirectiveMarker.click', function(event, args){
-        $scope.currentStone = args.leafletObject.options;
+        console.log(args.leafletObject.options.stones);
+        $scope.currentStone = args.leafletObject.options.stones[0];
         $scope.stoneOverlayIsActive = true;
+
+        if (args.leafletObject.options.stones.length > 1) {
+          $scope.stoneGroup = args.leafletObject.options.stones;
+          $scope.stoneSelectorIsActive = true;
+        } else {
+          $scope.stoneSelectorIsActive = false;
+        }
         console.log($scope.currentStone);
         console.log($scope.stoneOverlayIsActive);
   });
 
  	$scope.updateMarkers = function() {
  		console.log('Timeout called');
- 		$scope.stones.newMarker = {lat: 59.81,
+ 		$scope.pins.newMarker = {lat: 59.81,
                 lng: 10.65,
                 message: "I want to travel here!",
                 focus: false,
