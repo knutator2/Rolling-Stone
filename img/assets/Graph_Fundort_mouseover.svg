@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="36px" viewBox="0 0 30 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Graph_Fundort_mouseover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Startscreen-2-Copy-16" sketch:type="MSArtboardGroup" transform="translate(-511.000000, -312.000000)">
+            <g id="Graph_Fundort_mouseover" sketch:type="MSLayerGroup" transform="translate(505.000000, 305.500000)">
+                <path d="M20.7816896,35.9637182 C24.5112131,35.9637182 28.2407367,34.5409529 31.0862672,31.6954224 C36.7773283,26.0043613 36.7773283,16.7773283 31.0862672,11.0862672 C25.3952061,5.39520614 16.1681731,5.39520614 10.477112,11.0862672 C7.63158147,13.9317977 6.2088162,17.6613213 6.2088162,21.3908448 L6.2088162,35.9637182 L20.7816896,35.9637182 Z" id="Oval-692-Copy-14" fill="#ABE4EC" sketch:type="MSShapeGroup" transform="translate(20.781690, 21.390845) rotate(-45.000000) translate(-20.781690, -21.390845) "></path>
+                <path d="M16.3208721,15.5704791 L12.7452443,18.3865422 L13.4423147,23.3310563 L18.9977954,27.3908448 L26.8090905,23.8300543 L28.8181349,21.3908446 L27.7853684,18.0672359 L22.6185611,15.3908448 L16.3208721,15.5704791 Z" id="Path-799-Copy-13" fill="#F3F3F3" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

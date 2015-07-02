@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="61px" height="73px" viewBox="0 0 61 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Mehrere_Steine_ini</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M31.7343365,27.453244 L26.7855099,31.9733974 L27.7502861,39.909996 L35.4393163,46.4264929 L46.2504932,40.7109537 L49.0310991,36.7956998 L47.6017047,31.4608686 L40.4506157,27.1649073 L31.7343365,27.453244 Z"></path>
+        <path id="path-2" d="M45.5492841,37.5189158 L39.8198994,42.7520146 L40.9368457,51.9404204 L49.8386353,59.4847378 L62.355015,52.8677099 L65.5741946,48.334919 L63.9193476,42.1586466 L55.6403465,37.1851009 L45.5492841,37.5189158 Z"></path>
+        <path id="path-3" d="M28.6621716,43.2710848 L23.9358898,47.337032 L24.8572808,54.4761239 L32.2005415,60.3378126 L42.5255486,55.1965976 L45.181113,51.6747668 L43.8159973,46.8760044 L36.9864869,43.0117215 L28.6621716,43.2710848 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Startscreen-2-Copy-16" sketch:type="MSArtboardGroup" transform="translate(-218.000000, -506.000000)">
+            <g id="Icon_Mehrere_Steine_ini" sketch:type="MSLayerGroup" transform="translate(206.000000, 493.500000)">
+                <path d="M42.9855648,72.75136 C50.6632344,72.75136 58.3409039,69.8224278 64.1987683,63.9645634 C75.914497,52.2488346 75.914497,33.2538853 64.1987683,21.5381565 C52.4830395,9.82242777 33.4880902,9.82242777 21.7723614,21.5381565 C15.914497,27.3960209 12.9855648,35.0736904 12.9855648,42.75136 L12.9855648,72.75136 L42.9855648,72.75136 Z" id="Oval-692-Copy-9" fill="#ABE3EC" sketch:type="MSShapeGroup" transform="translate(42.985565, 42.751360) rotate(-45.000000) translate(-42.985565, -42.751360) "></path>
+                <g id="Path-799-Copy-18">
+                    <use fill="#F3F3F3" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <use fill="none" xlink:href="#path-1"></use>
+                </g>
+                <path d="M35.4393163,46.4264929 L46.2504932,40.7109537 L49.0310991,36.7956998 L47.6017047,31.4608686 L35.4393163,46.4264929 Z" id="Path-799-Copy-19" opacity="0.739447295" fill="#4A4A4A" sketch:type="MSShapeGroup"></path>
+                <path d="M35.4393163,46.4264929 L35.4393163,42.6385172 L38.2375457,32.5967317 L47.5715369,31.5497827 L35.4393163,46.4264929 Z" id="Path-799-Copy-20" opacity="0.284981343" fill="#4A4A4A" sketch:type="MSShapeGroup"></path>
+                <path d="M35.4393163,46.4264929 L35.4393161,42.5003243 L29.0302478,39.9059828 L27.753716,39.9059828 L35.4393163,46.4264929 Z" id="Path-799-Copy-21" opacity="0.490146922" fill="#666566" sketch:type="MSShapeGroup"></path>
+                <g id="Path-799-Copy-23">
+                    <use fill="#F3F3F3" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                    <use fill="none" xlink:href="#path-2"></use>
+                </g>
+                <path d="M49.8386353,59.4847378 L62.355015,52.8677099 L65.5741946,48.334919 L63.9193476,42.1586466 L49.8386353,59.4847378 Z" id="Path-799-Copy-24" opacity="0.739447295" fill="#4A4A4A" sketch:type="MSShapeGroup"></path>
+                <path d="M49.8386353,59.4847378 L49.8386353,55.0993002 L53.078218,43.4736648 L63.8844215,42.2615848 L49.8386353,59.4847378 Z" id="Path-799-Copy-25" opacity="0.284981343" fill="#4A4A4A" sketch:type="MSShapeGroup"></path>
+                <path d="M49.8386353,59.4847378 L49.838635,54.9393106 L42.4186905,51.9357743 L40.9408166,51.9357743 L49.8386353,59.4847378 Z" id="Path-799-Copy-26" opacity="0.490146922" fill="#666566" sketch:type="MSShapeGroup"></path>
+                <g id="Path-799-Copy-28">
+                    <use fill="#F3F3F3" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-3"></use>
+                    <use fill="none" xlink:href="#path-3"></use>
+                </g>
+                <path d="M32.2005415,60.3378126 L42.5255486,55.1965976 L45.181113,51.6747668 L43.8159973,46.8760044 L32.2005415,60.3378126 Z" id="Path-799-Copy-29" opacity="0.739447295" fill="#4A4A4A" sketch:type="MSShapeGroup"></path>
+                <path d="M32.2005415,60.3378126 L32.2005415,56.9304705 L34.8729368,47.8977307 L43.787186,46.955984 L32.2005415,60.3378126 Z" id="Path-799-Copy-30" opacity="0.284981343" fill="#4A4A4A" sketch:type="MSShapeGroup"></path>
+                <path d="M32.2005415,60.3378126 L32.2005413,56.8061639 L26.0796836,54.472514 L24.8605565,54.472514 L32.2005415,60.3378126 Z" id="Path-799-Copy-31" opacity="0.490146922" fill="#666566" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="61px" height="61px" viewBox="0 0 61 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Tab_Karte_nicht ausgewählt</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Startscreen-2-Copy-16" sketch:type="MSArtboardGroup" transform="translate(-507.000000, -653.000000)">
+            <g id="Icon_Gallerie" sketch:type="MSLayerGroup" transform="translate(62.500000, 640.500000)">
+                <g id="Tab_Karte_nicht-ausgewählt" transform="translate(431.702290, 0.000000)" sketch:type="MSShapeGroup">
+                    <path d="M21.7867966,64.2132034 C33.5025253,75.9289322 52.4974747,75.9289322 64.2132034,64.2132034 C75.9289322,52.4974747 75.9289322,33.5025253 64.2132034,21.7867966 C52.4974747,10.0710678 33.5025253,10.0710678 21.7867966,21.7867966 C10.0710678,33.5025253 10.0710678,52.4974747 21.7867966,64.2132034 Z" id="Oval-692-Copy-10" fill="#D8D8D8" transform="translate(43.000000, 43.000000) rotate(-45.000000) translate(-43.000000, -43.000000) "></path>
+                    <path d="M53.4359077,50.5542142 C56.0439403,47.9340511 57.6570421,44.3143296 57.6570421,40.3160955 C57.6570421,32.3196275 51.2046351,25.8372093 43.2451877,25.8372093 C35.2857403,25.8372093 28.8333333,32.3196275 28.8333333,40.3160955 C28.8333333,44.302247 30.4367003,47.9121702 33.0308507,50.5304325 L33.0544678,50.5542143 C33.070334,50.5701543 33.0862305,50.5860507 33.1021636,50.60191 L43.268887,60.7686335 L53.459607,50.5779135 L53.4359077,50.5542142 Z" id="Oval-692-Copy-8" fill="#96D0D8"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

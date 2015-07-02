@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Graph_Herkunft</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Startscreen-2-Copy-16" sketch:type="MSArtboardGroup" transform="translate(-470.000000, -230.000000)">
+            <g id="Graph_Herkunft" sketch:type="MSLayerGroup" transform="translate(464.000000, 224.000000)">
+                <path d="M11.1121504,31.6954224 C16.8032114,37.3864835 26.0302445,37.3864835 31.7213056,31.6954224 C37.4123666,26.0043613 37.4123666,16.7773283 31.7213056,11.0862672 C26.0302445,5.39520614 16.8032114,5.39520614 11.1121504,11.0862672 C5.4210893,16.7773283 5.4210893,26.0043613 11.1121504,31.6954224 Z" id="Oval-692-Copy-15" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(21.416728, 21.390845) rotate(-45.000000) translate(-21.416728, -21.390845) "></path>
+                <path d="M14.8287736,20.2790547 L15.6607447,21.1656863 L17.3859277,17.0952795 L19.5768573,16.3773359 L21.8489237,13 L26.1964214,17.4914649 L29.6798733,27.1875938 L12.4779059,27.1875934 L14.8287736,20.2790547 Z" id="Path-975-Copy-4" fill="#F3F3F3" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
