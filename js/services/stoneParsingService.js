@@ -38,26 +38,19 @@ service.factory('StonesService', ['$resource', '$http', function($resource, $htt
         /*
         Returns all the stones, grouped by location (needed for the map)
          */
-        
-        getPinsOrigin: function() {
-
-        },
-
-        getPinsLocation: function() {
-
-        },
-
         getPins: function() {
             if ( !promise ) {
                 promise = $http.get('js/metadata.json').then(function (response) {
                     var pins = [],
-                        groupedData;
+                        groupedDataDestination,
+                        groupedDataOrigins;
 
-                    groupedData = _.groupBy(response.data, function(stoneItem) {
+                    // Get pins for discovery locations
+                    groupedDataDestination = _.groupBy(response.data, function(stoneItem) {
                         return stoneItem.coordinate;
                     });
 
-                    angular.forEach(groupedData, function(element, index) {
+                    angular.forEach(groupedDataDestination, function(element, index) {
                         var atLeastOneOriginAvailable = _.find( element, function (element) {
                             return element.origin_coordinate;
                         });
@@ -67,35 +60,47 @@ service.factory('StonesService', ['$resource', '$http', function($resource, $htt
                                 coordinates,
                                 stones;
 
+                            coordinates = parseCoordinateString(index);
+                            stones = element;
 
-                            // TODO: What is exactly needed for a marker object?
-                            // REMOVE EVRYTHING UNNECESSARY!!!
-                            pin = angular.merge(pin, element[0], coordinates);
+                            pin.stones = stones;
+                            pin.type = "Destination";
+                            pin.icon = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}).options;
+                            pin = angular.merge(pin, coordinates);
+
+                            pins.push(pin);
+                        }
+                    });
+
+                    // Get pins for origin locations
+                    groupedDataOrigins = _.groupBy(response.data, function(stoneItem) {
+                        return stoneItem.origin_coordinate;
+                    });
+
+                    angular.forEach(groupedDataOrigins, function(element, index) {
+                        var atLeastOneDestinationAvailable = _.find( element, function (element) {
+                            return element.coordinate;
+                        });
+
+                        if (index !== 'undefined' && atLeastOneDestinationAvailable) {
+                            var pin = {},
+                                coordinates,
+                                stones;
 
                             coordinates = parseCoordinateString(index);
                             stones = element;
 
-                            pin.coordinates = coordinates;
                             pin.stones = stones;
-
-                            pin.type = "Destination";
-                            pin.icon = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}).options;
-
-                            pin = angular.merge(pin, element[0], coordinates);
+                            pin.type = "Origin";
+                            pin.icon = L.MakiMarkers.icon({icon: "circle", color: "#0f0", size: "m"}).options;
+                            pin = angular.merge(pin, coordinates);
 
                             pins.push(pin);
 
                         }
-                        // console.log(element);
-                        // console.log(index);
-                        // console.log(index === 'undefined');
-                        // console.log(atLeastOneOriginAvailable);
-                    });         
+                    });
 
-                    // console.log(response.data);
-                    // console.log(groupedData);
 
-                    console.log(pins);
                     return pins;
                 });
             }

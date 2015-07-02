@@ -4,18 +4,11 @@
         <ul class="detail-selector-list">
 
             <li class="detail-selector-list-item" ng-repeat="stone in stones">
-                <img class="detail-selector-list-item-image" src="img/{{stone.img}}" alt="" ng-click="$parent.selectedStone={}">
-                <div class="detail-selector-list-item-flyout">{{stone.title}}</div>
+                <img class="detail-selector-list-item-image" src="img/{{stone.img}}" alt="">
+                <div class="detail-selector-list-item-flyout" ng-click="updateCurrentStone(stone)">{{stone.title}}</div>
             </li>
             
         </ul>
 
     </div>
-
-<!--     <img ng-attr-src="img/{{ stone.img }}"></p>
-    <p>{{ stone.title }}</p>
-    <p>{{ stone.material }}</p>
-    <p>{{stone.date_in_mya}} million years ago</p>
-    <p>{{stone.commentary}}</p>
-    <p><a href="#" ng-click="action()">mehr</a></p> -->
 </div>

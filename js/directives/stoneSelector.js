@@ -7,6 +7,11 @@ myApp.directive('stoneselector', function() {
             selectorIsActive: '='
         },
         replace: true,
-        templateUrl: 'js/directives/stoneSelector.html' 
+        templateUrl: 'js/directives/stoneSelector.html',
+        link: function (scope, element, attrs) {
+            scope.updateCurrentStone = function(value) {
+                scope.selectedStone = value;
+            };
+        }
     };
 });

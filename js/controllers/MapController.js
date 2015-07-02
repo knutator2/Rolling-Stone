@@ -78,18 +78,17 @@
  	$scope.markerlayers = new L.featureGroup([]);
  	$scope.map = {};
   $scope.$on('leafletDirectiveMarker.click', function(event, args){
-        console.log(args.leafletObject.options.stones);
+
         $scope.currentStone = args.leafletObject.options.stones[0];
         $scope.stoneOverlayIsActive = true;
 
         if (args.leafletObject.options.stones.length > 1) {
           $scope.stoneGroup = args.leafletObject.options.stones;
           $scope.stoneSelectorIsActive = true;
+
         } else {
           $scope.stoneSelectorIsActive = false;
         }
-        console.log($scope.currentStone);
-        console.log($scope.stoneOverlayIsActive);
   });
 
  	$scope.updateMarkers = function() {
