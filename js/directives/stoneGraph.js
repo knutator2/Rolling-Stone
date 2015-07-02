@@ -1,8 +1,8 @@
 StoneConnection = {
-    ORIGIN : "origin",
-    DESTINATION : "destination",
-    KIND : "kind",
-    PERIOD : "period"
+    ORIGIN : 1,
+    DESTINATION : 2,
+    KIND : 3,
+    PERIOD : 4
 }
 
 function StoneGraph(el, core, stones) {
