@@ -26,6 +26,7 @@
     "angular-route": "~1.4.1",
     "d3": "~3.5.5",
     "angular-animate": "~1.4.1",
-    "L.EasyButton": "*"
+    "L.EasyButton": "*",
+    "underscore": "~1.8.3"
   }
 }
