@@ -1,9 +1,62 @@
+StoneConnection = {
+    ORIGIN : "origin",
+    DESTINATION : "destination",
+    KIND : "kind",
+    PERIOD : "period"
+}
+
 function StoneGraph(el, core, stones) {
 
+
+    var self = this;
+    self.stones = stones;
+    self.available_stones = stones.slice();
+    self.corestone = core;
+
+    self.getStone = function(stone_id) {
+        var index = _.findIndex(self.stones, {"inventory_id.": stone_id});
+        return self.stones[index];
+    }
+
+    function get_stone_property_by_connection(connection_type) {
+        var result = '';
+        switch(connection_type) {
+            case StoneConnection.ORIGIN: {
+                result = 'origin';
+                break; 
+            }
+
+            case StoneConnection.DESTINATION: {
+                result = 'coordinate';
+                break;
+            }
+
+            case StoneConnection.KIND: {
+                result = 'material';
+                break;
+            }
+
+            case StoneConnection.PERIOD: {
+                result = 'geological_era';
+                break;
+            }
+
+        }
+    }
+
+    //TODO: Normalize Stone Array
+    function get_next_stone_id(stone_id, connection_type) {
+        var new_stone = self.available_stones[0];
+        self.available_stones.splice(0,2);
+        console.log(new_stone);
+        return new_stone["inventory_id."];
+    }
 	
     // Add and remove elements on the graph object
-    var addNode = this.addNode = function (id) {
-        nodes.push({"id":id});
+    var addNode = this.addNode = function (stone_id) {
+        console.log("stone to add");
+        console.log(stone_id);
+        nodes.push({"data":stone_id});
         update();
     }
 
@@ -33,14 +86,14 @@ function StoneGraph(el, core, stones) {
 
     var findNode = function (id) {
         for (var i=0; i < nodes.length; i++) {
-            if (nodes[i].id === id)
+            if (nodes[i].data === id)
                 return nodes[i]
         };
     }
 
     var findNodeIndex = function (id) {
         for (var i=0; i < nodes.length; i++) {
-            if (nodes[i].id === id)
+            if (nodes[i].data === id)
                 return i
         };
     }
@@ -57,15 +110,45 @@ function StoneGraph(el, core, stones) {
         .attr("width", w)
         .attr("height", h);
 
-    var triangleMouseDown = function(d) {
- 		d3.select(this)
- 			.style('fill', 'black');
+    var triangleOriginMouseOver = function(d) {
+ 		d3.select(this).select('.graph-icon')
+ 			.attr('xlink:href', 'img/assets/Graph_Herkunft_mouseover.svg');
  	}
 
-	var triangleMouseUp = function(d) {
- 		d3.select(this)
- 			.style('fill', 'none');
+	var triangleOriginMouseOut = function(d) {
+ 		d3.select(this).select('.graph-icon')
+            .attr('xlink:href', 'img/assets/Graph_Herkunft.svg');
  	}
+
+    var triangleDestinationMouseOver = function(d) {
+        d3.select(this).select('.graph-icon')
+            .attr('xlink:href', 'img/assets/Graph_Fundort_mouseover.svg');
+    }
+
+    var triangleDestinationMouseOut = function(d) {
+        d3.select(this).select('.graph-icon')
+            .attr('xlink:href', 'img/assets/Graph_Fundort.svg');
+    }
+
+    var trianglePeriodMouseOver = function(d) {
+        d3.select(this).select('.graph-icon')
+            .attr('xlink:href', 'img/assets/Graph_Erdzeitalter_mouseover.svg');
+    }
+
+    var trianglePeriodMouseOut = function(d) {
+        d3.select(this).select('.graph-icon')
+            .attr('xlink:href', 'img/assets/Graph_Erdzeitalter.svg');
+    }
+
+    var triangleKindMouseOver = function(d) {
+        d3.select(this).select('.graph-icon')
+            .attr('xlink:href', 'img/assets/Graph_Gesteinsart_mouseover.svg');
+    }
+
+    var triangleKindMouseOut = function(d) {
+        d3.select(this).select('.graph-icon')
+            .attr('xlink:href', 'img/assets/Graph_Gesteinsart.svg');
+    }
 
     var createExpansionButton = function(element, figure) {
 		d3.select(element)
@@ -119,9 +202,28 @@ function StoneGraph(el, core, stones) {
  		d3.select(this).classed("dragging", false);
  	}
 
- 	var expand = function(d) {
- 		addNode(Math.floor((1 + Math.random()) * 0x10000).toString(16))
+ 	var expand = function(d, type) {
+        var next_stone_id = get_next_stone_id(d.data)
+ 		addNode(next_stone_id);
+        console.log("add link between" + d.data + " and " + next_stone_id);
+        self.addLink(d.data, next_stone_id);
  	}
+
+    var expand_by_origin = function(d) {
+        expand(d, StoneConnection.ORIGIN);
+    }
+    
+    var expand_by_destination = function(d) {
+        expand(d, StoneConnection.DESTINATION);
+    }
+    
+    var expand_by_kind = function(d) {
+        expand(d, StoneConnection.KIND);
+    }
+    
+    var expand_by_period = function(d) {
+        expand(d, StoneConnection.PERIOD);
+    }
 
  	var drag = d3.behavior.drag()
  		.origin(function(d) {return d; })
@@ -143,7 +245,7 @@ function StoneGraph(el, core, stones) {
     var update = function () {
 
         var link = container.selectAll("line.link")
-            .data(links, function(d) { return d.source.id + "-" + d.target.id; });
+            .data(links, function(d) { return d.source.data + "-" + d.target.data; });
 
         var linkEnter = link.enter();//.append("g");
 
@@ -156,68 +258,115 @@ function StoneGraph(el, core, stones) {
         link.exit().remove();
 
         var node = container.selectAll("g.node")
-            .data(nodes, function(d) { return d.id;});
+            .data(nodes, function(d) { return d.data; });
 
         var nodeEnter = node.enter().append("g")
             .attr("class", "node")
             .call(force.drag);
 
         nodeEnter.append("image")
-            .attr("xlink:href", "img/StadtmuseumBerlin_GeologischeSammlung_G-99-13_MichaelSetzpfandt.jpg")
+            .attr("xlink:href", function(d) {
+                console.log("image:" + d.data);
+                var stone = self.getStone(d.data)
+                console.log(stone)
+                return "img/" + stone.img;
+            })
             .attr("x", "0px")
             .attr("y", "0px")
             .attr("width", "100px")
             .attr("height", "100px");
 
 		// 	//triangle up
- 		nodeEnter.append("polygon")
+        var triangleUp = nodeEnter.append('g')
+            .on("click", expand)
+            .on("mouseover", triangleOriginMouseOver)
+            .on("mouseout", triangleOriginMouseOut);
+
+ 		triangleUp.append("polygon")
 	 	 		.style("stroke", "black")
 	 	 		.style("fill", "none")
 	 	 		.attr("points", function(d) {  
 	 	 	 		return "0,0, 50,-50, 100,0"; 
 	 	 		})
-	 	 	.style("pointer-events", "all")
-	 	 	.on("click", expand)
-	 	 	.on("mousedown", triangleMouseDown)
-	 	 	.on("mouseup", triangleMouseUp);
+	 	 	.style("pointer-events", "all");
+	 	 	
+
+        triangleUp.append('image')
+            .attr('xlink:href', "img/assets/Graph_Herkunft.svg")
+            .attr('x', '35px')
+            .attr('y', '-35px')
+            .attr('width', '30px')
+            .attr('height', '30px')
+            .attr('class', 'graph-icon' )
 
 	 	// 	//triangle left
- 		nodeEnter.append("polygon")
+        var triangleLeft = nodeEnter.append('g')
+            .on("click", expand)
+            .on("mouseover", triangleDestinationMouseOver)
+            .on("mouseout", triangleDestinationMouseOut);
+
+ 		triangleLeft.append("polygon")
 	 	 		.style("stroke", "black")
 	 	 		.style("fill", "none")
 	 	 		.attr("points", function(d) {  
 	 	 	 		return "0,0, -50,50, 0,100"; 
 	 	 		})
 	 	 	.style("pointer-events", "all")
-	 	 	.on("click", expand)
-	 	 	.on("mousedown", triangleMouseDown)
-	 	 	.on("mouseup", triangleMouseUp);
+	 	 
+
+        triangleLeft.append('image')
+            .attr('xlink:href', "img/assets/Graph_Fundort.svg")
+            .attr('x', '-35px')
+            .attr('y', '35px')
+            .attr('width', '30px')
+            .attr('height', '30px')
+            .attr('class', 'graph-icon' )	
 
 	 	// 	//triangle down
- 		nodeEnter.append("polygon")
+        var triangleDown = nodeEnter.append('g')
+            .on("click", expand)
+            .on("mouseover", trianglePeriodMouseOver)
+            .on("mouseout", trianglePeriodMouseOut);
+
+ 		triangleDown.append("polygon")
 	 	 		.style("stroke", "black")
 	 	 		.style("fill", "none")
 	 	 		.attr("points", function(d) {  
 	 	 	 		return "0,100, 50,150, 100,100"; 
 	 	 		})
-	 	 	.style("pointer-events", "all")
-	 	 	.on("click", expand)
-	 	 	.on("mousedown", triangleMouseDown)
-	 	 	.on("mouseup", triangleMouseUp);
+	 	 	.style("pointer-events", "all");
+
+        triangleDown.append('image')
+            .attr('xlink:href', "img/assets/Graph_Erdzeitalter.svg")
+            .attr('x', '35px')
+            .attr('y', '105px')
+            .attr('width', '30px')
+            .attr('height', '30px')
+            .attr('class', 'graph-icon' )
 
 	 	// 	//triangle right
- 		nodeEnter.append("polygon")
+        var triangleRight = nodeEnter.append('g')
+            .on("click", expand)
+            .on("mouseover", triangleKindMouseOver)
+            .on("mouseout", triangleKindMouseOut);
+
+ 		triangleRight.append("polygon")
 	 	 		.style("stroke", "black")
 	 	 		.style("fill", "none")
 	 	 		.attr("points", function(d) {  
 	 	 	 		return "100,0, 150,50, 100,100"; 
 	 	 		})
-	 	 	.style("pointer-events", "all")
-	 	 	.on("click", expand)
-	 	 	.on("mousedown", triangleMouseDown)
-	 	 	.on("mouseup", triangleMouseUp);
+	 	 	.style("pointer-events", "all");
 
-    	node.exit().remove();
+        triangleRight.append('image')
+            .attr('xlink:href', "img/assets/Graph_Gesteinsart.svg")
+            .attr('x', '105px')
+            .attr('y', '35px')
+            .attr('width', '30px')
+            .attr('height', '30px')
+            .attr('class', 'graph-icon' )
+
+    	//node.exit().remove();
 
         force.on("tick", function() {
           link.attr("x1", function(d) { return d.source.x; })
@@ -249,13 +398,7 @@ myApp.directive('stonegraph', function() {
 		link : function (scope, element, attrs) {
 			scope.init = function() {
 				graph = new StoneGraph('#graph', scope.active, scope.stones);
-				graph.addNode("Cause");
-				graph.addNode("Effect");
-				graph.addLink("Cause", "Effect");
-				graph.addNode("A");
-				graph.addNode("B");
-				graph.addLink("A", "B");
-
+				graph.addNode(scope.active["inventory_id."]);
 				// setupGraph();
 				// initGraph(scope.active, scope.stones);
 			}
