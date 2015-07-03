@@ -6,6 +6,11 @@ function parseCoordinateString(raw_coordinates) {
         return L.latLng(coordinates[0], coordinates[1]);
 }
 
+var destinationIcon = L.icon({
+        iconUrl: 'http://joshuafrazier.info/images/firefox.svg',
+        iconSize: [38, 95], // size of the icon
+        });
+
 
 
 service.factory('StonesService', ['$resource', '$http', function($resource, $http) {
@@ -65,7 +70,10 @@ service.factory('StonesService', ['$resource', '$http', function($resource, $htt
 
                             pin.stones = stones;
                             pin.type = "Destination";
-                            pin.icon = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}).options;
+                            //pin.icon = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}).options;
+                            var marker = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}).options;
+                            marker.iconUrl = "img/assets/Pin_Gestein Fundort_ini.svg"
+                            pin.icon = marker;
                             pin = angular.merge(pin, coordinates);
 
                             pins.push(pin);
@@ -92,7 +100,9 @@ service.factory('StonesService', ['$resource', '$http', function($resource, $htt
 
                             pin.stones = stones;
                             pin.type = "Origin";
-                            pin.icon = L.MakiMarkers.icon({icon: "circle", color: "#0f0", size: "m"}).options;
+                            var marker = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}).options;
+                            marker.iconUrl = "img/assets/Pin_Gestein Herkunft_ini.svg"
+                            pin.icon = marker;
                             pin = angular.merge(pin, coordinates);
 
                             pins.push(pin);
