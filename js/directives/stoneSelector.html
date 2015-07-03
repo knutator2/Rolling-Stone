@@ -1,11 +1,12 @@
 <div class="stone-selector detail-selector" ng-class="{active:selectorIsActive}">
     <div class="detail-selector-content">
-        <p class="detail-selector-headline">An diesem Ort wurden {{stones.length}} Steine gefunden</p>
         <ul class="detail-selector-list">
 
             <li class="detail-selector-list-item" ng-repeat="stone in stones">
                 <img class="detail-selector-list-item-image" src="img/medium/{{stone.img}}" alt="">
-                <div class="detail-selector-list-item-flyout" ng-click="updateCurrentStone(stone)">{{stone.title}}</div>
+                <div class="detail-selector-list-item-flyout" ng-click="updateCurrentStone(stone)">
+                    <span class="detail-selector-list-item-text">{{stone.title}}</span>
+                </div>
             </li>
             
         </ul>
