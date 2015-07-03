@@ -21,16 +21,27 @@
 }
 
 .link-primary {
-    background-color: lightblue;
+    background-color: $color-main;
 
-    &:active,
     &:hover {
-        background-color: aliceblue;
+        background-color: darken($color-main, 25%);
+    }
+
+    &:active {
+        background-color: $color-pressed;
     }
 }
 
 .link-secondary {
-    //TODO: Add some awesome colors! 
+    background-color: $color-grey-light;
+
+    &:hover {
+        background-color: darken($color-grey-light, 25%);
+    }
+
+    &:active {
+        background-color: $color-pressed;
+    }
 }
 
 .link-text {
