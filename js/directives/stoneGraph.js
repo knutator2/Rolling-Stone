@@ -290,7 +290,7 @@ function StoneGraph(el, core, stones) {
                 console.log("image:" + d.data);
                 var stone = self.getStone(d.data)
                 console.log(stone)
-                return "img/" + stone.img;
+                return "img/medium/" + stone.img;
             })
             .attr("x", "0px")
             .attr("y", "0px")
