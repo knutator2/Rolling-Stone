@@ -77,6 +77,10 @@
  	$scope.focusedLine = {};
  	$scope.markerlayers = new L.featureGroup([]);
  	$scope.map = {};
+  $scope.dismissSelection = function( event ) {
+    $scope.stoneSelectorIsActive = false;
+    $scope.stoneOverlayIsActive = false;
+  };
   $scope.$on('leafletDirectiveMarker.click', function(event, args){
 
         $scope.currentStone = args.leafletObject.options.stones[0];
