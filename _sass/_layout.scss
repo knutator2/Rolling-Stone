@@ -6,6 +6,10 @@ html, body, .page-content, .wrapper, .home {
     height: 100%;
 }
 
+html * {
+    color: $color-grey-dark;
+}
+
 .stone-graph {
     height: 70%;
 }

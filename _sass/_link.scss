@@ -6,8 +6,12 @@
     background-color: lightgrey;
     height: 40px;
     margin-top: 1em;
-    border-radius: 0.5em;
+    border-radius: 0.3em;
     text-decoration: none;
+
+    &:first-of-type {
+        margin-top: 30px;
+    }
 
     &:active,
     &:hover {
@@ -31,4 +35,6 @@
 
 .link-text {
     position: relative;
+    font-size: 1.1rem;
+    font-weight: bold;
 }

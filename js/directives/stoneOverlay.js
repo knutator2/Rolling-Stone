@@ -3,17 +3,9 @@ myApp.directive('stoneoverlay', function() {
 		restrict: 'E',
 		scope : {
 			stone: '=',
-			overlayIsActive: '=',
-			selectorIsActive: '='
+			overlayIsActive: '='
 		},
 		replace: true,
-		templateUrl: 'js/directives/stoneOverlay.html',
-		link : function (scope, element, attrs) {
-			scope.action = function() {
-				console.log(scope.stone);
-				console.log(scope.overlayIsActive);
-				// alert('TODO: show More Page');
-			};
-		}
+		templateUrl: 'js/directives/stoneOverlay.html'
 	};
 });
