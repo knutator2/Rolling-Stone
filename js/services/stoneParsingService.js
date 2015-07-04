@@ -74,6 +74,7 @@ service.factory('StonesService', ['$resource', '$http', function($resource, $htt
                         marker.iconUrl = pin.stones.length > 1 ? "img/assets/Pin_Mehrere_Steine_ini.svg" : "img/assets/Pin_Gestein Fundort_ini.svg";
                         pin.icon = marker;
                         pin = angular.merge(pin, coordinates);
+                        marker.iconRetinaUrl = marker.iconUrl;
 
                         pins.push(pin);
                     }
