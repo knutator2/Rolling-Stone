@@ -34,9 +34,11 @@ myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(Sto
                     count++;
                 })
 
-                $('.timeline-picture').click(function(event) {
+                $('.stone-timeline').on('click', '.timeline-picture', function(event) {
                     /* Act on the event */
+                    event.stopPropagation();
                     alert('clicked');
+
                 });
 
                 console.log(ticks);
