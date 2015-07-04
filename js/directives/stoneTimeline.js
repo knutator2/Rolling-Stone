@@ -105,7 +105,7 @@ myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(Sto
                             //var date = parseInt(stone.date_in_mya.split("-")[0]);
                             //return date <= leftEpoche.start && date >= rightEpoche.end;
                             for (var i = leftIndex; i <= rightIndex; i++) {
-                                if (stone.geological_era === scope.epoches[i].name) {
+                                if (stone.geological_era === scope.epoches[i].name_short) {
                                     return true;
                                 }
                             }
