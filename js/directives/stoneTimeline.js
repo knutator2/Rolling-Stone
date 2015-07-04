@@ -8,12 +8,24 @@ myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(Sto
         templateUrl: 'js/directives/stonetimeline.html',
         link: function (scope, element, attrs) {
 
-            //activate jquery ui tooltip
-            $(function() {
-                $( document ).tooltip({
-                    track: true
-                });
-            });
+            scope.closeDescriptions = function(event) {
+                $shortDescriptionElem = $('.era-description-short'),
+                $longDescriptionElem = $('.era-description-long'),
+                $descriptionWrapper = $('.era-description-wrapper'),
+                $timelineWrapper = $('.timeline-wrapper'),
+                $timelineAbsoluteWrapper = $('.timeline-absolute-wrapper'),
+
+                $shortDescriptionElem.text('');
+                $longDescriptionElem.text('');
+
+                $descriptionWrapper.removeClass('active');
+                $timelineWrapper.removeClass('active');
+                $timelineAbsoluteWrapper.removeClass('active');
+            };
+
+            scope.showLongDescription = function(event) {
+
+            };
 
             var all_stones = [];
 
@@ -29,16 +41,35 @@ myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(Sto
                 count = 0;
                 angular.forEach(scope.epoches, function(data) {
                     console.log(data);
-                    tickLabels.push('<img src="' + data.icon + '" title="' + data.text_short +'" class="timeline-picture"/>');
+                    tickLabels.push('<img src="' + data.icon + '" data-era-id="' + data.id + '" class="timeline-picture"/>');
                     ticks.push(count);
                     count++;
                 })
 
                 $('.stone-timeline').on('click', '.timeline-picture', function(event) {
-                    /* Act on the event */
                     event.stopPropagation();
-                    alert('clicked');
 
+                    var $this = $(this),
+                        $shortDescriptionElem = $('.era-description-short'),
+                        $longDescriptionElem = $('.era-description-long'),
+                        $descriptionWrapper = $('.era-description-wrapper'),
+                        $timelineWrapper = $('.timeline-wrapper'),
+                        $timelineAbsoluteWrapper = $('.timeline-absolute-wrapper'),
+                        eraId = parseInt( $this.data('era-id'), 10);
+
+                    era = _.find(scope.epoches, function(item) {
+                        return (item.id === eraId);
+                    });
+
+                    console.log($shortDescriptionElem);
+
+                    $shortDescriptionElem.html('<strong>' + era.name + '</strong> - ' + era.text_short);
+                    $descriptionWrapper.addClass('active');
+                    $timelineWrapper.addClass('active');
+                    $timelineAbsoluteWrapper.addClass('active');
+
+                    console.log(era);
+                    console.log($(this).data('era-id'));
                 });
 
                 console.log(ticks);

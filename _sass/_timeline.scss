@@ -3,7 +3,7 @@
 	// top: 100px;
 	// left: 200px;
 	width: 700px;
-	background-color: white;;
+	background-color: white;
 }
 
 #ex1Slider .slider-selection {
@@ -34,5 +34,21 @@
 }
 
 .slider {
-	margin-bottom: 30px !important;
+	  margin-bottom: 0 !important;
+}
+
+.timeline-button-more {
+  position: relative;
+  top: 40px;
+  left: 400px;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.timeline-button-close {
+  position: relative;
+  top: 40px;
+  left: 410px;
+  width: 30px !important;
+  height: 30px !important;
 }
