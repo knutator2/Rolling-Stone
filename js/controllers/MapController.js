@@ -40,6 +40,12 @@
     console.log(response);
 
     $scope.pins = response;
+    $scope.filteredPins = response.slice();
+    $scope.$watch("filteredPins", function (newValue, oldValue) {
+      console.log("markers did change");
+      console.log(newValue);
+      $scope.pins = newValue;
+    });
     angular.forEach(response, function(el) {
       // var coordinates = parseCoordinateString(el.coordinate);
       // var origin_coordinates = parseCoordinateString(el.origin_coordinate);

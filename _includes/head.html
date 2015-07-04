@@ -6,17 +6,28 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <link rel="stylesheet" href="js/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="js/bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
    <link rel="stylesheet" href="js/bower_components/leaflet/dist/leaflet.css" />
    <link rel="stylesheet" href="js/bower_components/leaflet.fullscreen/Control.FullScreen.css">
-   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+   <!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
 
   <!-- Libraries -->
 	<script src="js/bower_components/jquery/dist/jquery.min.js"></script>
+  <!--<script src="js/bower_components/jqueryui/jquery-ui.js"></script>-->
   <script src="js/bower_components/d3/d3.min.js"></script>
   <script src="js/bower_components/underscore/underscore-min.js"></script>
+  <script src="js/bower_components/modernizr/modernizr.js"></script>
+  <script src="js/bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+  <script src="js/bower_components/jqueryui/ui/minified/core.min.js"></script>
+  <script src="js/bower_components/jqueryui/ui/minified/position.min.js"></script>
+  <script src="js/bower_components/jqueryui/ui/minified/effect.min.js"></script>
+  <script src="js/bower_components/jqueryui/ui/minified/widget.min.js"></script>
+  <script src="js/bower_components/jqueryui/ui/minified/tooltip.min.js"></script>
 
   <!-- Leaflet -->
 	<script src="js/bower_components/leaflet/dist/leaflet.js"></script>

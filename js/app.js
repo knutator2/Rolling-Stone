@@ -1,4 +1,4 @@
-var myApp = angular.module('RollingStone', ['leaflet-directive', 'stoneparsingservice', 'ngRoute', 'ngAnimate']);
+var myApp = angular.module('RollingStone', ['leaflet-directive', 'stoneparsingservice', 'epocheservice', 'ngRoute', 'ngAnimate']);
 
 myApp.config(function($routeProvider) {
 	$routeProvider
