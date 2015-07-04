@@ -13,5 +13,9 @@ myApp.config(function($routeProvider) {
 		.when('/graph', {
 			templateUrl: 'js/views/graph.html',
 			controller: 'GraphController'
+		})
+		.when('/detail', {
+			templateUrl: 'js/views/detail.html',
+			controller: 'DetailController'
 		});
 });

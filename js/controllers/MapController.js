@@ -83,14 +83,17 @@
  	$scope.focusedLine = {};
  	$scope.markerlayers = new L.featureGroup([]);
  	$scope.map = {};
+  $scope.UiHeader = $('header');
   $scope.dismissSelection = function( event ) {
     $scope.stoneSelectorIsActive = false;
     $scope.stoneOverlayIsActive = false;
+    $scope.UiHeader.removeClass('compressed');
   };
   $scope.$on('leafletDirectiveMarker.click', function(event, args){
 
         $scope.currentStone = args.leafletObject.options.stones[0];
         $scope.stoneOverlayIsActive = true;
+        $scope.UiHeader.addClass('compressed');
 
         if (args.leafletObject.options.stones.length > 1) {
           $scope.stoneGroup = args.leafletObject.options.stones;
