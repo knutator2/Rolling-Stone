@@ -63,7 +63,7 @@ myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(Sto
 
                     console.log($shortDescriptionElem);
 
-                    $shortDescriptionElem.html('<strong>' + era.name + '</strong> - ' + era.text_short);
+                    $shortDescriptionElem.html('<strong>' + era.name + '</strong> &mdash; ' + era.text_short);
                     $descriptionWrapper.addClass('active');
                     $timelineWrapper.addClass('active');
                     $timelineAbsoluteWrapper.addClass('active');
