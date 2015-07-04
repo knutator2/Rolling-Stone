@@ -73,6 +73,7 @@ service.factory('StonesService', ['$resource', '$http', function($resource, $htt
                             //pin.icon = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}).options;
                             var marker = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}).options;
                             marker.iconUrl = pin.stones.length > 1 ? "img/assets/Pin_Mehrere_Steine_ini.svg" : "img/assets/Pin_Gestein Fundort_ini.svg";
+                            marker.iconRetinaUrl = marker.iconUrl;
                             pin.icon = marker;
                             pin = angular.merge(pin, coordinates);
 
@@ -102,9 +103,10 @@ service.factory('StonesService', ['$resource', '$http', function($resource, $htt
                             pin.type = "Origin";
                             var marker = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}).options;
                             marker.iconUrl = "img/assets/Pin_Gestein Herkunft_ini.svg";
+
                             pin.icon = marker;
                             pin = angular.merge(pin, coordinates);
-
+                            marker.iconRetinaUrl = marker.iconUrl;
                             pins.push(pin);
 
                         }
