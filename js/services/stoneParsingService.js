@@ -102,6 +102,7 @@ service.factory('StonesService', ['$resource', '$http', function($resource, $htt
                         pin.type = "Origin";
                         var marker = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}).options;
                         marker.iconUrl = "img/assets/Pin_Gestein Herkunft_ini.svg";
+                        marker.iconRetinaUrl = marker.iconUrl;
                         pin.icon = marker;
                         pin = angular.merge(pin, coordinates);
 
