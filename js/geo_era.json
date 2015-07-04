@@ -30,7 +30,7 @@
 		"multi" : false
 	},
 	{
-		"id" : 6,
+		"id" : 7,
 		"name" : "Trias",
 		"start" : 252.2,
 		"end": 201.3,
@@ -40,7 +40,7 @@
 		"multi" : false
 	},
 	{
-		"id" : 7,
+		"id" : 6,
 		"name" : "Perm",
 		"start" : 298.9,
 		"end": 252.2,

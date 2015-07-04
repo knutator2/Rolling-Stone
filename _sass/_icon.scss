@@ -4,6 +4,8 @@
     min-width: 35px;
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
 }
 
 .icon-button:before {
@@ -33,6 +35,10 @@
 
 .icon-type-close {
     background-image: url('../img/assets/Close_ini.svg');
+}
+
+.icon-type-more {
+    background-image: url('../img/assets/Zoom_in_ini.svg');
 }
 
 .icon-type-herkunft {
