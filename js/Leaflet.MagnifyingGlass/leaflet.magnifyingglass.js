@@ -1,5 +1,4 @@
-﻿
-L.MagnifyingGlass = L.Class.extend({
+﻿L.MagnifyingGlass = L.Class.extend({
   includes: L.Mixin.Events,
 
   options: {
