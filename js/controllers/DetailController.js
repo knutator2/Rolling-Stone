@@ -13,6 +13,10 @@ myApp.controller("DetailController", ['$scope', '$routeParams', 'StonesService',
 
         $scope.stones = []; // Could be used for later
 
+        $scope.closeDetailPage = function(event) {
+            window.history.back();
+        };
+
         // StonesService.get().then(function(data) {
         //     $scope.len = data.length;
         //     $scope.stones = data;
