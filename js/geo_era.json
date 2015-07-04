@@ -1,68 +1,119 @@
 [
 	{
-		"id" : 0,
+		"id" : 10,
 		"name" : "Tertiär",
 		"start" : 65,
-		"end": 2.6
+		"end": 2.6, 
+		"text_short" : "Das Präkambrium, auch Erdfrühzeit genannt, ist der älteste Zeitabschnitt der Erde und ging über vier Milliarden Jahre. Es umfasst den Zeitraum von der Entstehung der Erde bis zur Entwicklung der Tierwelt.", 
+		"text_long" : "Im Präkambrium entwickelten sich die ersten Lebewesen auf der Erde --beziehungsweise unter Wasser. Wann genau das geschah, ist wissenschaftlich noch nicht bewiesen. Allerdings fanden Forscher in der Nähe von Grönland etwa 3,8 Milliarden Jahre alte Gesteine, auf denen organisches Material nachgewiesen werden konnte. <br />Zunächst bewohnten nur einfache Einzeller, wie Bakterien und sogenannte Blaualgen, die Erde. Später entwickelten sich komplexere Einzeller mit Zellkern. Bis zum Ende dieses Zeitabschnitts kamen auch verschiedene vielzellige Tiere und Pflanzen hinzu.",
+		"icon" : "img/assets/timeline/Elephant2.svg",
+		"multi" : false
 	},
 	{
-		"id" : 1,
+		"id" : 9,
 		"name" : "Kreide",
 		"start" : 145,
-		"end": 66
-	},
-	{
-		"id" : 2,
-		"name" : "Jura",
-		"start" : 201.3,
-		"end": 145
-	},
-	{
-		"id" : 3,
-		"name" : "Perm",
-		"start" : 298.9,
-		"end": 252.2
-	},
-	{
-		"id" : 4,
-		"name" : "Trias",
-		"start" : 252.2,
-		"end": 201.3
-	},
-	{
-		"id" : 5,
-		"name" : "Devon",
-		"start" : 419.2,
-		"end": 358.9
-	},
-	{
-		"id" : 6,
-		"name" : "Silur",
-		"start" : 443.4,
-		"end": 419.2
-	},
-	{
-		"id" : 7,
-		"name" : "Ordovizium",
-		"start" : 485.4,
-		"end": 443.4
+		"end": 66,
+		"text_short" : "Das Präkambrium, auch Erdfrühzeit genannt, ist der älteste Zeitabschnitt der Erde und ging über vier Milliarden Jahre. Es umfasst den Zeitraum von der Entstehung der Erde bis zur Entwicklung der Tierwelt.", 
+		"text_long" : "Im Präkambrium entwickelten sich die ersten Lebewesen auf der Erde --beziehungsweise unter Wasser. Wann genau das geschah, ist wissenschaftlich noch nicht bewiesen. Allerdings fanden Forscher in der Nähe von Grönland etwa 3,8 Milliarden Jahre alte Gesteine, auf denen organisches Material nachgewiesen werden konnte. <br />Zunächst bewohnten nur einfache Einzeller, wie Bakterien und sogenannte Blaualgen, die Erde. Später entwickelten sich komplexere Einzeller mit Zellkern. Bis zum Ende dieses Zeitabschnitts kamen auch verschiedene vielzellige Tiere und Pflanzen hinzu.",
+		"icon" : "img/assets/timeline/Dinosaurier2.svg",
+		"multi" : false
 	},
 	{
 		"id" : 8,
+		"name" : "Jura",
+		"start" : 201.3,
+		"end": 145,
+		"text_short" : "Das Präkambrium, auch Erdfrühzeit genannt, ist der älteste Zeitabschnitt der Erde und ging über vier Milliarden Jahre. Es umfasst den Zeitraum von der Entstehung der Erde bis zur Entwicklung der Tierwelt.", 
+		"text_long" : "Im Präkambrium entwickelten sich die ersten Lebewesen auf der Erde --beziehungsweise unter Wasser. Wann genau das geschah, ist wissenschaftlich noch nicht bewiesen. Allerdings fanden Forscher in der Nähe von Grönland etwa 3,8 Milliarden Jahre alte Gesteine, auf denen organisches Material nachgewiesen werden konnte. <br />Zunächst bewohnten nur einfache Einzeller, wie Bakterien und sogenannte Blaualgen, die Erde. Später entwickelten sich komplexere Einzeller mit Zellkern. Bis zum Ende dieses Zeitabschnitts kamen auch verschiedene vielzellige Tiere und Pflanzen hinzu.",
+		"icon" : "img/assets/timeline/Bird2.svg",
+		"multi" : false
+	},
+	{
+		"id" : 6,
+		"name" : "Trias",
+		"start" : 252.2,
+		"end": 201.3,
+		"text_short" : "Das Trias ist die älteste Epoche des Erdmittelalters. In diesem Zeitabschnitt tauchten die ersten Dinosaurier auf, die später das gesamte Erdzeitalter für fast 150 Millionen Jahre dominierten. Außerdem entstanden die Vorfahren der Säugetiere.", 
+		"text_long" : "Im Trias entwickelten sich die Reptilien, die das “große Sterben” am Ende des Perms überlebt hatten, erheblich weiter. Alle Reptiliengruppen, bis auf die Schlagen, waren in dieser Periode bereits vorhanden. Auch entstehen im Laufe des Trias die ersten Dinosaurier und Flugsaurier. In dieser Zeitepoche traten auch nachweislich die ersten primitiven Säugetiere auf, wie beispielsweise der Triconodon, der auf der Abbildung dargestellt ist. <br /><br />Am Ende der Trias starben 50 bis 80 % aller Arten aus. Besonders betroffen waren die Landwirbeltiere. Der Grund dafür ist noch nicht vollständig geklärt; eventuell gab es starke Vulkanausbrüche.",
+		"icon" : "img/assets/timeline/Triconodon2.svg",
+		"multi" : false
+	},
+	{
+		"id" : 7,
+		"name" : "Perm",
+		"start" : 298.9,
+		"end": 252.2,
+		"text_short" : "Das Perm ist die letzte Periode im Erdaltertum. Sein Name stammt von der gleichnamigen russischen Region im Uralgebiet. Dort wurden zahlreiche Steine gefunden, die Forschern zur näheren Bestimmung dieses Zeitraumes dienen.", 
+		"text_long" : "Im Perm dominierten zunächst die Reptilien das Land. Einige Arten entwickelten prägnante Segel am Rücken. Später kamen sogenannte Therapsiden hinzu, die auch als säugetierartige Reptilien bezeichnet werden.<br /><br />Das Ende des Perms ist durch ein extremes Massensterben gekennzeichnet. Geschätzt 95% der Meeresbewohner und 75% der Landlebewesen starben aus. Viele Wissenschaftler vermuten, dass sibirische Vulkanausbrüche für das wahrscheinlich größte Massensterben der Geschichte verantwortlich waren.",
+		"icon" : "img/assets/timeline/Bird2.svg",
+		"multi" : false
+	},
+	{
+		"id" : 5,
+		"name" : "Karbon",
+		"start" : 358.9,
+		"end": 298.9,
+		"text_short" : "Das Karbon -- vom lateinischen Wort \"Carbo\" für Kohle -- erhielt seinen Namen aufgrund des reichen Kohlevorkommens. Diese Epoche wird daher auch als Kohlezeitalter bezeichnet.", 
+		"text_long" : "Im Karbon entwickelten sich die Wirbeltiere weiter. Der Stamm der Amphibien entfaltete sich und es entstanden die ersten Reptilien. Diese entwickelten in dieser Zeit die Fähigkeit, schalenumhüllte Eier zu legen. Dadurch wurde für die Wirbeltiere ein wasserunabhängiges Leben möglich.<br /><br />Die Pflanzenwelt im Karbon glich einem heutigen tropischen Sumpfwald. Fast alle Lebensräume auf dem Land waren bewachsen. Durch die Photosynthese erhöhte sich der Sauerstoffgehalt auf etwa 35%, was das Wachstum von großen Insekten und Gliedertieren begünstigte.",
+		"icon" : "img/assets/timeline/Hylonomus2.svg",
+		"multi" : false
+	},
+	{
+		"id" : 4,
+		"name" : "Devon",
+		"start" : 419.2,
+		"end": 358.9,
+		"text_short" : "Im Devon entfalteten sich die Fische in einer bisher nie dagewesenen Vielfalt. Daher wird diese Epoche auch als “Zeitalter der Fische” bezeichnet. Zahlreiche Tiergruppen durchliefen im Devon eine Evolution vom Fisch zum Amphibium.", 
+		"text_long" : "Im Devon wurde erstmals das Land dauerhaft besiedelt. Zunächst ließen sich Insekten und Skorpione auf dem Land nieder. Später traten die ersten Amphibien auf, wie der Ichthyostega, der auf der Abbildung dargestellt ist. Zum Ende der Epoche entwickelten sich auch die ersten geflügelten Insekten. <br /><br />Verschiedene Landpflanzen breiteten sich im Devon weiter aus. Es gab bereits mehrere Meter hohen Bäume; auch erste Wälder entstanden. Außerdem entwickelten sich in diesem Zeitraum die ersten Samenpflanzen.",
+		"icon" : "img/assets/timeline/Ichthyostega2.svg",
+		"multi" : false
+	},
+	{
+		"id" : 3,
+		"name" : "Silur",
+		"start" : 443.4,
+		"end": 419.2,
+		"text_short" : "Im Silur breitete sich das Leben langsam auf das Land aus. Erstmals siedelten sich Pflanzen auch außerhalb des Meeres an. Auch im Meer entwickelte sich das Leben weiter.", 
+		"text_long" : "Der Meeresgrund im Silur war gekennzeichnet durch Koralle, Muscheln und Seeigel, die Riffe bildeten. Zudem entstanden die ersten Fische mit Kiefern. Charakteristisch für das Silur waren außerdem die zu zwei Meter langen Seeskorpionen, die das Meer bewohnten. <br /><br />Die frühen Landpflanzen waren nur wenige Zentimeter hoch und vermehrten sich über Sporen. Die einfachen Pflanzen hatten noch keine festen Wurzeln ausgebildet. In dieser Epoche entwickelten sich die Urformen von Farnen und Flechten.",
+		"icon" : "img/assets/timeline/Cooksonia2.svg",
+		"multi" : false
+	},
+	{
+		"id" : 2,
+		"name" : "Ordovizium",
+		"start" : 485.4,
+		"end": 443.4,
+		"text_short" : "Nachdem im Kambrium zahlreiche Tierfamilien ausgestorben waren, haben sich im Ordovizium relativ schnell wieder neue Arten ausgebildet. Dadurch erreichte das Leben im Meer in dieser Epoche einen ersten Höhepunkt.", 
+		"text_long" : "Im Ordovizium bewohnten unterschiedlichste Arten von wirbellosen Tieren die Meere. So auch die sogenannten Kopffüßer, die in dieser Zeit eine rasche Ausbreitung erfuhren. Kopffüßer sind Kalkröhren, in deren vorderem Teil ein Tier lebt. Wie Fossilienfunde belegen, waren sie bis zu 10 Meter lang. Des Weiteren entwickelten sich in dieser Epoche die ersten Wirbeltiere in Form von kieferlosen Fischen.<br /><br />Am Ende des Ordoviziums kam es erneut zu einem Massensterben, wodurch mehr als 100 Tierarten ausstarben. Auslöser war vermutlich eine plötzliche Klimaverschlechterung und ein Absinken des Meeresspiegels.",
+		"icon" : "img/assets/timeline/Fisch2.svg",
+		"multi" : false
+	},
+	{
+		"id" : 1,
 		"name" : "Kambrium",
 		"start" : 541,
-		"end": 485.4
+		"end": 485.4,
+		"text_short" : "Das Kambrium bezeichnet eine Epoche der Erdgeschichte, in der sich fast alle modernen Tierstämme entwickelt haben. Das Leben fand noch nicht auf dem Land statt, sondern beschränkte sich ausschließlich auf das Meer.", 
+		"text_long" : "Im Kambrium kam es zu einer sprunghaften Zunahme an Lebewesen mit ganz unterschiedlichen Körperbauplänen. Diese Entwicklung wird auch als „Kambrische Explosion“ bezeichnet. Wahrscheinlich gab es viele dieser Lebewesen auch schon in den vorangegangenen Zeitabschnitt, dem Präkambrium. Jedoch fingen viele Tiere erst in dieser Epoche an, Hartschalen und stabile Außenskelette zu bilden. Er dadurch konnten sie als Fossile in Gesteinen überliefert werden.<br /><br />Ein bekanntes Fossil aus dem Kambrium ist zum Beispiel der heute ausgestorbene Trilobit. Wie auf der Abbildung zu erkennen, ähnelt er einer Kellerassel. Einige Exemplare der Trilobiten besaßen Augen. Außerdem entstanden im Kambrium die ersten Vorläufer der Wirbeltiere. Am Ende dieser Epoche kam es zu einem Massensterben, wodurch zahlreiche Arten verschwanden.",
+		"icon" : "img/assets/timeline/Trilobit2.svg",
+		"multi" : false
 	},
 	{
-		"id" : 9,
+		"id" : 0,
 		"name" : "Präkambrium",
-		"start" : 4600,
-		"end": 541
+		"start" : 1800,
+		"end": 541,
+		"text_short" : "Das Präkambrium, auch Erdfrühzeit genannt, ist der älteste Zeitabschnitt der Erde und ging über vier Milliarden Jahre. Es umfasst den Zeitraum von der Entstehung der Erde bis zur Entwicklung der Tierwelt.", 
+		"text_long" : "Im Präkambrium entwickelten sich die ersten Lebewesen auf der Erde --beziehungsweise unter Wasser. Wann genau das geschah, ist wissenschaftlich noch nicht bewiesen. Allerdings fanden Forscher in der Nähe von Grönland etwa 3,8 Milliarden Jahre alte Gesteine, auf denen organisches Material nachgewiesen werden konnte. <br />Zunächst bewohnten nur einfache Einzeller, wie Bakterien und sogenannte Blaualgen, die Erde. Später entwickelten sich komplexere Einzeller mit Zellkern. Bis zum Ende dieses Zeitabschnitts kamen auch verschiedene vielzellige Tiere und Pflanzen hinzu.",
+		"icon" : "img/assets/timeline/Wurm2.svg",
+		"multi" : false
 	},
 	{
-		"id" : 9,
+		"id" : 11,
 		"name" : "Devon bis Trias",
 		"start" : 419.2,
-		"end": 201.3
+		"end": 201.3,
+		"multi" : true
 	}
 ]
