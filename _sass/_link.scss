@@ -6,8 +6,12 @@
     background-color: lightgrey;
     height: 40px;
     margin-top: 1em;
-    border-radius: 0.5em;
+    border-radius: 0.3em;
     text-decoration: none;
+
+    &:first-of-type {
+        margin-top: 30px;
+    }
 
     &:active,
     &:hover {
@@ -17,18 +21,32 @@
 }
 
 .link-primary {
-    background-color: lightblue;
+    background-color: $color-main;
 
-    &:active,
     &:hover {
-        background-color: aliceblue;
+        background-color: darken($color-main, 25%);
+    }
+
+    &:active {
+        background-color: $color-pressed;
     }
 }
 
 .link-secondary {
-    //TODO: Add some awesome colors! 
+    background-color: $color-grey-light;
+
+    &:hover {
+        background-color: darken($color-grey-light, 25%);
+    }
+
+    &:active {
+        background-color: $color-pressed;
+    }
 }
 
 .link-text {
     position: relative;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: $color-grey-dark;
 }

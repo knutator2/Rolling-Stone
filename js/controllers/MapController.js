@@ -17,13 +17,13 @@
             }
         },
  		pins: {
-            osloMarker: {
-                lat: 59.91,
-                lng: 10.75,
-                message: "I want to travel here!",
-                focus: false,
-                draggable: false
-            }
+            // osloMarker: {
+            //     lat: 59.91,
+            //     lng: 10.75,
+            //     message: "I want to travel here!",
+            //     focus: false,
+            //     draggable: false
+            // }
         },
  		mapboxtiles: {
  			url: "https://{s}.tiles.mapbox.com/v4/knutator.c8d1fddc/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoia251dGF0b3IiLCJhIjoiRlEzWmFjUSJ9.JLn3oQ3FbbCsjtuxQCpFjQ",
@@ -83,6 +83,10 @@
  	$scope.focusedLine = {};
  	$scope.markerlayers = new L.featureGroup([]);
  	$scope.map = {};
+  $scope.dismissSelection = function( event ) {
+    $scope.stoneSelectorIsActive = false;
+    $scope.stoneOverlayIsActive = false;
+  };
   $scope.$on('leafletDirectiveMarker.click', function(event, args){
 
         $scope.currentStone = args.leafletObject.options.stones[0];

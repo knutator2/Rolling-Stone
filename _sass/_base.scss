@@ -1,8 +1,7 @@
 /**
  * main font
  */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
-
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 
 
 /**
@@ -25,7 +24,6 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
-    color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }

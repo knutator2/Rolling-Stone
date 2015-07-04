@@ -1,22 +1,30 @@
 .icon {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
+    width: 25px;
+    height: 25px;
+    min-width: 35px;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .icon-button:before {
     content: "";
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background-size: cover;
-    left: -25px;
-    top: 2px;
+    left: -30px;
 }
 
 .icon-button-type-graph:before {
     background-image: url('../img/assets/Graph_ini.svg');
+}
+
+.icon-button-type-more:before {
+    background-image: url('../img/assets/Zoom_in_ini.svg');
+}
+
+.icon-type-logo {
+    background-image: url('../img/assets/Logo_Mittel.png');
 }
 
 .icon-type-zoom-out {
@@ -28,12 +36,12 @@
 }
 
 .icon-type-herkunft {
-    background-image: url('../img/assets/Pin_Gestein Herkunft_ini.svg');
+    background-image: url('../img/assets/Graph_Herkunft.svg');
 }
 
 .icon-type-fundort {
-    background-image: url('../img/assets/Pin_Gestein Fundort_ini.svg');
-    height: 48px;
+    background-image: url('../img/assets/Graph_Fundort.svg');
+    height: 30px;
 }
 
 .icon-type-erdzeitalter {
@@ -42,5 +50,5 @@
 
 .icon-type-gesteinsart {
     background-image: url('../img/assets/Graph_Gesteinsart.svg');
-    height: 29px;
+    height: 20px;
 }
