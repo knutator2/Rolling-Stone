@@ -54,7 +54,7 @@
 		"name" : "Karbon",
 		"start" : 358.9,
 		"end": 298.9,
-		"text_short" : "Das Karbon – vom lateinischen Wort "Carbo" für Kohle – erhielt seinen Namen aufgrund des reichen Kohlevorkommens. Diese Epoche wird daher auch als Kohlezeitalter bezeichnet.", 
+		"text_short" : "Das Karbon – vom lateinischen Wort \"Carbo\" für Kohle – erhielt seinen Namen aufgrund des reichen Kohlevorkommens. Diese Epoche wird daher auch als Kohlezeitalter bezeichnet.", 
 		"text_long" : "Im Karbon entwickelten sich die Wirbeltiere weiter. Der Stamm der Amphibien entfaltete sich und es entstanden die ersten Reptilien. Diese entwickelten in dieser Zeit die Fähigkeit, schalenumhüllte Eier zu legen. Dadurch wurde für die Wirbeltiere ein wasserunabhängiges Leben möglich.<br /><br />Die Pflanzenwelt im Karbon glich einem heutigen tropischen Sumpfwald. Fast alle Lebensräume auf dem Land waren bewachsen. Durch die Photosynthese erhöhte sich der Sauerstoffgehalt auf etwa 35%, was das Wachstum von großen Insekten und Gliedertieren begünstigte.",
 		"icon" : "img/assets/timeline/Hylonomus2.svg",
 		"multi" : false
@@ -75,8 +75,7 @@
 		"start" : 443.4,
 		"end": 419.2,
 		"text_short" : "Im Silur breitete sich das Leben langsam auf das Land aus. Erstmals siedelten sich Pflanzen auch außerhalb des Meeres an. Auch im Meer entwickelte sich das Leben weiter.", 
-		"text_long" : "Der Meeresgrund im Silur war gekennzeichnet durch Koralle, Muscheln und Seeigel, die Riffe bildeten. Zudem entstanden die ersten Fische mit Kiefern. Charakteristisch für das Silur waren außerdem die zu zwei Meter langen Seeskorpionen, die das Meer bewohnten.<br>Die frühen Landpflanzen waren nur wenige Zentimeter hoch und vermehrten sich über Sporen. Die einfachen Pflanzen hatten noch keine festen Wurzeln ausgebildet. In dieser Epoche entwickelten sich die Urformen von Farnen und Flechten.
-",
+		"text_long" : "Der Meeresgrund im Silur war gekennzeichnet durch Koralle, Muscheln und Seeigel, die Riffe bildeten. Zudem entstanden die ersten Fische mit Kiefern. Charakteristisch für das Silur waren außerdem die zu zwei Meter langen Seeskorpionen, die das Meer bewohnten.<br>Die frühen Landpflanzen waren nur wenige Zentimeter hoch und vermehrten sich über Sporen. Die einfachen Pflanzen hatten noch keine festen Wurzeln ausgebildet. In dieser Epoche entwickelten sich die Urformen von Farnen und Flechten.",
 		"icon" : "img/assets/timeline/Cooksonia2.svg",
 		"multi" : false
 	},
