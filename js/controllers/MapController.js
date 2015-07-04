@@ -157,7 +157,7 @@ function parseMarkers(pins) {
                   map.removeLayer(magnifyingGlass);
                 } else {
                   map.addLayer(magnifyingGlass);
-                  magnifyingGlass.setLatLng(mouseEvt.latlng);
+                  //magnifyingGlass.setLatLng(mouseEvt.latlng);
                 }
               },
       '',map);
