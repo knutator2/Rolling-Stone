@@ -5,14 +5,20 @@
 		<div class="page-map-main-wrapper">
 			<div class="map-wrapper">
 				<div class="map" ng-click="dismissSelection()">
-					<leaflet 
-					markers="pins"
-					tiles="mapboxtiles" 
-					center="center"
-					defaults="defaults" 
-					width="100%" 
-					height="100%"
-					event-broadcast="events"></leaflet>
+				<div class="era-description-long-wrapper">
+					<div class="era-description-long">
+						<div class="era-description-long-headline"></div>
+						<div class="era-description-long-text"></div>
+					</div>
+				</div>
+				<leaflet 
+				markers="pins"
+				tiles="mapboxtiles" 
+				center="center"
+				defaults="defaults" 
+				width="100%" 
+				height="100%"
+				event-broadcast="events"></leaflet>
 				</div>
 			</div>
 
