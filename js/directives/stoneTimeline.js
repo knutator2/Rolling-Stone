@@ -12,19 +12,23 @@ myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(Sto
                 $shortDescriptionElem = $('.era-description-short'),
                 $longDescriptionElem = $('.era-description-long'),
                 $descriptionWrapper = $('.era-description-wrapper'),
+                $descriptionLongWrapper = $('.era-description-long-wrapper'),
                 $timelineWrapper = $('.timeline-wrapper'),
                 $timelineAbsoluteWrapper = $('.timeline-absolute-wrapper'),
 
                 $shortDescriptionElem.text('');
-                $longDescriptionElem.text('');
 
                 $descriptionWrapper.removeClass('active');
                 $timelineWrapper.removeClass('active');
                 $timelineAbsoluteWrapper.removeClass('active');
+                $descriptionLongWrapper.removeClass('active');
             };
 
             scope.showLongDescription = function(event) {
+                var $map = $('.map'),
+                    $longDescriptionElemWrapper = $('.era-description-long-wrapper');
 
+                    $longDescriptionElemWrapper.addClass('active');
             };
 
             var all_stones = [];
@@ -51,7 +55,8 @@ myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(Sto
 
                     var $this = $(this),
                         $shortDescriptionElem = $('.era-description-short'),
-                        $longDescriptionElem = $('.era-description-long'),
+                        $longDescriptionElem = $('.era-description-long-text'),
+                        $longDescriptionElemHeadline = $('.era-description-long-headline'),
                         $descriptionWrapper = $('.era-description-wrapper'),
                         $timelineWrapper = $('.timeline-wrapper'),
                         $timelineAbsoluteWrapper = $('.timeline-absolute-wrapper'),
@@ -67,6 +72,9 @@ myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(Sto
                     $descriptionWrapper.addClass('active');
                     $timelineWrapper.addClass('active');
                     $timelineAbsoluteWrapper.addClass('active');
+
+                    $longDescriptionElemHeadline.text(era.name);
+                    $longDescriptionElem.text(era.text_long);
 
                     console.log(era);
                     console.log($(this).data('era-id'));
