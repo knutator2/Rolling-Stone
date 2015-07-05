@@ -70,7 +70,6 @@ function StoneGraph(el, core, stones) {
         //         return candidate["inventory_id."];
         //     }
         // }
-        alert('next stone failed!!!');
     }
 	
     // Add and remove elements on the graph object
@@ -439,6 +438,7 @@ myApp.directive('stonegraph', function() {
 		templateUrl : 'js/directives/stoneGraph.html',
 		link : function (scope, element, attrs) {
 			scope.init = function() {
+                $('.btn').fadeOut();
 				graph = new StoneGraph('#graph', scope.active, scope.stones);
 				graph.addNode(scope.active["inventory_id."]);
 				// setupGraph();
