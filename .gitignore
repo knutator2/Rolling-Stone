@@ -1,4 +1,5 @@
 _site
 .sass-cache
+.jshintrc
 
 js/bower_components
