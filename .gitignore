@@ -3,3 +3,4 @@ _site
 .jshintrc
 
 js/bower_components
+node_modules
