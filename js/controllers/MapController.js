@@ -1,5 +1,7 @@
  myApp.controller("MapController", ['$scope', '$http', '$timeout', 'StonesService', 'leafletData',
     	function($scope, $http, $timeout, StonesService, leafletData) {
+
+        console.log("in map controller");
     angular.extend($scope, {
  		center: 
  		{

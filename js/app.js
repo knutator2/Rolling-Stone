@@ -1,6 +1,8 @@
 var myApp = angular.module('RollingStone', ['leaflet-directive', 'stoneparsingservice', 'epocheservice', 'ngRoute', 'ngAnimate']);
 
 myApp.config(function($routeProvider) {
+
+	console.log("in config function");
 	$routeProvider
 		.when('/', {
 			templateUrl: 'js/views/map.html',
