@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "sass --compass --watch styles/main.scss:build/main.css & http-server ."
+    "dev": "npm run sass-watch & npm run local-server",
+    "sass-watch": "sass --compass --watch styles/main.scss:build/main.css",
+    "local-server": "http-server ."
   },
   "repository": {
     "type": "git",
