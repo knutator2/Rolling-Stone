@@ -28,9 +28,9 @@ service.factory('StonesService', ['$resource', '$http', function($resource, $htt
   						var pin = angular.merge({}, el, coordinates);
   						var pin_orig = angular.merge({}, el, origin_coordinates);
   						pin.type = "Destination";
-  						pin.icon = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}).options;
+  						//pin.icon = L.marker.icon({icon: "rocket", color: "#f00", size: "m"}).options;
   						pin_orig.type = "Source";
-  						pin_orig.icon = L.MakiMarkers.icon({icon: "circle", color: "#0f0", size: "m"}).options;
+  						//pin_orig.icon = L.MakiMarkers.icon({icon: "circle", color: "#0f0", size: "m"}).options;
 	            		items.push(pin);
 	            		items.push(pin_orig);
 	        		}
@@ -70,7 +70,7 @@ service.factory('StonesService', ['$resource', '$http', function($resource, $htt
                         pin.stones = stones;
                         pin.type = "Destination";
                         //pin.icon = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}).options;
-                        var marker = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}).options;
+                        var marker = L.marker({icon: "rocket", color: "#f00", size: "m"});
                         marker.iconUrl = pin.stones.length > 1 ? "img/assets/Pin_Mehrere_Steine_ini.svg" : "img/assets/Pin_Gestein Fundort_ini.svg";
                         pin.icon = marker;
                         pin = angular.merge(pin, coordinates);
@@ -100,7 +100,7 @@ service.factory('StonesService', ['$resource', '$http', function($resource, $htt
 
                         pin.stones = stones;
                         pin.type = "Origin";
-                        var marker = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}).options;
+                        var marker = L.marker();
                         marker.iconUrl = "img/assets/Pin_Gestein Herkunft_ini.svg";
                         pin.icon = marker;
                         pin = angular.merge(pin, coordinates);
