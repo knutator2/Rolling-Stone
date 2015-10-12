@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html ng-app="RollingStone">
 
 <head>
@@ -10,48 +11,31 @@
     <!--   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     -->
 
-    <!-- Libraries -->
+   
 
-    <!-- Bootstrap hides the html element by default??? -->
-
-    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css">
     <!-- <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"> -->
     <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" /> -->
+
+    <!-- Library Styles -->
     <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="node_modules/leaflet.fullscreen/Control.FullScreen.css">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="build/main.css">
 
 
     <!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
 
     <!-- Libraries -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <!--<script src="js/bower_components/jqueryui/jquery-ui.js"></script>-->
-
-    <!-- I can't get jqueryui to work as an npm module -->
-    <script src="js/bower_components/jqueryui/ui/minified/core.min.js"></script>
-    <script src="js/bower_components/jqueryui/ui/minified/position.min.js"></script>
-    <script src="js/bower_components/jqueryui/ui/minified/effect.min.js"></script>
-    <script src="js/bower_components/jqueryui/ui/minified/widget.min.js"></script>
-    <script src="js/bower_components/jqueryui/ui/minified/tooltip.min.js"></script>
-
-
     <script src="node_modules/d3/d3.min.js"></script>
     <script src="node_modules/underscore/underscore-min.js"></script>
     <script src="node_modules/modernizr/modernizr.js"></script>
-    <script src="node_modules/bootstrap-slider/dist/bootstrap-slider.min.js"></script>
    
-
     <!-- Leaflet -->
     <script src="node_modules/leaflet/dist/leaflet.js"></script>
     <script src="node_modules/leaflet.fullscreen/Control.FullScreen.js"></script>
     <script src="node_modules/leaflet-easybutton/src/easy-button.js"></script>
-
-    <!-- Legacy Bower component - Please remove if possible! -->
-    <script src="js/bower_components/Leaflet.MakiMarkers/Leaflet.MakiMarkers.js"></script>
 
     <!-- Angular Components -->
     <script src="node_modules/angular/angular.min.js"></script>
@@ -59,7 +43,6 @@
     <script src="node_modules/angular-route/angular-route.min.js"></script>
     <script src="node_modules/angular-animate/angular-animate.min.js"></script>
 
-    <!--<script src="js/main.js"></script>!-->
 </head>
 
 <body>
@@ -103,14 +86,15 @@
     </div>
 
     <!-- Modules -->
-    <script src="js/app.js"></script>    
+    <script src="js/app.js"></script>   
+    <script src="node_modules/angular-simple-logger/dist/angular-simple-logger.js"></script> 
 
     <!-- Services -->
     <script src="js/services/stoneParsingService.js"></script>
     <script src="js/services/epocheService.js"></script>
 
     <!-- Directives -->
-    <script src="js/bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
+    <script src="node_modules/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
     <script src="js/directives/stoneOverlay.js"></script>
     <script src="js/directives/stoneGraph.js"></script>
     <script src="js/directives/stoneSelector.js"></script>

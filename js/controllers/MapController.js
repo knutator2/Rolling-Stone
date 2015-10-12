@@ -1,24 +1,23 @@
  myApp.controller("MapController", ['$scope', '$http', '$timeout', 'StonesService', 'leafletData',
-    	function($scope, $http, $timeout, StonesService, leafletData) {
+        function($scope, $http, $timeout, StonesService, leafletData) {
 
-        console.log("in map controller");
     angular.extend($scope, {
- 		center: 
- 		{
+        center: 
+        {
             lat: 52.886525,
             lng: 14.139851,
             zoom: 5
         },
- 		defaults: {
- 			scrollWheelZoom: false
- 		},
+        defaults: {
+            scrollWheelZoom: false
+        },
     events: {
             map: {
                 enable: ['zoomstart', 'drag', 'click', 'mousemove'],
                 logic: 'emit'
             }
         },
- 		pins: {
+        pins: {
             // osloMarker: {
             //     lat: 59.91,
             //     lng: 10.75,
@@ -27,18 +26,18 @@
             //     draggable: false
             // }
         },
- 		mapboxtiles: {
- 			url: "https://{s}.tiles.mapbox.com/v4/knutator.c8d1fddc/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoia251dGF0b3IiLCJhIjoiRlEzWmFjUSJ9.JLn3oQ3FbbCsjtuxQCpFjQ",
+        mapboxtiles: {
+            url: "https://{s}.tiles.mapbox.com/v4/knutator.c8d1fddc/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoia251dGF0b3IiLCJhIjoiRlEzWmFjUSJ9.JLn3oQ3FbbCsjtuxQCpFjQ",
             options: {
                 attribution: "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
             }
- 		}
- 	});
+        }
+    });
 
- 	var pins = StonesService.getPins();
+    var pins = StonesService.getPins();
   console.log(pins);
   pins.then(function(response) {
- 	 	//add pins to map
+        //add pins to map
     console.log(response);
 
     $scope.pins = response;
@@ -70,21 +69,21 @@
   });
 
     // $http.get('js/metadata.json').then(function(data) {
-    // 	console.log(data);
+    //  console.log(data);
     // });
 
     // $timeout(function() { $scope.updateMarkers(); }, 3000);
 
- 	$scope.name = "Map";
+    $scope.name = "Map";
   $scope.currentStone = {};
   $scope.stoneGroup = {};
   $scope.stoneOverlayIsActive = false;
   $scope.stoneSelectorIsActive = false;
   $scope.storedMarkers = [];
- 	$scope.focusedMarkerPair = {};
- 	$scope.focusedLine = {};
- 	$scope.markerlayers = new L.featureGroup([]);
- 	$scope.map = {};
+    $scope.focusedMarkerPair = {};
+    $scope.focusedLine = {};
+    $scope.markerlayers = new L.featureGroup([]);
+    $scope.map = {};
   $scope.UiHeader = $('header');
   $scope.dismissSelection = function( event ) {
     $scope.stoneSelectorIsActive = false;
@@ -106,14 +105,14 @@
         }
   });
 
- 	$scope.updateMarkers = function() {
- 		console.log('Timeout called');
- 		$scope.pins.newMarker = {lat: 59.81,
+    $scope.updateMarkers = function() {
+        console.log('Timeout called');
+        $scope.pins.newMarker = {lat: 59.81,
                 lng: 10.65,
                 message: "I want to travel here!",
                 focus: false,
                 draggable: false};
- 	};
+    };
 
   $scope.buttonsAdded = false;
 
@@ -129,33 +128,33 @@
     }
     
   });
-}]);	
+}]);    
     
-		// $http.get('js/metadata.json').then(function(data) {
-  //   		L.tileLayer('https://{s}.tiles.mapbox.com/v4/knutator.l8m1lim1/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoia251dGF0b3IiLCJhIjoiRlEzWmFjUSJ9.JLn3oQ3FbbCsjtuxQCpFjQ').addTo(map); 
-  //   		angular.forEach(data, function(index, el) {
-  //       		if (el.coordinate && el.origin_coordinate) {
-  //           		var coordinates = parseCoordinateString(el.coordinate);
-  //           		var origin_coordinates = parseCoordinateString(el.origin_coordinate);
-  //           		var marker = addMarkerForType("found_coordinate", coordinates);
-  //           		marker.bindPopup("<b>" + el.title + "</b><br />" +
-  //               		"Distanz: " + getDistanceString(coordinates, origin_coordinates));
-  //           		marker.on('popupopen', onMarkerShowPopup);
-  //           		marker.on('popupclose', onMarkerClosePopup);
+        // $http.get('js/metadata.json').then(function(data) {
+  //        L.tileLayer('https://{s}.tiles.mapbox.com/v4/knutator.l8m1lim1/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoia251dGF0b3IiLCJhIjoiRlEzWmFjUSJ9.JLn3oQ3FbbCsjtuxQCpFjQ').addTo(map); 
+  //        angular.forEach(data, function(index, el) {
+  //            if (el.coordinate && el.origin_coordinate) {
+  //                var coordinates = parseCoordinateString(el.coordinate);
+  //                var origin_coordinates = parseCoordinateString(el.origin_coordinate);
+  //                var marker = addMarkerForType("found_coordinate", coordinates);
+  //                marker.bindPopup("<b>" + el.title + "</b><br />" +
+  //                    "Distanz: " + getDistanceString(coordinates, origin_coordinates));
+  //                marker.on('popupopen', onMarkerShowPopup);
+  //                marker.on('popupclose', onMarkerClosePopup);
 
-  //           		var originMarker = addMarkerForType("origin_coordinate", origin_coordinates);
-  //           		originMarker.bindPopup("<b>" + el.title + "</b><br />" +
-  //               		"Distanz: " + getDistanceString(coordinates, origin_coordinates));
-  //           		originMarker.on('popupopen', onMarkerShowPopup);
-  //           		originMarker.on('popupclose', onMarkerClosePopup);
+  //                var originMarker = addMarkerForType("origin_coordinate", origin_coordinates);
+  //                originMarker.bindPopup("<b>" + el.title + "</b><br />" +
+  //                    "Distanz: " + getDistanceString(coordinates, origin_coordinates));
+  //                originMarker.on('popupopen', onMarkerShowPopup);
+  //                originMarker.on('popupclose', onMarkerClosePopup);
             
-  //           		$scope.storedMarkers.push({'origin' : originMarker, 'found' : marker});
-  //           		$scope.markerlayers.addLayer(originMarker);
-  //           		$scope.markerlayers.addLayer(marker);
-  //       		}
-  //   		}); 
-  //   		$scope.map.fitBounds(markerlayers.getBounds());
-		// });
+  //                $scope.storedMarkers.push({'origin' : originMarker, 'found' : marker});
+  //                $scope.markerlayers.addLayer(originMarker);
+  //                $scope.markerlayers.addLayer(marker);
+  //            }
+  //        }); 
+  //        $scope.map.fitBounds(markerlayers.getBounds());
+        // });
   //   };
 
 //     function parseCoordinateString(raw_coordinates) {
