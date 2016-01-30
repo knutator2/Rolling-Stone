@@ -11,7 +11,7 @@
     <!--   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     -->
 
-   
+
 
     <!-- <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"> -->
     <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" /> -->
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="node_modules/leaflet.fullscreen/Control.FullScreen.css">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="build/main.css">
+    <link rel="stylesheet" href="styles/main.css">
 
 
     <!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
@@ -31,7 +31,7 @@
     <script src="node_modules/d3/d3.min.js"></script>
     <script src="node_modules/underscore/underscore-min.js"></script>
     <script src="node_modules/modernizr/modernizr.js"></script>
-   
+
     <!-- Leaflet -->
     <script src="node_modules/leaflet/dist/leaflet.js"></script>
     <script src="node_modules/leaflet.fullscreen/Control.FullScreen.js"></script>
@@ -81,13 +81,13 @@
         <div class="page" ng-view>
 
         </div>
-        
-        
+
+
     </div>
 
     <!-- Modules -->
-    <script src="js/app.js"></script>   
-    <script src="node_modules/angular-simple-logger/dist/angular-simple-logger.js"></script> 
+    <script src="js/app.js"></script>
+    <script src="node_modules/angular-simple-logger/dist/angular-simple-logger.js"></script>
 
     <!-- Services -->
     <script src="js/services/stoneParsingService.js"></script>
@@ -103,7 +103,7 @@
     <!-- Controllers -->
     <script src="js/controllers/MapController.js"></script>
     <script src="js/controllers/GraphController.js"></script>
-    <script src="js/controllers/DetailController.js"></script>    
+    <script src="js/controllers/DetailController.js"></script>
 </body>
 
 </html>

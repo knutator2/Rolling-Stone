@@ -1,5 +1,8 @@
 .sass-cache
 .jshintrc
-.css.map
+
+styles/*.css.map
+styles/*.css
 
 node_modules
+build

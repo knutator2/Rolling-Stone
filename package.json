@@ -5,8 +5,12 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rm -rf build && mkdir build",
+    "build": "npm run build:sass && npm run build:copy",
+    "build:sass": "sass--compass styles/main.scss:styles/main.css",
+    "build:copy": "cp index.html build/index.html && cp -r img build/img && cp -r js build/js && cp -r node_modules build/node_modules && cp -r styles build/styles",
     "dev": "npm run sass-watch & npm run local-server",
-    "sass-watch": "sass --compass --watch styles/main.scss:build/main.css",
+    "sass-watch": "sass --compass --watch styles/main.scss:styles/main.css",
     "local-server": "http-server ."
   },
   "repository": {
@@ -35,6 +39,7 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "browserify": "^13.0.0",
     "http-server": "^0.8.5"
   }
 }
