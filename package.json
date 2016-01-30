@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rm -rf build && mkdir build",
-    "build": "npm run build:sass && npm run build:copy",
-    "build:sass": "sass--compass styles/main.scss:styles/main.css",
+    "build": "npm run build:browserify && npm run build:sass && npm run build:copy",
+    "build:browserify": "browserify js/app.js --outfile js/bundle.js",
+    "build:sass": "sass --compass styles/main.scss:styles/main.css",
     "build:copy": "cp index.html build/index.html && cp -r img build/img && cp -r js build/js && cp -r node_modules build/node_modules && cp -r styles build/styles",
     "dev": "npm run sass-watch & npm run local-server",
     "sass-watch": "sass --compass --watch styles/main.scss:styles/main.css",

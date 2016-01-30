@@ -1,15 +1,21 @@
-myApp.controller("DetailController", ['$scope', '$routeParams', 'StonesService',
-    function($scope, $routeParams, StonesService) {
+'use strict';
 
-        $scope.name = "Detail";
-        $scope.currentStone = {};
-        var qwertz = StonesService.getStoneById(parseInt($routeParams.stoneId,10));
+// var DetailController = function($scope) {
+//     $scope.name = "DetailTEST";
+// }
 
-        qwertz.then(function(response) {
-            $scope.currentStone = response;
-        });
+// var app.controller("DetailController", ['$scope', '$routeParams', 'StonesService',
+var DetailController = function( $scope, $routeParams ) {
 
-        // $scope.currentStone = {test: "yeee"};
+        $scope.name = "DetailQWERTZUIUZTRE";
+        // $scope.currentStone = {};
+        // var qwertz = StonesService.getStoneById(parseInt($routeParams.stoneId,10));
+        //
+        // qwertz.then(function(response) {
+        //     $scope.currentStone = response;
+        // });
+
+        $scope.currentStone = {test: "yeee"};
 
         $scope.stones = []; // Could be used for later
 
@@ -22,6 +28,9 @@ myApp.controller("DetailController", ['$scope', '$routeParams', 'StonesService',
         //         }
         //     });
         //     console.log($routeParams);
-        // }); 
+        // });
     }
-]);
+// ]);
+
+
+module.exports = DetailController;
