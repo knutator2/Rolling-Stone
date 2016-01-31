@@ -4,5 +4,7 @@
 styles/*.css.map
 styles/*.css
 
+js/bundle.js
+
 node_modules
 build

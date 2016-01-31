@@ -7,7 +7,7 @@
 // var app.controller("DetailController", ['$scope', '$routeParams', 'StonesService',
 var DetailController = function( $scope, $routeParams ) {
 
-        $scope.name = "DetailQWERTZUIUZTRE";
+        $scope.name = "BLUBB";
         // $scope.currentStone = {};
         // var qwertz = StonesService.getStoneById(parseInt($routeParams.stoneId,10));
         //
