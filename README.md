@@ -1,4 +1,4 @@
-# Rolling Stone
+# Rapakiwi
 Wahrscheinlich hast Du auch schon mal einen Stein gefunden und Dich über seine Beschaffenheit, Farbe oder Form gewundert. Wusstest Du, dass dieses Gesteinsmaterial mehrere Millionen Jahre alt ist und in den Eiszeiten von Gletschern aus Skandinavien nach Berlin und Brandenburg transportiert wurde?
 
 # Projektidee
