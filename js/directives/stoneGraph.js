@@ -23,7 +23,7 @@ function StoneGraph(el, core, stones) {
         switch(connection_type) {
             case StoneConnection.ORIGIN: {
                 result = 'origin';
-                break; 
+                break;
             }
 
             case StoneConnection.DESTINATION: {
@@ -61,7 +61,7 @@ function StoneGraph(el, core, stones) {
             self.available_stones.splice(index,2)
             return new_stone["inventory_id."];
         }
-        
+
         // for (var i = 0; i < self.available_stones.length; i=i+2) {
         //     var candidate = self.available_stones[i];
         //     if (candidate[propertyname] == current_stone[propertyname]) {
@@ -72,7 +72,7 @@ function StoneGraph(el, core, stones) {
         // }
         alert('next stone failed!!!');
     }
-	
+
     // Add and remove elements on the graph object
     var addNode = this.addNode = function (stone_id) {
         console.log("stone to add");
@@ -176,8 +176,8 @@ function StoneGraph(el, core, stones) {
 			.append("polygon")
 	 	 		.style("stroke", "black")
 	 	 		.style("fill", "none")
-	 	 		.attr("points", function(d) {  
-	 	 	 		return figure; 
+	 	 		.attr("points", function(d) {
+	 	 	 		return figure;
 	 	 		})
 	 	 	.style("pointer-events", "all")
 	 	 	.on("click", expand)
@@ -208,7 +208,7 @@ function StoneGraph(el, core, stones) {
  		.attr('height', h)
  		.classed('background-container', true);
 
-    
+
 
  	var dragstarted =  function(d) {
  	 	d3.event.sourceEvent.stopPropagation();
@@ -233,15 +233,15 @@ function StoneGraph(el, core, stones) {
     var expand_by_origin = function(d) {
         expand(d, StoneConnection.ORIGIN);
     }
-    
+
     var expand_by_destination = function(d) {
         expand(d, StoneConnection.DESTINATION);
     }
-    
+
     var expand_by_kind = function(d) {
         expand(d, StoneConnection.KIND);
     }
-    
+
     var expand_by_period = function(d) {
         expand(d, StoneConnection.PERIOD);
     }
@@ -250,7 +250,7 @@ function StoneGraph(el, core, stones) {
  		.origin(function(d) {return d; })
  		.on("dragstart", dragstarted)
  		.on("drag", dragged)
- 		.on("dragend", dragended);	    
+ 		.on("dragend", dragended);
 
     var force = d3.layout.force()
         .gravity(.05)
@@ -262,7 +262,7 @@ function StoneGraph(el, core, stones) {
         links = force.links();
 
     var colors = d3.scale.category10();
-    
+
     var update = function () {
 
         var link = container.selectAll("line.link")
@@ -306,11 +306,11 @@ function StoneGraph(el, core, stones) {
  		triangleUp.append("polygon")
 	 	 		.style("stroke", "black")
 	 	 		.style("fill", "none")
-	 	 		.attr("points", function(d) {  
-	 	 	 		return "0,0, 50,-50, 100,0"; 
+	 	 		.attr("points", function(d) {
+	 	 	 		return "0,0, 50,-50, 100,0";
 	 	 		})
 	 	 	.style("pointer-events", "all");
-	 	 	
+
 
         triangleUp.append('image')
             .attr('xlink:href', "img/assets/Graph_Herkunft.svg")
@@ -329,11 +329,11 @@ function StoneGraph(el, core, stones) {
  		triangleLeft.append("polygon")
 	 	 		.style("stroke", "black")
 	 	 		.style("fill", "none")
-	 	 		.attr("points", function(d) {  
-	 	 	 		return "0,0, -50,50, 0,100"; 
+	 	 		.attr("points", function(d) {
+	 	 	 		return "0,0, -50,50, 0,100";
 	 	 		})
 	 	 	.style("pointer-events", "all")
-	 	 
+
 
         triangleLeft.append('image')
             .attr('xlink:href', "img/assets/Graph_Fundort.svg")
@@ -341,7 +341,7 @@ function StoneGraph(el, core, stones) {
             .attr('y', '35px')
             .attr('width', '30px')
             .attr('height', '30px')
-            .attr('class', 'graph-icon' )	
+            .attr('class', 'graph-icon' )
 
 	 	// 	//triangle down
         var triangleDown = nodeEnter.append('g')
@@ -352,8 +352,8 @@ function StoneGraph(el, core, stones) {
  		triangleDown.append("polygon")
 	 	 		.style("stroke", "black")
 	 	 		.style("fill", "none")
-	 	 		.attr("points", function(d) {  
-	 	 	 		return "0,100, 50,150, 100,100"; 
+	 	 		.attr("points", function(d) {
+	 	 	 		return "0,100, 50,150, 100,100";
 	 	 		})
 	 	 	.style("pointer-events", "all");
 
@@ -374,8 +374,8 @@ function StoneGraph(el, core, stones) {
  		triangleRight.append("polygon")
 	 	 		.style("stroke", "black")
 	 	 		.style("fill", "none")
-	 	 		.attr("points", function(d) {  
-	 	 	 		return "100,0, 150,50, 100,100"; 
+	 	 		.attr("points", function(d) {
+	 	 	 		return "100,0, 150,50, 100,100";
 	 	 		})
 	 	 	.style("pointer-events", "all");
 
@@ -394,7 +394,7 @@ function StoneGraph(el, core, stones) {
                 .attr("y1", function(d) { return d.source.y; })
                 .attr("x2", function(d) { return d.target.x; })
                 .attr("y2", function(d) { return d.target.y; })
-                .attr('transform', function(d) { 
+                .attr('transform', function(d) {
                     var x = 0;
                     var y = 0;
                     switch(d.type) {
@@ -413,7 +413,7 @@ function StoneGraph(el, core, stones) {
                             y+=50;
                             break;
                     }
-                    return 'translate(' + x + ',' + y + ')'; 
+                    return 'translate(' + x + ',' + y + ')';
                 });
 
             node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
@@ -428,7 +428,8 @@ function StoneGraph(el, core, stones) {
 }
 
 
-myApp.directive('stonegraph', function() {
+//myApp.directive('stonegraph', function() {
+var stoneGraph = function() {
 	return {
 		restrict: 'E',
 		scope : {
@@ -446,4 +447,6 @@ myApp.directive('stonegraph', function() {
 			}
 		}
 	};
-});
+}
+
+module.exports = stoneGraph;

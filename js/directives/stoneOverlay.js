@@ -1,4 +1,5 @@
-myApp.directive('stoneoverlay', function() {
+// myApp.directive('stoneoverlay', function() {
+var stoneOverlay = function() {
 	return {
 		restrict: 'E',
 		scope : {
@@ -8,4 +9,6 @@ myApp.directive('stoneoverlay', function() {
 		replace: true,
 		templateUrl: 'js/directives/stoneOverlay.html'
 	};
-});
+}
+
+module.exports = stoneOverlay;

@@ -1,4 +1,5 @@
-myApp.directive('stoneselector', function() {
+//myApp.directive('stoneselector', function() {
+var stoneSelector = function() {
     return {
         restrict: 'E',
         scope : {
@@ -14,4 +15,6 @@ myApp.directive('stoneselector', function() {
             };
         }
     };
-});
+}
+
+module.exports = stoneSelector;

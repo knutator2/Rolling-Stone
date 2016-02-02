@@ -1,4 +1,5 @@
-myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(StonesService, EpocheService) {
+//myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(StonesService, EpocheService) {
+var stoneTimeline = function( StoneParsingService, StoneEpocheService ) {
     return {
         restrict: 'E',
         scope : {
@@ -17,11 +18,11 @@ myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(Sto
 
             var all_stones = [];
 
-            StonesService.getPins().then(function (response) {
+            StoneParsingService.getPins().then(function (response) {
                 all_stones = response;
             });
 
-            EpocheService.get().then(function (data) {
+            StoneEpocheService.get().then(function (data) {
                 scope.epoches = _.filter(data, {multi : false});
                 scope.epoches.reverse();
                 var tickLabels = [];
@@ -69,7 +70,7 @@ myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(Sto
                 var rightEpoche = scope.epoches[rightIndex];
                 if (scope.stones.length > 0) {
                     var stones_copy = JSON.parse(JSON.stringify(all_stones))
-                    var filtered_stones = _.map(stones_copy, function (elem) { 
+                    var filtered_stones = _.map(stones_copy, function (elem) {
                         elem.stones = _.filter(elem.stones, function (stone) {
                             //var date = parseInt(stone.date_in_mya.split("-")[0]);
                             //return date <= leftEpoche.start && date >= rightEpoche.end;
@@ -88,7 +89,7 @@ myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(Sto
                     console.log("want to update markers")
                     scope.stones = filtered_stones;
                 }
-                
+
                 //if (slideEvt.value[0] < 1)
                 //    scope.stones = all_stones;
                 // else {
@@ -97,9 +98,9 @@ myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(Sto
             });
             });
 
-            
-            
-            
+
+
+
 
             scope.init = function() {
                 console.log(scope.stones)
@@ -108,4 +109,6 @@ myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(Sto
             };
         }
     };
-}]);
+}
+
+module.exports = stoneTimeline;
