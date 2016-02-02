@@ -15,7 +15,7 @@
     "dev": "npm run sass-vendor-copy && npm run dev:js-watch & npm run dev:sass-watch & npm run dev:local-server",
     "dev:js-watch": "watchify js/app.js -o js/bundle.js -v",
     "dev:sass-watch": "sass --compass --watch styles/main.scss:styles/main.css",
-    "dev:local-server": "http-server .",
+    "dev:local-server": "http-server -s .",
     "sass-vendor-copy":
         "mkdir -p styles/vendor/leaflet && cp node_modules/leaflet/dist/leaflet.css styles/vendor/leaflet/leaflet.scss && cp node_modules/leaflet.fullscreen/Control.FullScreen.css styles/vendor/leaflet/Control.FullScreen.scss"
   },
