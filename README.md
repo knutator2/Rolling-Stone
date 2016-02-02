@@ -10,5 +10,5 @@ Als weiteres Feature sollen die Nutzer Steine mit ähnlichen Eigenschaften entde
 Geologische Sammlung Stadtmuseum Berlin (mit fast 300 Einträgen), Fotos unter https://commons.wikimedia.org/wiki/Category:Geologische_Sammlung_%28Stadtmuseum_Berlin%29
 
 # Lizenzen
-Icons: CC by Anika Schultz
+Icons: CC by Anika Schultz; 
 Fotos: CC by-SA Michael Setzpfandt - Stadtmuseum Berlin
