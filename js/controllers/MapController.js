@@ -1,8 +1,12 @@
- myApp.controller("MapController", ['$scope', '$http', '$timeout', 'StonesService', 'leafletData',
-        function($scope, $http, $timeout, StonesService, leafletData) {
+// myApp.controller("MapController", ['$scope', '$http', '$timeout', 'StonesService', 'leafletData',
+
+require( 'angular' );
+var $ = require( 'jquery' );
+require( 'leaflet-easybutton' );
+var MapController = function( $scope, $http, $timeout, StoneParsingService, leafletData ) {
 
     angular.extend($scope, {
-        center: 
+        center:
         {
             lat: 52.886525,
             lng: 14.139851,
@@ -34,7 +38,7 @@
         }
     });
 
-    var pins = StonesService.getPins();
+    var pins = StoneParsingService.getPins();
   console.log(pins);
   pins.then(function(response) {
         //add pins to map
@@ -61,10 +65,10 @@
       //    "Distanz: " + getDistanceString(coordinates, origin_coordinates));
       // originMarker.on('popupopen', onMarkerShowPopup);
       // originMarker.on('popupclose', onMarkerClosePopup);
-  
+
       //$scope.storedMarkers.push({'origin' : originMarker, 'found' : marker});
       //$scope.markerlayers.addLayer(originMarker);
-      //$scope.markerlayers.addLayer(marker);  
+      //$scope.markerlayers.addLayer(marker);
     });
   });
 
@@ -118,20 +122,22 @@
 
   leafletData.getMap().then(function(map) {
     if ($scope.buttonsAdded === false) {
-      L.easyButton('fa fa-search-plus', 
+      L.easyButton('fa fa-search-plus',
               function () {alert('hello!');},
              '',
              map
             );
       $scope.buttonsAdded = true;
-      console.log('added button');  
+      console.log('added button');
     }
-    
+
   });
-}]);    
-    
+}
+
+module.exports = MapController;
+
         // $http.get('js/metadata.json').then(function(data) {
-  //        L.tileLayer('https://{s}.tiles.mapbox.com/v4/knutator.l8m1lim1/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoia251dGF0b3IiLCJhIjoiRlEzWmFjUSJ9.JLn3oQ3FbbCsjtuxQCpFjQ').addTo(map); 
+  //        L.tileLayer('https://{s}.tiles.mapbox.com/v4/knutator.l8m1lim1/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoia251dGF0b3IiLCJhIjoiRlEzWmFjUSJ9.JLn3oQ3FbbCsjtuxQCpFjQ').addTo(map);
   //        angular.forEach(data, function(index, el) {
   //            if (el.coordinate && el.origin_coordinate) {
   //                var coordinates = parseCoordinateString(el.coordinate);
@@ -147,20 +153,20 @@
   //                    "Distanz: " + getDistanceString(coordinates, origin_coordinates));
   //                originMarker.on('popupopen', onMarkerShowPopup);
   //                originMarker.on('popupclose', onMarkerClosePopup);
-            
+
   //                $scope.storedMarkers.push({'origin' : originMarker, 'found' : marker});
   //                $scope.markerlayers.addLayer(originMarker);
   //                $scope.markerlayers.addLayer(marker);
   //            }
-  //        }); 
+  //        });
   //        $scope.map.fitBounds(markerlayers.getBounds());
         // });
   //   };
 
 //     function parseCoordinateString(raw_coordinates) {
 //         var coordinates = raw_coordinates.split(',');
-                
-//         // $.each(coordinates, function(index, el) { 
+
+//         // $.each(coordinates, function(index, el) {
 //         //     coordinates[index] = parseFloat(el);
 //         // });
 //         return L.latLng(coordinates[0], coordinates[1]);
@@ -194,7 +200,7 @@
 //     }
 
 //     function onMarkerShowPopup(event) {
-        
+
 //         angular.forEach(storedMarkers, function(markerPairIndex, markerPair) {
 //              angular.forEach(markerPair, function(markerIndex, marker) {
 //                   var currentLatLng = marker.getLatLng();

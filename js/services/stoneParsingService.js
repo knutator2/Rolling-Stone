@@ -1,4 +1,8 @@
-var service = angular.module('stoneparsingservice', ['ngResource']);
+// var service = angular.module('stoneparsingservice', ['ngResource']);
+
+require( 'angular' );
+require( 'leaflet' );
+var _ = require( 'underscore' );
 
 // Split given coordinate and parse it into leaflet specific format
 function parseCoordinateString(raw_coordinates) {
@@ -13,11 +17,12 @@ var destinationIcon = L.icon({
 
 
 
-service.factory('StonesService', ['$resource', '$http', function($resource, $http) {
+// service.factory('StonesService', ['$resource', '$http', function($resource, $http) {
+var StoneParsingService = function($resource, $http) {
 	var promiseGet;
     var promiseGetPins;
     var promiseGetById;
-	var stoneParsingService = {
+	return {
 		get: function() {
 			promiseGet = $http.get('js/metadata.json').then(function (response) {
 				var items = [];
@@ -34,7 +39,7 @@ service.factory('StonesService', ['$resource', '$http', function($resource, $htt
 	            		items.push(pin);
 	            		items.push(pin_orig);
 	        		}
-    			}); 
+    			});
 				return items;
 			});
 			return promiseGet;
@@ -129,8 +134,9 @@ service.factory('StonesService', ['$resource', '$http', function($resource, $htt
         return promiseGetById;
         }
 	};
-	return stoneParsingService;
-}]);
+}
+
+module.exports = StoneParsingService;
   // return $resource('js/metadata.json',{}, {
   //    query: {method:'GET', isArray:true}
   //  });
