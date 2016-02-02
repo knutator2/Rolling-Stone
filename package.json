@@ -13,7 +13,7 @@
     "build:copy":
         "cp index.html build/index.html && cp -r img build/img && mkdir build/js/ && cp js/bundle.js build/js/bundle.js && mkdir build/js/views && cp js/views/*.html build/js/views && mkdir build/js/directives && cp js/directives/*.html build/js/directives && mkdir build/styles && cp styles/main.css build/styles/main.css",
     "dev": "npm run sass-vendor-copy && npm run dev:js-watch & npm run dev:sass-watch & npm run dev:local-server",
-    "dev:js-watch": "watchify js/app.js -o js/bundle.js",
+    "dev:js-watch": "watchify js/app.js -o js/bundle.js -v",
     "dev:sass-watch": "sass --compass --watch styles/main.scss:styles/main.css",
     "dev:local-server": "http-server .",
     "sass-vendor-copy":
