@@ -1,3 +1,8 @@
+
+var d3 = require( 'd3' );
+var $ = require( 'jquery' );
+var _ = require( 'underscore' );
+
 StoneConnection = {
     ORIGIN : 1,
     DESTINATION : 2,
