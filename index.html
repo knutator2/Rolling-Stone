@@ -1,59 +1,16 @@
 <!DOCTYPE html>
-
 <html ng-app="Rapakiwi">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title> -->
-    <!--   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    -->
-
-
-
-    <!-- <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"> -->
-    <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" /> -->
-
-    <!-- Library Styles -->
-    <!-- <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
-    <link rel="stylesheet" href="node_modules/leaflet.fullscreen/Control.FullScreen.css"> -->
-
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/main.css">
-
-
-    <!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
-
-    <!-- Libraries -->
-    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/d3/d3.min.js"></script>
-    <script src="node_modules/underscore/underscore-min.js"></script>
-    <script src="node_modules/modernizr/modernizr.js"></script> -->
-
-    <!-- Leaflet -->
-    <!-- <script src="node_modules/leaflet/dist/leaflet.js"></script>
-    <script src="node_modules/leaflet.fullscreen/Control.FullScreen.js"></script>
-    <script src="node_modules/leaflet-easybutton/src/easy-button.js"></script> -->
-
-    <!-- Angular Components -->
-    <!-- <script src="node_modules/angular/angular.min.js"></script>
-    <script src="node_modules/angular-resource/angular-resource.min.js"></script>
-    <script src="node_modules/angular-route/angular-route.min.js"></script>
-    <script src="node_modules/angular-animate/angular-animate.min.js"></script> -->
-
 </head>
-
 <body>
-
     <header class="site-header">
-
         <div class="wrapper">
-
             <div class="logo"></div>
-
-        <!-- <a class="site-title" href="{{ site.baseurl }}/"><span class="icon icon-type-logo"></span>{{ site.title }}</a> -->
-
             <nav class="site-nav">
                 <a href="#" class="menu-icon">
                     <svg viewBox="0 0 18 15">
@@ -62,48 +19,16 @@
                         <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
                     </svg>
                 </a>
-
                 <div class="trigger">
-                <!--      {% for page in site.pages %}
-                  {% if page.title %}
-                  <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                  {% endif %}
-                  {% endfor %} -->
                 </div>
             </nav>
-
         </div>
-
     </header>
 
     <div ng-app="Rapakiwi">
-        <div class="page" ng-view>
-
-        </div>
-
-
+        <div class="page" ng-view/>
     </div>
 
-    <!-- Modules -->
-    <!-- <script src="js/app.js"></script> -->
     <script src="js/bundle.js"></script>
-    <!-- <script src="node_modules/angular-simple-logger/dist/angular-simple-logger.js"></script> -->
-
-    <!-- Services -->
-    <!-- <script src="js/services/stoneParsingService.js"></script>
-    <script src="js/services/epocheService.js"></script> -->
-
-    <!-- Directives -->
-    <!-- <script src="node_modules/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
-    <script src="js/directives/stoneOverlay.js"></script>
-    <script src="js/directives/stoneGraph.js"></script>
-    <script src="js/directives/stoneSelector.js"></script>
-    <script src="js/directives/stoneTimeline.js"></script> -->
-
-    <!-- Controllers -->
-    <!-- <script src="js/controllers/MapController.js"></script>
-    <script src="js/controllers/GraphController.js"></script>
-    <script src="js/controllers/DetailController.js"></script> -->
 </body>
-
 </html>
