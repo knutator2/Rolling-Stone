@@ -3,15 +3,14 @@
 		<stoneoverlay stone="currentStone" overlay-is-active="stoneOverlayIsActive"></stoneoverlay>
 		<stoneselector stones="stoneGroup" selected-stone="currentStone" selector-is-active="stoneSelectorIsActive"></stoneselector>
 		<div class="map" ng-click="dismissSelection()">
-			<leaflet 
+			<leaflet
 			markers="pins"
-			tiles="mapboxtiles" 
+			tiles="mapboxtiles"
 			center="center"
-			defaults="defaults" 
-			width="100%" 
+			defaults="defaults"
+			width="100%"
 			height="100%"
 			event-broadcast="events"></leaflet>
 		</div>
 	</div>
-
 </div>

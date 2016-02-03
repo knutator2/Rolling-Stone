@@ -15,9 +15,6 @@ var destinationIcon = L.icon({
         iconSize: [38, 95], // size of the icon
         });
 
-
-
-// service.factory('StonesService', ['$resource', '$http', function($resource, $http) {
 var StoneParsingService = function($resource, $http) {
 	var promiseGet;
     var promiseGetPins;
@@ -137,7 +134,3 @@ var StoneParsingService = function($resource, $http) {
 }
 
 module.exports = StoneParsingService;
-  // return $resource('js/metadata.json',{}, {
-  //    query: {method:'GET', isArray:true}
-  //  });
-//  }]);
