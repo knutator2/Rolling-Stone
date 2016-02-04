@@ -1,0 +1,43 @@
+/* Main Page Styles */
+
+$pagePartLeftWidth: 320px;
+
+.page {
+    bottom: 0;
+    padding-top: 62px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+.page__wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.page__wrapper--off-canvas {
+
+    .page__part--off-canvas-main {
+        @include transition( transform 0.3s linear);
+    }
+
+    .page__part--off-canvas-left {
+        height: 100%;
+        position: absolute;
+        right: 100%;
+        z-index: $z-index-1;
+        @include transition( transform 0.3s )
+    }
+
+    &-active-left {
+        .page__part--off-canvas-main {
+            @include translate3d( $pagePartLeftWidth/2, 0, 0 );
+            // transform: translate3d( 200px, 0, 0);
+        }
+
+        .page__part--off-canvas-left {
+            @include translate3d( $pagePartLeftWidth, 0, 0 );
+        }
+    }
+}

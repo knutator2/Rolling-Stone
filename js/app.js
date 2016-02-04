@@ -17,7 +17,7 @@ app.config( function($routeProvider) {
     $routeProvider
         .when('/', {
             templateUrl: 'js/views/map.html',
-            controller: 'MapController'
+            controller: 'MapPageController'
         })
         .when('/map', {
             templateUrl: 'js/views/map.html',

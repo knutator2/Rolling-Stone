@@ -2,10 +2,17 @@
 @import "../styles/vendor/leaflet/leaflet.scss";
 @import "../styles/vendor/leaflet/Control.FullScreen.scss";
 
+// Compass Modules
+@import "compass/css3/transform";
+@import "compass/css3/transition";
+
 // page styles
 @import "../styles/variables";
 @import "../styles/base";
 @import "../styles/layout";
+@import "../styles/page";
+@import "../styles/header";
+@import "../styles/map";
 @import "../styles/syntax-highlighting";
 @import "../styles/layout-custom";
 @import "../styles/detail-overlay";
@@ -13,4 +20,3 @@
 @import "../styles/timeline";
 @import "../styles/link";
 @import "../styles/icon";
-@import "../styles/header";
