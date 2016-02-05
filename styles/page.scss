@@ -19,7 +19,7 @@ $pagePartLeftWidth: 320px;
 .page__wrapper--off-canvas {
 
     .page__part--off-canvas-main {
-        @include transition( transform 0.3s linear);
+        @include transition( transform 0.3s ease-out );
     }
 
     .page__part--off-canvas-left {
@@ -27,7 +27,7 @@ $pagePartLeftWidth: 320px;
         position: absolute;
         right: 100%;
         z-index: $z-index-1;
-        @include transition( transform 0.3s )
+        @include transition( transform 0.3s ease-in )
     }
 
     &-active-left {

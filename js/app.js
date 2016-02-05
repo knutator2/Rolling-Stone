@@ -21,7 +21,11 @@ app.config( function($routeProvider) {
         })
         .when('/map', {
             templateUrl: 'js/views/map.html',
-            controller: 'MapController'
+            controller: 'MapPageController'
+        })
+        .when('/gallery', {
+            templateUrl: 'js/views/gallery.html',
+            controller: 'GalleryPageController'
         })
         .when('/graph', {
             templateUrl: 'js/views/graph.html',
