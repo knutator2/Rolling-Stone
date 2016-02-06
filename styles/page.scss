@@ -17,6 +17,7 @@
 
 .page__wrapper--off-canvas {
 
+    // Normal mode
     .page__part--off-canvas-main {
         @include transition( transform 0.3s ease-out );
     }
@@ -27,6 +28,7 @@
         right: 100%;
         width: 90%;
         z-index: $z-index-5;
+
         @include transition( transform 0.3s ease-in );
 
         @include screenBreakpointMedium {
@@ -36,8 +38,44 @@
         @include screenBreakpointLarge {
             width: 320px;
         }
+
+        // Adjustments if page has off-canvas-left-additional element
+        &.page__part--off-canvas-left-additional-adjustments {
+            width: 60%;
+
+            @include screenBreakpointMedium {
+                width: 50%;
+            }
+
+            @include screenBreakpointLarge {
+                width: 320px;
+            }
+        }
     }
 
+    .page__part--off-canvas-left-additional {
+        height: 100%;
+        position: absolute;
+        right: 100%;
+        width: 30%;
+        z-index: $z-index-4;
+
+        @include transition( transform 0.3s ease-in );
+
+        @include screenBreakpointMedium {
+            width: 25%;
+        }
+
+        @include screenBreakpointLarge {
+            width: 160px;
+        }
+
+        & ~ *:first-child {
+            width: 28%;
+        }
+    }
+
+    // left off canvas element active
     &-active-left {
         .page__part--off-canvas-main {
             @include screenBreakpointMedium {
@@ -50,6 +88,14 @@
 
             @include screenBreakpointLarge {
                 @include translate3d( $pagePartLeftWidthLarge, 0, 0 );
+            }
+        }
+
+        .page__part--off-canvas-left-additional {
+            @include translate3d( 300%, 0, 0 );
+
+            @include screenBreakpointLarge {
+                @include translate3d( $pagePartLeftWidthLarge * 1.5, 0, 0 );
             }
         }
     }

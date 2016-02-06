@@ -1,5 +1,4 @@
-//myApp.directive('stoneselector', function() {
-var stoneSelector = function() {
+var detailSelector = function() {
     return {
         restrict: 'E',
         scope : {
@@ -8,7 +7,7 @@ var stoneSelector = function() {
             selectorIsActive: '='
         },
         replace: true,
-        templateUrl: 'js/directives/stoneSelector.html',
+        templateUrl: 'js/directives/detailSelector.html',
         link: function (scope, element, attrs) {
             scope.updateCurrentStone = function(value) {
                 scope.selectedStone = value;
@@ -17,4 +16,4 @@ var stoneSelector = function() {
     };
 }
 
-module.exports = stoneSelector;
+module.exports = detailSelector;
