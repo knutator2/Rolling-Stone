@@ -36,9 +36,9 @@
 
 .detail-overlay__info-wrapper {
     margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include display-flex;
+    @include flex-direction(row);
+    @include align-items(center);
 }
 
 .detail-overlay__info-text {
