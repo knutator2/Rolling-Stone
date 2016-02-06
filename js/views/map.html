@@ -1,4 +1,5 @@
-<div class="page__wrapper page__wrapper--off-canvas">
+<div class="page__wrapper page__wrapper--off-canvas"
+	ng-class="{ 'page__wrapper--off-canvas-active-left' : overlayLeftActive }">
 	<detailoverlay class="page__part--off-canvas-left" stone="currentStone" overlay-is-active="stoneOverlayIsActive"></detailoverlay>
 	<!-- <stoneselector stones="stoneGroup" selected-stone="currentStone" selector-is-active="stoneSelectorIsActive"></stoneselector> -->
 	<div class="page__part--off-canvas-main map" ng-click="dismissSelection()">

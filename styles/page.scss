@@ -1,9 +1,9 @@
 /* Main Page Styles */
 
-$pagePartLeftWidth: 320px;
-
 .page {
     bottom: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     padding-top: 62px;
     position: absolute;
     text-align: center;
@@ -26,18 +26,32 @@ $pagePartLeftWidth: 320px;
         height: 100%;
         position: absolute;
         right: 100%;
+        width: 90%;
         z-index: $z-index-1;
-        @include transition( transform 0.3s ease-in )
+        @include transition( transform 0.3s ease-in );
+
+        @include screenBreakpointMedium {
+            width: 50%;
+        }
+
+        @include screenBreakpointLarge {
+            width: 320px;
+        }
     }
 
     &-active-left {
         .page__part--off-canvas-main {
-            @include translate3d( $pagePartLeftWidth/2, 0, 0 );
-            // transform: translate3d( 200px, 0, 0);
+            @include screenBreakpointMedium {
+                @include translate( $pagePartLeftWidthLarge/2, 0, 0 );
+            }
         }
 
         .page__part--off-canvas-left {
-            @include translate3d( $pagePartLeftWidth, 0, 0 );
+            @include translate( 100%, 0, 0 );
+
+            @include screenBreakpointLarge {
+                @include translate( $pagePartLeftWidthLarge, 0, 0 );
+            }
         }
     }
 }
