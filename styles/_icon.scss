@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
 }
 
-.icon-button:before {
+.icon--button:before {
     content: "";
     position: absolute;
     width: 25px;
@@ -15,40 +15,40 @@
     left: -30px;
 }
 
-.icon-button-type-graph:before {
+.icon-type--button-graph:before {
     background-image: url('../img/assets/Graph_ini.svg');
 }
 
-.icon-button-type-more:before {
+.icon-type--button-more:before {
     background-image: url('../img/assets/Zoom_in_ini.svg');
 }
 
-.icon-type-logo {
+.icon-type--logo {
     background-image: url('../img/assets/Logo_Mittel.png');
 }
 
-.icon-type-zoom-out {
+.icon-type--zoom-out {
     background-image: url('../img/assets/Zoom_out_ini.svg');
 }
 
-.icon-type-close {
+.icon-type--close {
     background-image: url('../img/assets/Close_ini.svg');
 }
 
-.icon-type-herkunft {
+.icon-type--origin {
     background-image: url('../img/assets/Steckbrief_Herkunft.svg');
 }
 
-.icon-type-fundort {
+.icon-type--source {
     background-image: url('../img/assets/Steckbrief_Fundort.svg');
     height: 30px;
 }
 
-.icon-type-erdzeitalter {
+.icon-type--geologic-era {
     background-image: url('../img/assets/Steckbrief_Erdzeitalter.svg');
 }
 
-.icon-type-gesteinsart {
+.icon-type--rock-type {
     background-image: url('../img/assets/Steckbrief_Gesteinsart.svg');
     height: 20px;
 }

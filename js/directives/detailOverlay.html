@@ -1,36 +1,36 @@
 <div class="detail-overlay">
-    <div class="detail-overlay__wrapper detail-overlay-content">
-        <div class="detail-overlay-image-wrapper">
-            <img class="detail-overlay-image" ng-attr-src="img/medium/{{ stone.img }}"></p>
-        </div>
-        <h2 class="detail-overlay-headline">{{ stone.title }}</h2>
-
-        <div class="detail-overlay-chunk">
-            <span class="icon icon-type-gesteinsart" />
-            <p>{{ stone.material }}</p>
+    <div class="detail-overlay__wrapper">
+        <div class="detail-overlay__image-wrapper">
+            <img class="detail-overlay__image" ng-attr-src="img/medium/{{ stone.img }}"/>
         </div>
 
-        <div class="detail-overlay-chunk">
-            <span class="icon icon-type-erdzeitalter" />
-            <p>{{ stone.geological_era }}</p>
+        <h2 class="detail-overlay__headline">{{ stone.title }}</h2>
+
+        <div class="detail-overlay__info-wrapper">
+            <span class="icon icon-type--rock-type" />
+            <p class="detail-overlay__info-text">{{ stone.material }}</p>
         </div>
 
-        <div class="detail-overlay-chunk">
-            <span class="icon icon-type-herkunft" />
-            <p>{{ stone.origin }}</p>
+        <div class="detail-overlay__info-wrapper">
+            <span class="icon icon-type--geologic-era" />
+            <p class="detail-overlay__info-text">{{ stone.geological_era }}</p>
         </div>
 
-        <div class="detail-overlay-chunk">
-            <span class="icon icon-type-fundort" />
-            <p>{{ stone.location }}</p>
+        <div class="detail-overlay__info-wrapper">
+            <span class="icon icon-type--origin" />
+            <p class="detail-overlay__info-text">{{ stone.origin }}</p>
         </div>
 
+        <div class="detail-overlay__info-wrapper">
+            <span class="icon icon-type--source" />
+            <p class="detail-overlay__info-text">{{ stone.location }}</p>
+        </div>
+        <!-- TODO: Refactor buttons to match the new structure! -->
         <a href="#/graph?stone={{stone.museum_id}}" class="link-large link-primary">
-            <span class="link-text icon-button icon-button-type-graph">Graph</span>
+            <span class="link-text icon--button icon-button-type-graph">Graph</span>
         </a>
         <a href="#/detail?stoneId={{stone.museum_id}}" class="link-large link-secondary">
-            <span class="link-text icon-button icon-button-type-more">mehr</span>
+            <span class="link-text icon--button icon-button-type-more">mehr</span>
         </a>
     </div>
-
 </div>

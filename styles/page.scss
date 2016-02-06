@@ -6,7 +6,6 @@
     overflow: hidden;
     padding-top: 62px;
     position: absolute;
-    text-align: center;
     top: 0;
     width: 100%;
 }
@@ -42,7 +41,7 @@
     &-active-left {
         .page__part--off-canvas-main {
             @include screenBreakpointMedium {
-                @include translate( $pagePartLeftWidthLarge/2, 0, 0 );
+                @include translate3d( $pagePartLeftWidthLarge/2, 0, 0 );
             }
         }
 
@@ -50,7 +49,7 @@
             @include translate( 100%, 0, 0 );
 
             @include screenBreakpointLarge {
-                @include translate( $pagePartLeftWidthLarge, 0, 0 );
+                @include translate3d( $pagePartLeftWidthLarge, 0, 0 );
             }
         }
     }
