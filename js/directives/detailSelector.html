@@ -2,10 +2,10 @@
     <div class="detail-selector-content">
         <ul class="detail-selector-list">
 
-            <li class="detail-selector-list-item" ng-repeat="stone in stones">
-                <img class="detail-selector-list-item-image" src="img/medium/{{stone.img}}" alt="">
-                <div class="detail-selector-list-item-flyout" ng-click="updateCurrentStone(stone)">
-                    <span class="detail-selector-list-item-text">{{stone.title}}</span>
+            <li class="detail-selector-list-item" ng-repeat="item in items">
+                <img class="detail-selector-list-item-image" src="img/medium/{{item.img}}" alt="">
+                <div class="detail-selector-list-item-flyout" ng-click="updateCurrentItem(item)">
+                    <span class="detail-selector-list-item-text">{{item.title}}</span>
                 </div>
             </li>
 

@@ -8,6 +8,8 @@ var MapController = function( $scope, $http, $timeout, StoneParsingService, leaf
     // Properties
     $scope.overlayLeftIsActive = false;
     $scope.selectorIsActive = false;
+    $scope.selectorItems = {};
+    $scope.currentItem = {};
 
     // Elements
     $scope.UiHeader = $( 'header' );
@@ -93,10 +95,10 @@ var MapController = function( $scope, $http, $timeout, StoneParsingService, leaf
     // $timeout(function() { $scope.updateMarkers(); }, 3000);
 
     $scope.name = "Map";
-  $scope.currentStone = {};
-  $scope.stoneGroup = {};
-  $scope.stoneOverlayIsActive = false;
-  $scope.stoneSelectorIsActive = false;
+  //$scope.currentStone = {};
+  // $scope.stoneGroup = {};
+  //$scope.stoneOverlayIsActive = false;
+  //$scope.stoneSelectorIsActive = false;
   $scope.storedMarkers = [];
     $scope.focusedMarkerPair = {};
     $scope.focusedLine = {};
@@ -109,16 +111,16 @@ var MapController = function( $scope, $http, $timeout, StoneParsingService, leaf
         $scope.overlayLeftIsActive = true;
         $scope.selectorIsActive = true;
 
-        $scope.currentStone = args.leafletObject.options.stones[0];
-        $scope.stoneOverlayIsActive = true;
+        $scope.currentItem = args.leafletObject.options.stones[0];
+        //$scope.stoneOverlayIsActive = true;
         $scope.UiHeader.addClass('compressed');
 
         if (args.leafletObject.options.stones.length > 1) {
-          $scope.stoneGroup = args.leafletObject.options.stones;
-          $scope.stoneSelectorIsActive = true;
+          $scope.selectorItems = args.leafletObject.options.stones;
+          $scope.selectorIsActive = true;
 
         } else {
-          $scope.stoneSelectorIsActive = false;
+          $scope.selectorIsActive = false;
         }
   });
 

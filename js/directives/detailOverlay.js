@@ -2,7 +2,7 @@ var DetailOverlay = function() {
 	return {
 		restrict: 'E',
 		scope : {
-			stone: '='
+			item: '='
 		},
 		replace: true,
 		templateUrl: 'js/directives/detailOverlay.html'

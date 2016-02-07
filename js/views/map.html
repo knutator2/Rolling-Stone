@@ -3,10 +3,17 @@
 		'page__wrapper--off-canvas-active-left' : overlayLeftIsActive,
 		'page__wrapper--off-canvas-active-left-additional': selectorIsActive
 	}">
-	<detailoverlay class="page__part--off-canvas-left" stone="currentStone" overlay-is-active="stoneOverlayIsActive"></detailoverlay>
-	<detailselector class="page__part--off-canvas-left-additional"></detailselector>
+	<detailoverlay
+		class="page__part--off-canvas-left"
+		item="currentItem">
+	</detailoverlay>
 
-	<!-- <stoneselector stones="stoneGroup" selected-stone="currentStone" selector-is-active="stoneSelectorIsActive"></stoneselector> -->
+	<detailselector
+		class="page__part--off-canvas-left-additional"
+		items="selectorItems"
+		selected-item="currentItem">
+	</detailselector>
+
 	<div class="page__part--off-canvas-main map" ng-click="dismissSelection()">
 		<leaflet
 		markers="pins"

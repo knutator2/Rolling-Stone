@@ -1,35 +1,35 @@
 <div class="detail-overlay">
     <div class="detail-overlay__wrapper">
         <div class="detail-overlay__image-wrapper">
-            <img class="detail-overlay__image" ng-attr-src="img/medium/{{ stone.img }}"/>
+            <img class="detail-overlay__image" ng-attr-src="img/medium/{{ item.img }}"/>
         </div>
 
-        <h2 class="detail-overlay__headline">{{ stone.title }}</h2>
+        <h2 class="detail-overlay__headline">{{ item.title }}</h2>
 
         <div class="detail-overlay__info-wrapper">
             <span class="icon icon-type--rock-type" />
-            <p class="detail-overlay__info-text">{{ stone.material }}</p>
+            <p class="detail-overlay__info-text">{{ item.material }}</p>
         </div>
 
         <div class="detail-overlay__info-wrapper">
             <span class="icon icon-type--geologic-era" />
-            <p class="detail-overlay__info-text">{{ stone.geological_era }}</p>
+            <p class="detail-overlay__info-text">{{ item.geological_era }}</p>
         </div>
 
         <div class="detail-overlay__info-wrapper">
             <span class="icon icon-type--origin" />
-            <p class="detail-overlay__info-text">{{ stone.origin }}</p>
+            <p class="detail-overlay__info-text">{{ item.origin }}</p>
         </div>
 
         <div class="detail-overlay__info-wrapper">
             <span class="icon icon-type--source" />
-            <p class="detail-overlay__info-text">{{ stone.location }}</p>
+            <p class="detail-overlay__info-text">{{ item.location }}</p>
         </div>
         <!-- TODO: Refactor buttons to match the new structure! -->
-        <a href="#/graph?stone={{stone.museum_id}}" class="link-large link-primary">
+        <a href="#/graph?stone={{item.museum_id}}" class="link-large link-primary">
             <span class="link-text icon--button icon-button-type-graph">Graph</span>
         </a>
-        <a href="#/detail?stoneId={{stone.museum_id}}" class="link-large link-secondary">
+        <a href="#/detail?stoneId={{item.museum_id}}" class="link-large link-secondary">
             <span class="link-text icon--button icon-button-type-more">mehr</span>
         </a>
     </div>
