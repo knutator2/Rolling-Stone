@@ -1,15 +1,12 @@
-<div class="detail-selector" ng-class="{active:selectorIsActive}">
-    <div class="detail-selector-content">
-        <ul class="detail-selector-list">
-
-            <li class="detail-selector-list-item" ng-repeat="item in items">
-                <img class="detail-selector-list-item-image" src="img/medium/{{item.img}}" alt="">
-                <div class="detail-selector-list-item-flyout" ng-click="updateCurrentItem(item)">
-                    <span class="detail-selector-list-item-text">{{item.title}}</span>
+<div class="detail-selector">
+    <div class="detail-selector__wrapper">
+        <ul class="detail-selector__list">
+            <li class="detail-selector__item" ng-repeat="item in items">
+                <img class="detail-selector__item-image" src="img/medium/{{item.img}}" alt="">
+                <div class="detail-selector__item-overlay" ng-click="updateCurrentItem(item)">
+                    <span class="detail-selector__item-text">{{item.title}}</span>
                 </div>
             </li>
-
         </ul>
-
     </div>
 </div>

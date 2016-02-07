@@ -3,8 +3,7 @@ var detailSelector = function() {
         restrict: 'E',
         scope : {
             items: '=',
-            selectedItem: '=',
-            selectorIsActive: '='
+            selectedItem: '='
         },
         replace: true,
         templateUrl: 'js/directives/detailSelector.html',

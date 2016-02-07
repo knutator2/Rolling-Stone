@@ -14,8 +14,6 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
@@ -25,6 +23,7 @@ body {
     line-height: $base-line-height;
     font-weight: 300;
     background-color: $background-color;
+    box-sizing: border-box;
     -webkit-text-size-adjust: 100%;
 }
 
