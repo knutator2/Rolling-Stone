@@ -1,5 +1,5 @@
 .detail-selector {
-    box-shadow: inset 0px 0px 1px 0px $color-grey-dark;
+    @include box-shadow(inset 0px 0px 1px 0px $color-grey-dark);
     background-color: $color-white;
     overflow-y: scroll;
 }

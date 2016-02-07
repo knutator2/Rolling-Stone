@@ -27,7 +27,7 @@
         position: absolute;
         right: 100%;
         width: 90%;
-        z-index: $z-index-5;
+        z-index: $z-index-6;
 
         @include transition( transform 0.3s ease-in, width 0.2s linear );
 
@@ -45,7 +45,7 @@
         position: absolute;
         right: 100%;
         width: 30%;
-        z-index: $z-index-4;
+        z-index: $z-index-5;
 
         @include transition( transform 0.3s ease-in );
 
