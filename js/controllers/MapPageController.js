@@ -6,14 +6,16 @@ require( 'leaflet-easybutton' );
 var MapController = function( $scope, $http, $timeout, StoneParsingService, leafletData ) {
 
     // Properties
-    $scope.overlayLeftActive = false;
+    $scope.overlayLeftIsActive = false;
+    $scope.selectorIsActive = false;
 
     // Elements
     $scope.UiHeader = $( 'header' );
 
     // Event Handlers
     $scope.dismissSelection = function( event ) {
-        $scope.overlayLeftActive = false;
+        $scope.overlayLeftIsActive = false;
+        $scope.selectorIsActive = false;
         $scope.UiHeader.removeClass( 'compressed' );
     };
 
@@ -104,7 +106,8 @@ var MapController = function( $scope, $http, $timeout, StoneParsingService, leaf
 
   $scope.$on('leafletDirectiveMarker.click', function(event, args){
 
-        $scope.overlayLeftActive = true;
+        $scope.overlayLeftIsActive = true;
+        $scope.selectorIsActive = true;
 
         $scope.currentStone = args.leafletObject.options.stones[0];
         $scope.stoneOverlayIsActive = true;

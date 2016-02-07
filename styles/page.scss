@@ -29,7 +29,7 @@
         width: 90%;
         z-index: $z-index-5;
 
-        @include transition( transform 0.3s ease-in );
+        @include transition( transform 0.3s ease-in, width 0.2s linear );
 
         @include screenBreakpointMedium {
             width: 50%;
@@ -37,19 +37,6 @@
 
         @include screenBreakpointLarge {
             width: 320px;
-        }
-
-        // Adjustments if page has off-canvas-left-additional element
-        &.page__part--off-canvas-left-additional-adjustments {
-            width: 60%;
-
-            @include screenBreakpointMedium {
-                width: 50%;
-            }
-
-            @include screenBreakpointLarge {
-                width: 320px;
-            }
         }
     }
 
@@ -88,6 +75,21 @@
 
             @include screenBreakpointLarge {
                 @include translate3d( $pagePartLeftWidthLarge, 0, 0 );
+            }
+        }
+    }
+
+    // Adjustments if page has off-canvas-left-additional element
+    &-active-left-additional {
+        .page__part--off-canvas-left {
+            width: 60%;
+
+            @include screenBreakpointMedium {
+                width: 50%;
+            }
+
+            @include screenBreakpointLarge {
+                width: 320px;
             }
         }
 
