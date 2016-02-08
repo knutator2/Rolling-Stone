@@ -71,7 +71,7 @@
         }
 
         .page__part--off-canvas-left {
-            @include translate( 100%, 0, 0 );
+            @include translate3d( 100%, 0, 0 );
 
             @include screenBreakpointLarge {
                 @include translate3d( $pagePartLeftWidthLarge, 0, 0 );
