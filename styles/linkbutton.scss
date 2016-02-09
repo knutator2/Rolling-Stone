@@ -1,0 +1,47 @@
+.linkbutton {
+    background-color: $color-main;
+    border-radius: 0.3em;
+    display: block;
+    height: 40px;
+    margin-top: 1em;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+
+    &:hover {
+        background-color: darken($color-main, 25%);
+    }
+
+    &:active {
+        background-color: $color-pressed;
+    }
+
+    &:active,
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:first-of-type {
+        margin-top: 30px;
+    }
+}
+
+.linkbutton--secondary {
+    background-color: $color-grey-light;
+
+    &:hover {
+        background-color: darken($color-grey-light, 25%);
+    }
+
+    &:active {
+        background-color: darken($color-grey-light, 35%);;
+    }
+}
+
+.linkbutton__text {
+    color: $color-grey-dark;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 40px;
+    position: relative;
+}

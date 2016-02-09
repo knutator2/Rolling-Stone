@@ -25,12 +25,20 @@
             <span class="icon icon-type--source" />
             <p class="detail-overlay__info-text">{{ item.location }}</p>
         </div>
-        <!-- TODO: Refactor buttons to match the new structure! -->
-        <a href="#/graph?stone={{item.museum_id}}" class="link-large link-primary">
-            <span class="link-text icon--button icon-button-type-graph">Graph</span>
-        </a>
-        <a href="#/detail?stoneId={{item.museum_id}}" class="link-large link-secondary">
-            <span class="link-text icon--button icon-button-type-more">mehr</span>
-        </a>
+
+        <linkbutton
+            data-target="#/graph?stone={{item.museum_id}}"
+            data-link-title="Link zum Graphen"
+            data-text="Graph"
+            data-icon-class="icon-type--button-graph">
+        </linkbutton>
+
+        <linkbutton
+            class="linkbutton--secondary"
+            data-target="#/detail?stoneId={{item.museum_id}}"
+            data-link-title="Link zur Detailseite"
+            data-text="mehr"
+            data-icon-class="icon-type--button-more">
+        </linkbutton>
     </div>
 </div>
