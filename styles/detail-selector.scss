@@ -20,6 +20,13 @@
     margin-bottom: 15px;
     position: relative;
 
+    // TODO: Define and add animations for entering and leaving
+    .ng-enter {
+    }
+
+    .ng-leave {
+    }
+
     &:hover {
         .detail-selector__item-overlay {
             @include display-flex;
