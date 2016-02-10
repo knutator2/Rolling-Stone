@@ -1,20 +1,21 @@
-//myApp.directive('stonetimeline', ['StonesService', 'EpocheService', function(StonesService, EpocheService) {
-var stoneTimeline = function( StoneParsingService, StoneEpocheService ) {
+var $ = require( 'jquery' );
+
+var timeline = function( StoneParsingService, StoneEpocheService ) {
     return {
         restrict: 'E',
         scope : {
             stones: '='
         },
         replace: true,
-        templateUrl: 'js/directives/stonetimeline.html',
+        templateUrl: 'js/directives/timeline.html',
         link: function (scope, element, attrs) {
 
             //activate jquery ui tooltip
-            $(function() {
-                $( document ).tooltip({
-                    track: true
-                });
-            });
+            // $(function() {
+            //     $( document ).tooltip({
+            //         track: true
+            //     });
+            // });
 
             var all_stones = [];
 
@@ -111,4 +112,4 @@ var stoneTimeline = function( StoneParsingService, StoneEpocheService ) {
     };
 }
 
-module.exports = stoneTimeline;
+module.exports = timeline;
