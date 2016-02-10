@@ -7,12 +7,14 @@ var MapController = function( $scope, $http, $timeout, StoneParsingService, leaf
 
     // Properties
     $scope.overlayLeftIsActive = false;
+    $scope.overlayBottomIsActive = true;
     $scope.selectorIsActive = false;
     $scope.selectorItems = {};
     $scope.currentItem = {};
 
     // Elements
     $scope.UiHeader = $( 'header' );
+    $scope.UiOverlayBottomHandler = $( '.page__part--off-canvas-bottom-handle' );
 
     // Event Handlers
     $scope.dismissSelection = function( event ) {
@@ -20,6 +22,10 @@ var MapController = function( $scope, $http, $timeout, StoneParsingService, leaf
         $scope.selectorIsActive = false;
         $scope.UiHeader.removeClass( 'compressed' );
     };
+
+    $scope.toggleOverlayBottom = function() {
+        $scope.overlayBottomIsActive = !$scope.overlayBottomIsActive;
+    }
 
     angular.extend($scope, {
         center:

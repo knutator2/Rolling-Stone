@@ -19,7 +19,23 @@
 
     // Normal mode
     .page__part--off-canvas-main {
-        @include transition( transform 0.3s ease-out );
+        @include transition( transform 0.3s ease-out, height 0.3s ease-out );
+        height: 100%;
+        width: 100%;
+    }
+
+    .page__part--off-canvas-bottom {
+        @include transition( height 0.3s ease-out );
+        height: 0%;
+        position: relative;
+        width: 100%;
+    }
+
+    .page__part--off-canvas-bottom-handle {
+        bottom: 100%;
+        height: 50px;
+        position: absolute;
+        width: 100px;
     }
 
     .page__part--off-canvas-left {
@@ -99,6 +115,17 @@
             @include screenBreakpointLarge {
                 @include translate3d( $pagePartLeftWidthLarge * 1.5, 0, 0 );
             }
+        }
+    }
+
+    // bottom off canvas element active
+    &-active-bottom {
+        .page__part--off-canvas-main {
+            height: 80%;
+        }
+
+        .page__part--off-canvas-bottom {
+            height: 20%;
         }
     }
 }

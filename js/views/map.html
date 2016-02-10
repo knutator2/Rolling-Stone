@@ -1,7 +1,8 @@
 <div class="page__wrapper page__wrapper--off-canvas"
 	ng-class="{
 		'page__wrapper--off-canvas-active-left' : overlayLeftIsActive,
-		'page__wrapper--off-canvas-active-left-additional': selectorIsActive
+		'page__wrapper--off-canvas-active-left-additional': selectorIsActive,
+		'page__wrapper--off-canvas-active-bottom': overlayBottomIsActive
 	}">
 	<detailoverlay
 		class="page__part--off-canvas-left"
@@ -24,4 +25,9 @@
 		height="100%"
 		event-broadcast="events"></leaflet>
 	</div>
+
+	<div class="page__part--off-canvas-bottom">
+		<button class="page__part--off-canvas-bottom-handle" ng-click="toggleOverlayBottom()"></button>
+	</div>
+
 </div>
