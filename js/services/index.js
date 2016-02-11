@@ -2,7 +2,7 @@
 
 require( 'angular-resource' );
 
-var StoneDataService = require( 'angular' ).module( 'StoneDataService', ['ngResource'] );
+var StoneService = require( 'angular' ).module( 'StoneService', ['ngResource'] );
 
-StoneDataService.factory( 'StoneParsingService', require('./stoneParsingService.js'));
-StoneDataService.factory( 'StoneEpocheService', require('./stoneEpocheService.js'));
+StoneService.factory( 'StoneDataService', require('./stoneDataService.js'));
+StoneService.factory( 'StoneEpocheService', require('./stoneEpocheService.js'));

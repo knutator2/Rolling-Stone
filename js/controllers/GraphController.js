@@ -1,7 +1,7 @@
 // myApp.controller("GraphController", ['$scope', '$routeParams' ,'StonesService',
-var GraphController = function( $scope, $routeParams, StoneParsingService ) {
+var GraphController = function( $scope, $routeParams, StoneDataService ) {
 
-		console.log( StoneParsingService );
+		console.log( StoneDataService );
 
 		$scope.name = 'test name';
 		$scope.currentStone = {};

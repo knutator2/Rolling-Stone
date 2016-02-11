@@ -5,11 +5,11 @@
 // }
 
 // var app.controller("DetailController", ['$scope', '$routeParams', 'StonesService',
-var DetailController = function( $scope, $routeParams, StoneParsingService ) {
+var DetailController = function( $scope, $routeParams, StoneDataService ) {
 
     $scope.name = "BLUBB";
     // $scope.currentStone = {};
-    var qwertz = StoneParsingService.getStoneById(parseInt($routeParams.stoneId,10));
+    var qwertz = StoneDataService.getStoneById(parseInt($routeParams.stoneId,10));
 
     console.log( qwertz );
     //

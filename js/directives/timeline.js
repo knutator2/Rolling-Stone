@@ -1,7 +1,7 @@
 var $ = require( 'jquery' );
 var _ = require( 'underscore' );
 
-var timeline = function( StoneParsingService, StoneEpocheService ) {
+var timeline = function( StoneDataService, StoneEpocheService ) {
     return {
         restrict: 'E',
         scope : {
@@ -20,7 +20,7 @@ var timeline = function( StoneParsingService, StoneEpocheService ) {
 
             var all_stones = [];
 
-            StoneParsingService.getPins().then(function (response) {
+            StoneDataService.getPins().then(function (response) {
                 all_stones = response;
             });
 
@@ -31,7 +31,7 @@ var timeline = function( StoneParsingService, StoneEpocheService ) {
                 var ticks = [];
                 count = 0;
                 angular.forEach(scope.epoches, function(data) {
-                    console.log(data);
+                    //console.log(data);
                     tickLabels.push('<img src="' + data.icon + '" title="' + data.text_short +'" class="timeline-picture"/>');
                     ticks.push(count);
                     count++;
@@ -44,7 +44,7 @@ var timeline = function( StoneParsingService, StoneEpocheService ) {
 
                 });
 
-                console.log(ticks);
+                //console.log(ticks);
 
 
                 // var slider = $('#ex1').slider({
@@ -105,7 +105,7 @@ var timeline = function( StoneParsingService, StoneEpocheService ) {
 
 
             scope.init = function() {
-                console.log(scope.stones)
+                //console.log(scope.stones)
                 scope.stones = [];
                 //scope.$apply();
             };

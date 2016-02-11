@@ -10,7 +10,7 @@ require( 'angular-animate' );
 require( 'angular-simple-logger' );
 require( 'angular-leaflet-directive' );
 
-var app = angular.module('Rapakiwi', ['StoneDataService', 'ngRoute', 'ngAnimate', 'leaflet-directive']);
+var app = angular.module('Rapakiwi', ['StoneService', 'ngRoute', 'ngAnimate', 'leaflet-directive']);
 
 // Routing
 app.config( function($routeProvider) {
