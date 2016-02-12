@@ -59,7 +59,6 @@ var StoneDataService = function( $resource, $http, $q ) {
 
     // Returns data for all stones, grouped by the origin location property
     var getAllStonesGroupedByOrigin = function( filter ) {
-
         var deferred = $q.defer();
         var promise = deferred.promise;
 
@@ -78,7 +77,20 @@ var StoneDataService = function( $resource, $http, $q ) {
 
     // Returns data for all stones, grouped by the destination location property
     var getAllStonesGroupedByDestination = function( filter ) {
-        // TODO: Implement!
+        var deferred = $q.defer();
+        var promise = deferred.promise;
+
+        getAllStones().then( function( result ) {
+            var groupedData;
+
+            groupedData = _.groupBy( result, function( item ) {
+                return item.origin_coordinate;
+            })
+
+            deferred.resolve( groupedData );
+        });
+
+        return promise;
     };
 
     // Public API

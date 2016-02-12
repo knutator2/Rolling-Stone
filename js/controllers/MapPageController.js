@@ -3,8 +3,9 @@
 require( 'angular' );
 require( 'leaflet-easybutton' );
 var $ = require( 'jquery' );
+var _ = require( 'underscore' );
 
-var MapController = function( $scope, $http, $timeout, StoneDataService, leafletData ) {
+var MapController = function( $scope, $http, $timeout, $q, StoneDataService, leafletData ) {
 
     // Properties
     $scope.overlayLeftIsActive = false;
@@ -13,7 +14,8 @@ var MapController = function( $scope, $http, $timeout, StoneDataService, leaflet
     $scope.selectorItems = {};
     $scope.currentItem = {};
     $scope.name = "Map";
-    $scope.stoneData = {};
+    $scope.stoneDataOrigin = {};
+    $scope.stoneDataDestination = {};
 
     // UI Elements
     $scope.UiHeader = $( 'header' );
@@ -31,27 +33,33 @@ var MapController = function( $scope, $http, $timeout, StoneDataService, leaflet
     };
 
     // Controller Functions
-    $scope.createOriginPins = function( data ) {
+    $scope.updatePins = function( originData, destinationData ) {
+        console.log( originData );
+        console.log( destinationData );
 
-    };
+        //TODO: Create all pin objects (remove this from the stoneDataService)
 
-    $scope.createDestinationPins = function( data ) {
+        //TODO: After creating all the pins, set them to $scope.pins
 
+        //TODO: ?
+
+        //TODO: Profit!
     };
 
     $scope.getStoneDataFromService = function( ) {
-        // var stoneData = StoneDataService.get();
-        // var stoneData = StoneDataService.getAllStones();
-        var stoneData = StoneDataService.getAllStonesGroupedByOrigin();
+        var stoneDataOrigin = StoneDataService.getAllStonesGroupedByOrigin();
+        var stoneDataDestination = StoneDataService.getAllStonesGroupedByDestination();
 
-        stoneData.then( function( items ) {
-            console.log( 'in then' );
-            console.log( items );
-            $scope.stoneData = items;
-        });
+        $q.all( [ stoneDataOrigin, stoneDataDestination ] )
+            .then( function ( result ) {
+                $scope.stoneDataOrigin = result[0];
+                $scope.stoneDataDestination = result[1];
+                $scope.updatePins( $scope.stoneDataOrigin, $scope.stoneDataDestination );
+            }, function( reason ) {
+                console.error( reason );
+            });
     }
 
-    $scope.getStoneDataFromService();
 
     // Setting up the map data
     angular.extend( $scope, {
@@ -78,6 +86,12 @@ var MapController = function( $scope, $http, $timeout, StoneDataService, leaflet
         }
     });
 
+    $scope.getStoneDataFromService();
+
+
+
+
+    // TODO: Remove garbage from below here!
     var pins = StoneDataService.getPins();
   //console.log(pins);
   pins.then(function(response) {
