@@ -1,6 +1,7 @@
 // myApp.controller("MapController", ['$scope', '$http', '$timeout', 'StonesService', 'leafletData',
 
 require( 'angular' );
+require( 'leaflet' );
 require( 'leaflet-easybutton' );
 var $ = require( 'jquery' );
 var _ = require( 'underscore' );
@@ -13,6 +14,7 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
     $scope.selectorIsActive = false;
     $scope.selectorItems = {};
     $scope.currentItem = {};
+    $scope.$currentPinElement;
     $scope.name = "Map";
     $scope.stoneDataOrigin = {};
     $scope.stoneDataDestination = {};
@@ -34,17 +36,53 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
 
     // Controller Functions
     $scope.updatePins = function( originData, destinationData ) {
-        console.log( originData );
-        console.log( destinationData );
+        var newPins = [];
 
-        //TODO: Create all pin objects (remove this from the stoneDataService)
+        angular.forEach( originData, function( item ) {
+            newPins.push( $scope.createPin( item, 'origin' ) );
+        });
+        angular.forEach( destinationData, function( item ) {
+            newPins.push( $scope.createPin( item, 'destination' ) );
+        });
 
-        //TODO: After creating all the pins, set them to $scope.pins
-
-        //TODO: ?
-
-        //TODO: Profit!
+        $scope.pins = newPins;
     };
+
+    $scope.createPin = function( data, type ) {
+        var pin = {},
+            coordinates,
+            marker,
+            iconUrl;
+
+        // Type
+        pin.type = type;
+
+        // Coordinates
+        if ( type === 'origin' ) {
+            coordinates = data[0].origin_coordinate.split( ',' );
+        } else if ( type === 'destination' ) {
+            coordinates = data[0].coordinate.split( ',' );
+        }
+        pin = angular.merge( pin, L.latLng( coordinates[0], coordinates[1] ) );
+
+        // Data for all stones
+        pin.stones = data;
+
+        // Icon
+        marker = L.marker({icon: "rocket", color: "#f00", size: "m"});
+        if ( type === 'origin' ) {
+            iconUrl = 'img/assets/Pin_Gestein Herkunft_ini.svg';
+        } else if ( type === 'destination' ) {
+            iconUrl = ( data.length > 1 )
+                ? 'img/assets/Pin_Mehrere_Steine_ini.svg'
+                : 'img/assets/Pin_Gestein Fundort_ini.svg';
+        }
+        marker.iconUrl = iconUrl;
+        marker.iconRetinaUrl = iconUrl;
+        pin.icon = marker;
+
+        return pin;
+    }
 
     $scope.getStoneDataFromService = function( ) {
         var stoneDataOrigin = StoneDataService.getAllStonesGroupedByOrigin();
@@ -86,66 +124,19 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
         }
     });
 
+    // load stone data
     $scope.getStoneDataFromService();
 
+    // Add event handler for the pins
+    $scope.$on( 'leafletDirectiveMarker.click', function(event, args) {
 
+        // mark the new pin
+        //TODO: Replace the dummy CSS style for the marked pin with something that works
+        if ( $scope.$currentPinElement) $scope.$currentPinElement.removeClass( 'map__pin--active' );
+        $scope.$currentPinElement = $( args.leafletObject._icon );
+        $scope.$currentPinElement.addClass( 'map__pin--active' );
 
-
-    // TODO: Remove garbage from below here!
-    var pins = StoneDataService.getPins();
-  //console.log(pins);
-  pins.then(function(response) {
-        //add pins to map
-    //console.log(response);
-
-    $scope.pins = response;
-
-    // $scope.filteredPins = response.slice();
-    // $scope.$watch("filteredPins", function (newValue, oldValue) {
-    //   console.log("markers did change");
-    //   console.log(newValue);
-    //   $scope.pins = newValue;
-    // });
-    //angular.forEach(response, function(el) {
-      // var coordinates = parseCoordinateString(el.coordinate);
-      // var origin_coordinates = parseCoordinateString(el.origin_coordinate);
-      // var marker = addMarkerForType("found_coordinate", coordinates);
-      // marker.bindPopup("<b>" + el.title + "</b><br />" +
-      //    "Distanz: " + getDistanceString(coordinates, origin_coordinates));
-      // marker.on('popupopen', onMarkerShowPopup);
-      // marker.on('popupclose', onMarkerClosePopup);
-
-      // var originMarker = addMarkerForType("origin_coordinate", origin_coordinates);
-      // originMarker.bindPopup("<b>" + el.title + "</b><br />" +
-      //    "Distanz: " + getDistanceString(coordinates, origin_coordinates));
-      // originMarker.on('popupopen', onMarkerShowPopup);
-      // originMarker.on('popupclose', onMarkerClosePopup);
-
-      //$scope.storedMarkers.push({'origin' : originMarker, 'found' : marker});
-      //$scope.markerlayers.addLayer(originMarker);
-      //$scope.markerlayers.addLayer(marker);
-    //});
-  });
-
-    // $http.get('js/metadata.json').then(function(data) {
-    //  console.log(data);
-    // });
-
-    // $timeout(function() { $scope.updateMarkers(); }, 3000);
-
-
-  //$scope.currentStone = {};
-  // $scope.stoneGroup = {};
-  //$scope.stoneOverlayIsActive = false;
-  //$scope.stoneSelectorIsActive = false;
-  $scope.storedMarkers = [];
-    $scope.focusedMarkerPair = {};
-    $scope.focusedLine = {};
-    $scope.markerlayers = new L.featureGroup([]);
-    $scope.map = {};
-
-
-  $scope.$on( 'leafletDirectiveMarker.click', function(event, args) {
+        // Provide layout and data for the detail overlay
         $scope.overlayLeftIsActive = true;
         $scope.selectorIsActive = true;
 
@@ -153,126 +144,12 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
         $scope.UiHeader.addClass('compressed');
 
         if (args.leafletObject.options.stones.length > 1) {
-          $scope.selectorItems = args.leafletObject.options.stones;
-          $scope.selectorIsActive = true;
+            $scope.selectorItems = args.leafletObject.options.stones;
+            $scope.selectorIsActive = true;
         } else {
-          $scope.selectorIsActive = false;
+            $scope.selectorIsActive = false;
         }
-  });
-
-    // $scope.updateMarkers = function() {
-    //     console.log('Timeout called');
-    //     $scope.pins.newMarker = {lat: 59.81,
-    //             lng: 10.65,
-    //             message: "I want to travel here!",
-    //             focus: false,
-    //             draggable: false};
-    // };
-
-    // TODO: Find out what this is!
-  // $scope.buttonsAdded = false;
-  //
-  // leafletData.getMap().then(function(map) {
-  //   if ($scope.buttonsAdded === false) {
-  //     L.easyButton('fa fa-search-plus',
-  //             function () {alert('hello!');},
-  //            '',
-  //            map
-  //           );
-  //     $scope.buttonsAdded = true;
-  //     console.log('added button');
-  //   }
-  //
-  // });
+    });
 }
 
 module.exports = MapController;
-
-        // $http.get('js/metadata.json').then(function(data) {
-  //        L.tileLayer('https://{s}.tiles.mapbox.com/v4/knutator.l8m1lim1/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoia251dGF0b3IiLCJhIjoiRlEzWmFjUSJ9.JLn3oQ3FbbCsjtuxQCpFjQ').addTo(map);
-  //        angular.forEach(data, function(index, el) {
-  //            if (el.coordinate && el.origin_coordinate) {
-  //                var coordinates = parseCoordinateString(el.coordinate);
-  //                var origin_coordinates = parseCoordinateString(el.origin_coordinate);
-  //                var marker = addMarkerForType("found_coordinate", coordinates);
-  //                marker.bindPopup("<b>" + el.title + "</b><br />" +
-  //                    "Distanz: " + getDistanceString(coordinates, origin_coordinates));
-  //                marker.on('popupopen', onMarkerShowPopup);
-  //                marker.on('popupclose', onMarkerClosePopup);
-
-  //                var originMarker = addMarkerForType("origin_coordinate", origin_coordinates);
-  //                originMarker.bindPopup("<b>" + el.title + "</b><br />" +
-  //                    "Distanz: " + getDistanceString(coordinates, origin_coordinates));
-  //                originMarker.on('popupopen', onMarkerShowPopup);
-  //                originMarker.on('popupclose', onMarkerClosePopup);
-
-  //                $scope.storedMarkers.push({'origin' : originMarker, 'found' : marker});
-  //                $scope.markerlayers.addLayer(originMarker);
-  //                $scope.markerlayers.addLayer(marker);
-  //            }
-  //        });
-  //        $scope.map.fitBounds(markerlayers.getBounds());
-        // });
-  //   };
-
-//     function parseCoordinateString(raw_coordinates) {
-//         var coordinates = raw_coordinates.split(',');
-
-//         // $.each(coordinates, function(index, el) {
-//         //     coordinates[index] = parseFloat(el);
-//         // });
-//         return L.latLng(coordinates[0], coordinates[1]);
-//     }
-
-//     function addMarkerForType(type, coordinates) {
-//         var marker;
-//         var icon;
-//         switch(type) {
-//             case "origin_coordinate":
-//                 icon = L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"});
-//                 break;
-//             case "found_coordinate":
-//                 icon = L.MakiMarkers.icon({icon: "circle", color: "#0f0", size: "m"});
-//                 break;
-//         }
-//         console.log(coordinates);
-//         marker = L.marker(coordinates, {icon: icon}).addTo(map);
-//         return marker;
-
-//     }
-
-//     function focusMarkerPair(markerPair) {
-//         var linesegments = [];
-//         focusedMarkerPair = markerPair;
-//         angular.forEach(markerPair, function(index, val) {
-//             val.setIcon(L.MakiMarkers.icon({icon: "swimming", color: "#ff0", size: "m"}));
-//             linesegments.push(val.getLatLng());
-//         });
-//         focusedLine = L.polyline(linesegments, {color: 'red'}).addTo(map);
-//     }
-
-//     function onMarkerShowPopup(event) {
-
-//         angular.forEach(storedMarkers, function(markerPairIndex, markerPair) {
-//              angular.forEach(markerPair, function(markerIndex, marker) {
-//                   var currentLatLng = marker.getLatLng();
-//                   if (currentLatLng.equals(event.popup.getLatLng())) {
-//                     focusMarkerPair(markerPair);
-//                     console.log('focused');
-//                   }
-//              });
-//         });
-//     }
-
-//     function onMarkerClosePopup(event) {
-//         focusedMarkerPair.found.setIcon(L.MakiMarkers.icon({icon: "circle", color: "#0f0", size: "m"}));
-//         focusedMarkerPair.origin.setIcon(L.MakiMarkers.icon({icon: "rocket", color: "#f00", size: "m"}));
-//         map.removeLayer(focusedLine);
-//     }
-
-//     function getDistanceString(originCoordinate, foundCoordiante) {
-//         var distanceInMeters = foundCoordiante.distanceTo(originCoordinate);
-//         var distanceInKilometers = Math.round(distanceInMeters / 1000 *100) / 100;
-//         return distanceInKilometers + ' km';
-//     }
-// });

@@ -20,7 +20,7 @@ var timeline = function( StoneDataService, StoneEpocheService ) {
 
             var all_stones = [];
 
-            StoneDataService.getPins().then(function (response) {
+            StoneDataService.getAllStones().then(function (response) {
                 all_stones = response;
             });
 
