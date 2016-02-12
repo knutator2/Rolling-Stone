@@ -51,7 +51,7 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
     $scope.createPin = function( data, type ) {
         var pin = {},
             coordinates,
-            marker,
+            marker = {},
             iconUrl;
 
         // Type
@@ -69,7 +69,6 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
         pin.stones = data;
 
         // Icon
-        marker = L.marker({icon: "rocket", color: "#f00", size: "m"});
         if ( type === 'origin' ) {
             iconUrl = 'img/assets/Pin_Gestein Herkunft_ini.svg';
         } else if ( type === 'destination' ) {
@@ -79,6 +78,7 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
         }
         marker.iconUrl = iconUrl;
         marker.iconRetinaUrl = iconUrl;
+        marker.className = 'map__pin';
         pin.icon = marker;
 
         return pin;

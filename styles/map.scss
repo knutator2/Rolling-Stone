@@ -1,4 +1,9 @@
 /* map */
+
+.map__pin {
+    width: 30px;
+}
+
 .map__pin--active {
     @include box-shadow(0px 0px 0px 2px $color-white);
     border-radius: 50%;
