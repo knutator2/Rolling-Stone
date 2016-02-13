@@ -15,7 +15,7 @@
 		selected-item="currentItem">
 	</detailselector>
 
-	<div class="page__part--off-canvas-main map" ng-click="dismissSelection()">
+	<div class="page__part--off-canvas-main map" ng-click="dismissSelection(); applyFilter();">
 		<leaflet
 		markers="pins"
 		tiles="mapboxtiles"

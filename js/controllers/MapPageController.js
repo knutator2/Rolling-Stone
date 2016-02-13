@@ -1,5 +1,3 @@
-// myApp.controller("MapController", ['$scope', '$http', '$timeout', 'StonesService', 'leafletData',
-
 require( 'angular' );
 require( 'leaflet' );
 require( 'leaflet-easybutton' );
@@ -30,6 +28,11 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
         $scope.UiHeader.removeClass( 'compressed' );
     };
 
+    // TODO: Refactor this dummy function
+    $scope.applyFilter = function() {
+        $scope.getStoneDataFromService( 1, 2);
+    }
+
     $scope.toggleOverlayBottom = function() {
         $scope.overlayBottomIsActive = !$scope.overlayBottomIsActive;
     };
@@ -38,14 +41,17 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
     $scope.updatePins = function( originData, destinationData ) {
         var newPins = [];
 
-        angular.forEach( originData, function( item ) {
-            newPins.push( $scope.createPin( item, 'origin' ) );
-        });
         angular.forEach( destinationData, function( item ) {
             newPins.push( $scope.createPin( item, 'destination' ) );
         });
+        angular.forEach( originData, function( item ) {
+            newPins.push( $scope.createPin( item, 'origin' ) );
+        });
 
-        $scope.pins = newPins;
+        $scope.pins = [];
+        $timeout( function() {
+            $scope.pins = newPins;
+        }, 1);
     };
 
     $scope.createPin = function( data, type ) {
@@ -84,9 +90,9 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
         return pin;
     }
 
-    $scope.getStoneDataFromService = function( ) {
-        var stoneDataOrigin = StoneDataService.getAllStonesGroupedByOrigin();
-        var stoneDataDestination = StoneDataService.getAllStonesGroupedByDestination();
+    $scope.getStoneDataFromService = function( filterStart, filterEnd ) {
+        var stoneDataOrigin = StoneDataService.getAllStonesGroupedByOrigin( filterStart, filterEnd );
+        var stoneDataDestination = StoneDataService.getAllStonesGroupedByDestination( filterStart, filterEnd );
 
         $q.all( [ stoneDataOrigin, stoneDataDestination ] )
             .then( function ( result ) {
@@ -115,7 +121,7 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
                 logic: 'emit'
             }
         },
-        pins: {},
+        pins: [],
         mapboxtiles: {
             url: "https://{s}.tiles.mapbox.com/v4/knutator.c8d1fddc/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoia251dGF0b3IiLCJhIjoiRlEzWmFjUSJ9.JLn3oQ3FbbCsjtuxQCpFjQ",
             options: {
