@@ -49,9 +49,11 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
         });
 
         $scope.pins = [];
-        $timeout( function() {
+
+        var removeWatchListener = $scope.$watch( 'pins', function( newValue, oldValue ) {
             $scope.pins = newPins;
-        }, 1);
+            removeWatchListener();
+        });
     };
 
     $scope.createPin = function( data, type ) {
