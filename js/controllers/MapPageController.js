@@ -30,7 +30,7 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
 
     // TODO: Refactor this dummy function
     $scope.applyFilter = function() {
-        $scope.getStoneDataFromService( 1, 2);
+        $scope.getStoneDataFromService( 7, 8);
     }
 
     $scope.toggleOverlayBottom = function() {

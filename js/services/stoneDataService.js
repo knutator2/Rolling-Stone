@@ -1,10 +1,21 @@
 require( 'angular' );
 var _ = require( 'underscore' );
 
-var StoneDataService = function( $resource, $http, $q ) {
+var StoneDataService = function( $resource, $http, $q, StoneEraService ) {
+
+    var standardFilterData;
+    var initFilterData = function() {
+        allErasPromise = StoneEraService.getAllEras();
+
+        allErasPromise.then( function( result ) {
+            standardFilterData = result;
+        });
+    }
+
+    initFilterData();
 
     // Returns all stones that have an origin and destination location available
-    var getAllStones =  function() {
+    var getAllStones =  function( filterStart, filterEnd ) {
         var promise = $http.get( 'js/metadata.json' ).then( function( response ) {
             var items = [];
             angular.forEach( response.data, function( element, index ) {
@@ -12,6 +23,10 @@ var StoneDataService = function( $resource, $http, $q ) {
                     items.push( element );
                 }
             });
+
+            if ( filterStart !== undefined && filterEnd !== undefined ) {
+                items = filterStonesByEra( items, filterStart, filterEnd );
+            }
             return items;
         });
 
@@ -47,12 +62,8 @@ var StoneDataService = function( $resource, $http, $q ) {
         var deferred = $q.defer();
         var promise = deferred.promise;
 
-        getAllStones().then( function( result ) {
+        getAllStones( filterStart, filterEnd ).then( function( result ) {
             var groupedData;
-
-            if ( filterStart && filterEnd ) {
-                result = filterStonesByEra( result, filterStart, filterEnd );
-            }
 
             groupedData = _.groupBy( result, function( item ) {
                 return item.origin_coordinate;
@@ -69,12 +80,8 @@ var StoneDataService = function( $resource, $http, $q ) {
         var deferred = $q.defer();
         var promise = deferred.promise;
 
-        getAllStones().then( function( result ) {
+        getAllStones( filterStart, filterEnd ).then( function( result ) {
             var groupedData;
-
-            if ( filterStart && filterEnd ) {
-                result = filterStonesByEra( result, filterStart, filterEnd );
-            }
 
             groupedData = _.groupBy( result, function( item ) {
                 return item.coordinate;
@@ -88,11 +95,19 @@ var StoneDataService = function( $resource, $http, $q ) {
 
     // filters the given stone data by the given geological eras
     var filterStonesByEra = function( stones, indexFrom, indexTo ) {
-        var filteredData = [];
+        var filteredData = [],
+            reducedStandardFilterData = standardFilterData.slice( indexFrom, indexTo + 1 ),
+            remainingEraNames = [];
 
-        for (var i = 0; i < stones.length; i = i + 20) {
-            filteredData.push( stones[i] )
-        }
+        remainingEraNames = _.map( reducedStandardFilterData, function( item ) {
+            return item.name;
+        })
+
+        _.each( stones, function( stone ) {
+            if ( _.contains( remainingEraNames, stone.geological_era ) ) {
+                filteredData.push( stone );
+            }
+        });
 
         return filteredData;
     }

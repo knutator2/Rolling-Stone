@@ -1,7 +1,7 @@
 var $ = require( 'jquery' );
 var _ = require( 'underscore' );
 
-var timeline = function( StoneDataService, StoneEpocheService ) {
+var timeline = function( StoneDataService, StoneEraService ) {
     return {
         restrict: 'E',
         scope : {
@@ -24,7 +24,7 @@ var timeline = function( StoneDataService, StoneEpocheService ) {
                 all_stones = response;
             });
 
-            StoneEpocheService.get().then(function (data) {
+            StoneEraService.getAllEras().then(function (data) {
                 scope.epoches = _.filter(data, {multi : false});
                 scope.epoches.reverse();
                 var tickLabels = [];
