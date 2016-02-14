@@ -16,6 +16,7 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
     $scope.name = "Map";
     $scope.stoneDataOrigin = {};
     $scope.stoneDataDestination = {};
+    $scope.timelineIndexes = { start: undefined, end: undefined };
 
     // UI Elements
     $scope.UiHeader = $( 'header' );
@@ -27,11 +28,6 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
         $scope.selectorIsActive = false;
         $scope.UiHeader.removeClass( 'compressed' );
     };
-
-    // TODO: Refactor this dummy function
-    $scope.applyFilter = function() {
-        $scope.getStoneDataFromService( 7, 8);
-    }
 
     $scope.toggleOverlayBottom = function() {
         $scope.overlayBottomIsActive = !$scope.overlayBottomIsActive;
@@ -158,6 +154,11 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
             $scope.selectorIsActive = false;
         }
     });
+
+    // watch timeline selector for changes
+    $scope.$watch( 'timelineIndexes', function() {
+        $scope.getStoneDataFromService( $scope.timelineIndexes.start, $scope.timelineIndexes.end);
+    }, true );
 }
 
 module.exports = MapController;

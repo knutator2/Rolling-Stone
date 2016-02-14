@@ -34,9 +34,14 @@
 
     .page__part--off-canvas-bottom-handle {
         bottom: 100%;
+        display: block;
         height: 50px;
         position: absolute;
         width: 100px;
+
+        @include screenHeightBreakpointMedium {
+            display: none;
+        }
     }
 
     .page__part--off-canvas-left {

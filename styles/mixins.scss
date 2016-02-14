@@ -11,3 +11,9 @@
         @content;
     }
 }
+
+@mixin screenHeightBreakpointMedium {
+    @media (min-height: $screenHeightBreakpointMedium) {
+        @content;
+    }
+}

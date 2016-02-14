@@ -15,20 +15,23 @@
 		selected-item="currentItem">
 	</detailselector>
 
-	<div class="page__part--off-canvas-main map" ng-click="dismissSelection(); applyFilter();">
+	<div class="page__part--off-canvas-main map" ng-click="dismissSelection();">
 		<leaflet
-		markers="pins"
-		tiles="mapboxtiles"
-		center="center"
-		defaults="defaults"
-		width="100%"
-		height="100%"
-		event-broadcast="events"></leaflet>
+			markers="pins"
+			tiles="mapboxtiles"
+			center="center"
+			defaults="defaults"
+			width="100%"
+			height="100%"
+			event-broadcast="events">
+		</leaflet>
 	</div>
 
 	<div class="page__part--off-canvas-bottom">
 		<button class="page__part--off-canvas-bottom-handle" ng-click="toggleOverlayBottom()"></button>
-		<timeline></timeline>
+		<timeline
+			timeline-indexes="timelineIndexes">
+		</timeline>
 	</div>
 
 </div>
