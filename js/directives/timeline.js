@@ -21,15 +21,6 @@ var timeline = function( StoneEraService ) {
                 });
             }
 
-            // TODO: Move this dummy functionality to the handle functionality!!!
-            // dummy timeline selection
-            $( '.timeline' ).on( 'click', function() {
-                scope.$apply( function() {
-                    scope.timelineIndexes.start = Math.floor( Math.random() * 5);
-                    scope.timelineIndexes.end = Math.floor( Math.random() * 5 + 5);
-                });
-            })
-
             // Functionality for moving the handles
             var $currentHandle,
                 $opposingHandle,
@@ -78,6 +69,17 @@ var timeline = function( StoneEraService ) {
                     $currentHandle
                         .css( 'transform', 'translate3d(' + newPosX + 'px, 0, 0)' );
                     $currentHandle.data( 'pos-x', newPosX );
+
+                    if ( currentHandlePosition === 'left' ) {
+                        scope.$apply( function() {
+                            scope.timelineIndexes.start = calculateSelectionIndex( newPosX, currentHandlePosition );
+                        });
+                    } else if ( currentHandlePosition === 'right' ) {
+                        scope.$apply( function() {
+                            scope.timelineIndexes.end = calculateSelectionIndex( newPosX, currentHandlePosition );
+                        });
+                    }
+
                     $currentHandle = undefined;
                     $opposingHandle = undefined;
                     initialPosX = undefined;
@@ -137,6 +139,18 @@ var timeline = function( StoneEraService ) {
 
                 return offsetX;
             }
+
+            var calculateSelectionIndex = function( offsetX, handlePosition ) {
+                var barWidth = $selectorBar.width(),
+                    barSegmentOffset = barWidth / (scope.eraData.length - 1);
+
+                if ( handlePosition === 'left' ) {
+                    return Math.round( offsetX / barSegmentOffset );
+                } else if ( handlePosition === 'right' ) {
+                    return Math.round( (barWidth + offsetX) / barSegmentOffset ); //offsetX is negative!
+                }
+            }
+
 
             //TODO: handle resizing of the window
 

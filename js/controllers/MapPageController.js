@@ -4,7 +4,7 @@ require( 'leaflet-easybutton' );
 var $ = require( 'jquery' );
 var _ = require( 'underscore' );
 
-var MapController = function( $scope, $http, $timeout, $q, StoneDataService, leafletData ) {
+var MapController = function( $scope, $http, $timeout, $q, StoneDataService, StoneEraService, leafletData ) {
 
     // Properties
     $scope.overlayLeftIsActive = false;
@@ -130,6 +130,12 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, lea
 
     // load stone data
     $scope.getStoneDataFromService();
+
+    // load era metadata
+    StoneEraService.getErasLength()
+        .then( function( result ) {
+            $scope.timelineIndexes = { start: 0,  end: result-1 };
+        });
 
     // Add event handler for the pins
     $scope.$on( 'leafletDirectiveMarker.click', function(event, args) {

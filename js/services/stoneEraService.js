@@ -7,7 +7,7 @@ var StoneEraService = function($resource, $http) {
     var getAllEras = function() {
         var promise;
 
-        promise = $http.get('js/geo_era.json').then(function (response) {
+        promise = $http.get( 'js/geo_era.json' ).then(function (response) {
             var result;
 
             result = _.sortBy( response.data, function( item ) {
@@ -22,8 +22,19 @@ var StoneEraService = function($resource, $http) {
         return promise;
     }
 
+    var getErasLength = function() {
+        var promise;
+
+        promise = $http.get( 'js/geo_era.json' ).then(function (response) {
+            return response.data.length;
+        });
+
+        return promise;
+    }
+
     return {
-        getAllEras: getAllEras
+        getAllEras: getAllEras,
+        getErasLength: getErasLength
     }
 }
 
