@@ -1,4 +1,4 @@
-# Rolling Stone
+# Rapakiwi
 Wahrscheinlich hast Du auch schon mal einen Stein gefunden und Dich über seine Beschaffenheit, Farbe oder Form gewundert. Wusstest Du, dass dieses Gesteinsmaterial mehrere Millionen Jahre alt ist und in den Eiszeiten von Gletschern aus Skandinavien nach Berlin und Brandenburg transportiert wurde?
 
 # Projektidee
@@ -9,5 +9,6 @@ Als weiteres Feature sollen die Nutzer Steine mit ähnlichen Eigenschaften entde
 # Datenset
 Geologische Sammlung Stadtmuseum Berlin (mit fast 300 Einträgen), Fotos unter https://commons.wikimedia.org/wiki/Category:Geologische_Sammlung_%28Stadtmuseum_Berlin%29
 
-
-
+# Lizenzen
+Icons: CC by Anika Schultz; 
+Fotos: CC by-SA Michael Setzpfandt - Stadtmuseum Berlin
