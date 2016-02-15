@@ -1,0 +1,12 @@
+/* Partials */
+
+// vertically centering the image
+%p_vertical-align {
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        margin-right: -0.25em; /* Adjusts for spacing */
+        vertical-align: middle;
+    }
+}

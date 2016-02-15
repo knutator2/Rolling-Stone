@@ -1,0 +1,50 @@
+// Custom Colors for Rapakiwi
+$color-main:        #ABE3EC;
+$color-pressed:     #526F73;
+$color-grey-dark:   #4A4A4A;
+$color-grey-light:  #D7D7D7;
+$color-white:       #FFFFFF;
+
+// z-index
+$z-index-1: 1;
+$z-index-2: 10;
+$z-index-3: 100;
+$z-index-4: 1000;
+$z-index-5: 1100;
+$z-index-6: 1500;
+
+// fonts
+$base-font-family: 'Source Sans Pro', sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+// screen categories
+$screenWidthBreakpointMedium: 600px;
+$screenWidthBreakpointLarge: 900px;
+
+$screenHeightBreakpointMedium: 800px;
+
+// page element sizes
+$heightHeader: 62px;
+
+$pagePartLeftWidthLarge: 320px;
+$pagePartLeftWidthMedium: 50%;
+$pagePartLeftWidthSmall: 90%;
+
+// spaces
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;

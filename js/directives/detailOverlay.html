@@ -1,0 +1,44 @@
+<div class="detail-overlay">
+    <div class="detail-overlay__wrapper">
+        <div class="detail-overlay__image-wrapper">
+            <img class="detail-overlay__image" ng-attr-src="img/medium/{{ item.img }}"/>
+        </div>
+
+        <h2 class="detail-overlay__headline">{{ item.title }}</h2>
+
+        <div class="detail-overlay__info-wrapper">
+            <span class="icon icon-type--rock-type" />
+            <p class="detail-overlay__info-text">{{ item.material }}</p>
+        </div>
+
+        <div class="detail-overlay__info-wrapper">
+            <span class="icon icon-type--geologic-era" />
+            <p class="detail-overlay__info-text">{{ item.geological_era }}</p>
+        </div>
+
+        <div class="detail-overlay__info-wrapper">
+            <span class="icon icon-type--origin" />
+            <p class="detail-overlay__info-text">{{ item.origin }}</p>
+        </div>
+
+        <div class="detail-overlay__info-wrapper">
+            <span class="icon icon-type--source" />
+            <p class="detail-overlay__info-text">{{ item.location }}</p>
+        </div>
+
+        <linkbutton
+            data-target="#/graph?stone={{item.museum_id}}"
+            data-link-title="Link zum Graphen"
+            data-text="Graph"
+            data-icon-class="icon-type--button-graph">
+        </linkbutton>
+
+        <linkbutton
+            class="linkbutton--secondary"
+            data-target="#/detail?stoneId={{item.museum_id}}"
+            data-link-title="Link zur Detailseite"
+            data-text="mehr"
+            data-icon-class="icon-type--button-more">
+        </linkbutton>
+    </div>
+</div>

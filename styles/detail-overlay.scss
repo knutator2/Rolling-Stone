@@ -1,0 +1,48 @@
+/* detail-overlay */
+
+.detail-overlay {
+    border-right: 1px solid $color-grey-light;
+    background: $color-white;
+    overflow-y: scroll;
+}
+
+.detail-overlay__wrapper {
+    margin-bottom: 20px;
+    padding: 0 10px $heightHeader;
+    position: relative;
+}
+
+.detail-overlay__image-wrapper {
+    height: 200px;
+    margin-top: 20px;
+    text-align: center;
+
+    @extend %p_vertical-align;
+}
+
+.detail-overlay__image {
+    border-radius: 5px;
+    display: inline-block;
+    max-height: 200px;
+    vertical-align: middle;
+}
+
+.detail-overlay__headline {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.1rem;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.detail-overlay__info-wrapper {
+    margin-bottom: 10px;
+    @include display-flex;
+    @include flex-direction(row);
+    @include align-items(center);
+}
+
+.detail-overlay__info-text {
+    font-size: 1.1rem;
+}

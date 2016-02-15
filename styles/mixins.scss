@@ -1,0 +1,19 @@
+/* mixins */
+
+@mixin screenBreakpointMedium {
+    @media (min-width: $screenWidthBreakpointMedium) {
+        @content;
+    }
+}
+
+@mixin screenBreakpointLarge {
+    @media (min-width: $screenWidthBreakpointLarge) {
+        @content;
+    }
+}
+
+@mixin screenHeightBreakpointMedium {
+    @media (min-height: $screenHeightBreakpointMedium) {
+        @content;
+    }
+}

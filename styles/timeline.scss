@@ -1,0 +1,49 @@
+.timeline {
+	padding: 0 10px 100px;
+}
+
+.timeline__selector {
+	background-color: $color-grey-light;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+.timeline__selector-body {
+	position: relative;
+	width: 100%;
+}
+
+.timeline__selector-bar {
+	@include display-flex;
+	@include justify-content( space-between );
+
+	background-color: black;
+	height: 4px;
+	position: relative;
+	width: 100%;
+}
+
+.timeline__selector-handle {
+	background-color: $color-main;
+	border: 1px solid $color-grey-dark;
+	border-radius: 3px;
+	cursor: pointer;
+	height: 20px;
+	position: absolute;
+	top: -8px;
+	width: 10px;
+}
+
+.timeline__selector-handle--left {
+	left: 0;
+}
+
+.timeline__selector-handle--right {
+	right: 0;
+}
+
+.timeline__selector-segment {
+	background-color: $color-grey-light;
+	height: 4px;
+	width: 2px;
+}

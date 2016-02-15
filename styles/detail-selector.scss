@@ -1,0 +1,63 @@
+.detail-selector {
+    @include box-shadow(inset 0px 0px 1px 0px $color-grey-dark);
+    background-color: $color-white;
+    overflow-y: scroll;
+}
+
+.detail-selector__wrapper {
+    box-sizing: border-box;
+    padding: 0 10px 62px;
+    width: 100%;
+}
+
+.detail-selector__list {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.detail-selector__item {
+    margin-bottom: 15px;
+    position: relative;
+
+    // TODO: Define and add animations for entering and leaving
+    .ng-enter {
+    }
+
+    .ng-leave {
+    }
+
+    &:hover {
+        .detail-selector__item-overlay {
+            @include display-flex;
+            @include align-items(flex-end);
+            @include justify-content(center);
+        }
+    }
+}
+
+.detail-selector__item-image {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.detail-selector__item-overlay {
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    display: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.detail-selector__item-text {
+    color: $color-white;
+    font-size: 0.8rem;
+    line-height: 1.0rem;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    text-align: left;
+    width: 100%;
+    word-break: break-word;
+}

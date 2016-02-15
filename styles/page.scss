@@ -1,0 +1,133 @@
+/* Main Page Styles */
+
+.page {
+    bottom: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-top: 62px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.page__wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.page__wrapper--off-canvas {
+
+    // Normal mode
+    .page__part--off-canvas-main {
+        @include transition( transform 0.3s ease-out, height 0.3s ease-out );
+        height: 100%;
+        width: 100%;
+    }
+
+    .page__part--off-canvas-bottom {
+        @include transition( transform 0.3s ease-out );
+        @include translate3d( 0, 100%, 0 );
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    .page__part--off-canvas-bottom-handle {
+        bottom: 100%;
+        display: block;
+        height: 50px;
+        position: absolute;
+        width: 100px;
+
+        @include screenHeightBreakpointMedium {
+            display: none;
+        }
+    }
+
+    .page__part--off-canvas-left {
+        height: 100%;
+        position: absolute;
+        right: 100%;
+        width: 90%;
+        z-index: $z-index-6;
+
+        @include transition( transform 0.3s ease-in, width 0.2s linear );
+
+        @include screenBreakpointMedium {
+            width: 50%;
+        }
+
+        @include screenBreakpointLarge {
+            width: 320px;
+        }
+    }
+
+    .page__part--off-canvas-left-additional {
+        height: 100%;
+        position: absolute;
+        right: 100%;
+        width: 30%;
+        z-index: $z-index-5;
+
+        @include transition( transform 0.3s ease-in );
+
+        @include screenBreakpointMedium {
+            width: 25%;
+        }
+
+        @include screenBreakpointLarge {
+            width: 160px;
+        }
+
+        & ~ *:first-child {
+            width: 28%;
+        }
+    }
+
+    // left off canvas element active
+    &-active-left {
+        .page__part--off-canvas-main {
+            @include screenBreakpointMedium {
+                @include translate3d( $pagePartLeftWidthLarge/2, 0, 0 );
+            }
+        }
+
+        .page__part--off-canvas-left {
+            @include translate3d( 100%, 0, 0 );
+
+            @include screenBreakpointLarge {
+                @include translate3d( $pagePartLeftWidthLarge, 0, 0 );
+            }
+        }
+    }
+
+    // Adjustments if page has off-canvas-left-additional element
+    &-active-left-additional {
+        .page__part--off-canvas-left {
+            width: 60%;
+
+            @include screenBreakpointMedium {
+                width: 50%;
+            }
+
+            @include screenBreakpointLarge {
+                width: 320px;
+            }
+        }
+
+        .page__part--off-canvas-left-additional {
+            @include translate3d( 300%, 0, 0 );
+
+            @include screenBreakpointLarge {
+                @include translate3d( $pagePartLeftWidthLarge * 1.5, 0, 0 );
+            }
+        }
+    }
+
+    // bottom off canvas element active
+    &-active-bottom {
+        .page__part--off-canvas-bottom {
+            @include translate3d( 0, 0, 0 );
+        }
+    }
+}

@@ -1,31 +1,38 @@
-myApp.controller("DetailController", ['$scope', '$routeParams', 'StonesService',
-    function($scope, $routeParams, StonesService) {
+'use strict';
 
-        $scope.name = "Detail";
-        $scope.currentStone = {};
-        var qwertz = StonesService.getStoneById(parseInt($routeParams.stoneId,10));
+// var DetailController = function($scope) {
+//     $scope.name = "DetailTEST";
+// }
 
-        qwertz.then(function(response) {
-            $scope.currentStone = response;
-        });
+// var app.controller("DetailController", ['$scope', '$routeParams', 'StonesService',
+var DetailController = function( $scope, $routeParams, StoneDataService ) {
 
-        // $scope.currentStone = {test: "yeee"};
+    $scope.name = "BLUBB";
+    // $scope.currentStone = {};
+    var qwertz = StoneDataService.getStoneById(parseInt($routeParams.stoneId,10));
 
-        $scope.stones = []; // Could be used for later
+    console.log( qwertz );
+    //
+    // qwertz.then(function(response) {
+    //     $scope.currentStone = response;
+    // });
 
-        $scope.closeDetailPage = function(event) {
-            window.history.back();
-        };
+    $scope.currentStone = {test: "yeee"};
 
-        // StonesService.get().then(function(data) {
-        //     $scope.len = data.length;
-        //     $scope.stones = data;
-        //     angular.forEach(data, function(value) {
-        //         if (value.museum_id === parseInt($routeParams.stone)) {
-        //             $scope.currentStone = value;
-        //         }
-        //     });
-        //     console.log($routeParams);
-        // }); 
-    }
-]);
+    $scope.stones = []; // Could be used for later
+
+    // StonesService.get().then(function(data) {
+    //     $scope.len = data.length;
+    //     $scope.stones = data;
+    //     angular.forEach(data, function(value) {
+    //         if (value.museum_id === parseInt($routeParams.stone)) {
+    //             $scope.currentStone = value;
+    //         }
+    //     });
+    //     console.log($routeParams);
+    // });
+}
+// ]);
+
+
+module.exports = DetailController;

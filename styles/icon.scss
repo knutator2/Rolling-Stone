@@ -1,0 +1,59 @@
+.icon {
+    width: 25px;
+    height: 25px;
+    min-width: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
+.icon-type--logo {
+    background-image: url('../img/assets/Logo_Mittel.png');
+}
+
+.icon-type--zoom-out {
+    background-image: url('../img/assets/Zoom_out_ini.svg');
+}
+
+.icon-type--close {
+    background-image: url('../img/assets/Close_ini.svg');
+}
+
+.icon-type--origin {
+    background-image: url('../img/assets/Steckbrief_Herkunft.svg');
+}
+
+.icon-type--source {
+    background-image: url('../img/assets/Steckbrief_Fundort.svg');
+    height: 30px;
+}
+
+.icon-type--geologic-era {
+    background-image: url('../img/assets/Steckbrief_Erdzeitalter.svg');
+}
+
+.icon-type--rock-type {
+    background-image: url('../img/assets/Steckbrief_Gesteinsart.svg');
+    height: 20px;
+}
+
+
+// Icon styles for the linkbutton element
+.icon--button::before {
+    background-size: cover;
+    content: '';
+    height: 25px;
+    left: -30px;
+    position: absolute;
+    top: -2px;
+    width: 25px;
+}
+
+.icon-type--button-graph::before {
+    background-image: url('../img/assets/Graph_ini.svg');
+}
+
+.icon-type--button-more::before {
+    background-image: url('../img/assets/Zoom_in_ini.svg');
+}
