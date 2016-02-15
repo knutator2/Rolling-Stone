@@ -4,7 +4,7 @@ require( 'leaflet-easybutton' );
 var $ = require( 'jquery' );
 var _ = require( 'underscore' );
 
-var MapController = function( $scope, $http, $timeout, $q, StoneDataService, StoneEraService, leafletData ) {
+var MapPageController = function( $scope, $http, $timeout, $q, StoneDataService, StoneEraService, leafletData ) {
 
     // Properties
     $scope.overlayLeftIsActive = false;
@@ -167,4 +167,4 @@ var MapController = function( $scope, $http, $timeout, $q, StoneDataService, Sto
     }, true );
 }
 
-module.exports = MapController;
+module.exports = MapPageController;
