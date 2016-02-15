@@ -100,7 +100,7 @@ var StoneDataService = function( $resource, $http, $q, StoneEraService ) {
             remainingEraNames = [];
 
         remainingEraNames = _.map( reducedStandardFilterData, function( item ) {
-            return item.name;
+            return item.name_short;
         })
 
         _.each( stones, function( stone ) {
