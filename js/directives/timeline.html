@@ -1,10 +1,25 @@
 <div class="timeline">
 
     <div class="timeline__selector">
-
+        <div class="timeline__selector-body">
+            <div class="timeline__selector-time-labels"></div>
+            <div class="timeline__selector-bar">
+                <div class="timeline__selector-handle timeline__selector-handle--left"
+                     data-is-moving=false
+                     data-position="left">
+                </div>
+                <div class="timeline__selector-handle timeline__selector-handle--right"
+                     data-is-moving=false
+                     data-position="right">
+                </div>
+                <div class="timeline__selector-segment" ng-repeat="item in eraData"></div>
+            </div>
+        </div>
     </div>
 
-    div.timeline__labels
+    <div class="timeline__labels">
+
+    </div>
 <!-- <li class="detail-selector__item" ng-repeat="item in items"> -->
 
 </div>
