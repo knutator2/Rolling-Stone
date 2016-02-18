@@ -107,9 +107,9 @@ var timeline = function( StoneEraService ) {
                 }
 
                 if ( position === 'left' ) {
-                    return snapPosition - 12;
+                    return snapPosition;
                 } else if ( position === 'right' ) {
-                    return snapPosition - barWidth + 12;
+                    return snapPosition - barWidth;
                 }
             }
 
@@ -131,12 +131,12 @@ var timeline = function( StoneEraService ) {
                     opposedPosX = $opposingHandle.data( 'pos-x' );
 
                 if ( handlePosition === 'left' ) {
-                    if ( offsetX > barWidth + opposedPosX - 24) { // opposedPosX is negative!
-                        return offsetX + (barWidth + opposedPosX - 24 - offsetX);
+                    if ( offsetX > barWidth + opposedPosX ) { // opposedPosX is negative!
+                        return offsetX + (barWidth + opposedPosX - offsetX);
                     }
                 } else if ( handlePosition === 'right' ) {
-                    if ( opposedPosX + 24 > barWidth + offsetX ) { // offsetX is negative!
-                        return offsetX + (opposedPosX + 24) - (barWidth + offsetX);
+                    if ( opposedPosX > barWidth + offsetX ) { // offsetX is negative!
+                        return offsetX + (opposedPosX) - (barWidth + offsetX);
                     }
                 }
 
@@ -146,17 +146,10 @@ var timeline = function( StoneEraService ) {
             var calculateSelectionIndex = function( offsetX, handlePosition ) {
                 var barWidth = $selectorBar.width(),
                     barSegmentOffset = barWidth / (scope.eraData.length - 1);
-
-                console.log( barWidth );
-                console.log( barSegmentOffset );
-                console.log( offsetX );
-
+                    
                 if ( handlePosition === 'left' ) {
-                    console.log( Math.round( offsetX / barSegmentOffset ) );
-
                     return Math.round( offsetX / barSegmentOffset );
                 } else if ( handlePosition === 'right' ) {
-                    console.log( Math.round( (barWidth + offsetX) / barSegmentOffset ) );
                     return Math.round( (barWidth + offsetX) / barSegmentOffset ); //offsetX is negative!
                 }
             }
@@ -175,7 +168,7 @@ var timeline = function( StoneEraService ) {
                 var $handleLink = $( '.timeline__selector-handle-link' ),
                     barWidth = $selectorBar.width();
 
-                $handleLink.css( 'width', barWidth - 15 + 'px' );
+                $handleLink.css( 'width', barWidth + 'px' );
             }
 
             //TODO: handle resizing of the window
