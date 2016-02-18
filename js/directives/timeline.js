@@ -53,6 +53,7 @@ var timeline = function( StoneEraService ) {
                     $currentHandle
                         .css( 'transform', 'translate3d(' + offsetX + 'px, 0, 0)' );
                     $currentHandle.data( 'pos-x', offsetX );
+                    updateHandleLink();
                 } else {
                     return;
                 }
@@ -79,6 +80,8 @@ var timeline = function( StoneEraService ) {
                             scope.timelineIndexes.end = calculateSelectionIndex( newPosX, currentHandlePosition );
                         });
                     }
+
+                    updateHandleLink();
 
                     $currentHandle = undefined;
                     $opposingHandle = undefined;
@@ -144,13 +147,36 @@ var timeline = function( StoneEraService ) {
                 var barWidth = $selectorBar.width(),
                     barSegmentOffset = barWidth / (scope.eraData.length - 1);
 
+                console.log( barWidth );
+                console.log( barSegmentOffset );
+                console.log( offsetX );
+
                 if ( handlePosition === 'left' ) {
+                    console.log( Math.round( offsetX / barSegmentOffset ) );
+
                     return Math.round( offsetX / barSegmentOffset );
                 } else if ( handlePosition === 'right' ) {
+                    console.log( Math.round( (barWidth + offsetX) / barSegmentOffset ) );
                     return Math.round( (barWidth + offsetX) / barSegmentOffset ); //offsetX is negative!
                 }
             }
 
+            var updateHandleLink = function() {
+                var $leftHandle = $( '.timeline__selector-handle--left' ),
+                    $rightHandle = $( '.timeline__selector-handle--right' ),
+                    $handleLink = $( '.timeline__selector-handle-link' ),
+                    newWidth;
+
+                newWidth = $rightHandle.offset().left - $leftHandle.offset().left;
+                $handleLink.css( 'width', newWidth + 'px' );
+            }
+
+            var initHandleLink = function() {
+                var $handleLink = $( '.timeline__selector-handle-link' ),
+                    barWidth = $selectorBar.width();
+
+                $handleLink.css( 'width', barWidth - 15 + 'px' );
+            }
 
             //TODO: handle resizing of the window
 
@@ -158,6 +184,7 @@ var timeline = function( StoneEraService ) {
             // Initialising the timeline
             loadEraData();
             initHandles();
+            initHandleLink();
 
             $( '.timeline__selector-handle' ).on( 'mousedown', initHandleMovement );
             $( window ).on( 'mousemove', moveHandle )
