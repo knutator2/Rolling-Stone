@@ -78,6 +78,7 @@ var timeline = function( StoneEraService ) {
                         ? event.originalEvent.changedTouches[0].clientX
                         : event.clientX;
                     var newPosX = getHandleSnapPosition( clientX, currentHandlePosition );
+                    var indexResult;
 
                     newPosX = checkSelectionBarBoundaries( newPosX, currentHandlePosition )
                     newPosX = checkOpposingHandle( newPosX, currentHandlePosition );
@@ -86,13 +87,15 @@ var timeline = function( StoneEraService ) {
                         .css( 'transform', 'translate3d(' + newPosX + 'px, 0, 0)' );
                     $currentHandle.data( 'pos-x', newPosX );
 
+                    indexResult = calculateSelectionIndex( newPosX, currentHandlePosition );
+
                     if ( currentHandlePosition === 'left' ) {
                         scope.$apply( function() {
-                            scope.timelineIndexes.start = calculateSelectionIndex( newPosX, currentHandlePosition );
+                            scope.timelineIndexes.start = indexResult;
                         });
                     } else if ( currentHandlePosition === 'right' ) {
                         scope.$apply( function() {
-                            scope.timelineIndexes.end = calculateSelectionIndex( newPosX, currentHandlePosition );
+                            scope.timelineIndexes.end = indexResult;
                         });
                     }
 
@@ -186,8 +189,20 @@ var timeline = function( StoneEraService ) {
                 $handleLink.css( 'width', barWidth + 'px' );
             }
 
-            //TODO: handle resizing of the window
+            // After a window resize or orientation change, the timeline is reset to the default
+            var handleWindowResize = function() {
+                var $timelineHandles = $( '.timeline__selector-handle' );
 
+                $timelineHandles.css( 'transform', 'translate3d(0, 0, 0)' );
+                $timelineHandles.data( 'pos-x', 0 );
+
+                updateHandleLink();
+
+                scope.$apply( function() {
+                    scope.timelineIndexes.start = 0;
+                    scope.timelineIndexes.end = scope.eraData.length - 1;
+                });
+            }
 
             // Initialising the timeline
             loadEraData();
@@ -197,6 +212,7 @@ var timeline = function( StoneEraService ) {
             $( '.timeline__selector-handle' ).on( 'mousedown touchstart', initHandleMovement );
             $( window ).on( 'mousemove touchmove', moveHandle )
             $( window ).on( 'mouseup touchend', stopHandleMovement );
+            $( window ).on( 'resize orientationchange', handleWindowResize );
         }
     };
 }
