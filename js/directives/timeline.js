@@ -32,6 +32,12 @@ var timeline = function( StoneEraService ) {
             }
 
             var initHandleMovement = function( event ) {
+                event.stopPropagation();
+                event.preventDefault();
+
+                var clientX = ( event.type === 'touchstart' )
+                    ? event.originalEvent.touches[0].clientX
+                    : event.clientX;
                 var $handle = $( event.target );
                 $handle.data( 'isMoving', true );
                 $currentHandle = $handle;
@@ -39,13 +45,19 @@ var timeline = function( StoneEraService ) {
                 initialOffsetX = ( $currentHandle.data( 'pos-x' ) )
                                 ? $currentHandle.data( 'pos-x' )
                                 : 0;
-                initialPosX = event.clientX - initialOffsetX;
+                initialPosX = clientX - initialOffsetX;
             }
 
             var moveHandle = function( event ) {
                 if ( $currentHandle ) {
+                    event.stopPropagation();
+                    event.preventDefault();
+
+                    var clientX = ( event.type === 'touchmove' )
+                        ? event.originalEvent.touches[0].clientX
+                        : event.clientX;
                     var handlePosition = $currentHandle.data( 'position' );
-                    var offsetX = event.clientX - initialPosX;
+                    var offsetX = clientX - initialPosX;
 
                     offsetX = checkSelectionBarBoundaries( offsetX, handlePosition );
                     offsetX = checkOpposingHandle( offsetX, handlePosition );
@@ -62,7 +74,10 @@ var timeline = function( StoneEraService ) {
             var stopHandleMovement = function( event ) {
                 if ( $currentHandle ) {
                     var currentHandlePosition = $currentHandle.data( 'position' );
-                    var newPosX = getHandleSnapPosition( event.clientX, currentHandlePosition );
+                    var clientX = ( event.type === 'touchend' )
+                        ? event.originalEvent.changedTouches[0].clientX
+                        : event.clientX;
+                    var newPosX = getHandleSnapPosition( clientX, currentHandlePosition );
 
                     newPosX = checkSelectionBarBoundaries( newPosX, currentHandlePosition )
                     newPosX = checkOpposingHandle( newPosX, currentHandlePosition );
@@ -146,7 +161,7 @@ var timeline = function( StoneEraService ) {
             var calculateSelectionIndex = function( offsetX, handlePosition ) {
                 var barWidth = $selectorBar.width(),
                     barSegmentOffset = barWidth / (scope.eraData.length - 1);
-                    
+
                 if ( handlePosition === 'left' ) {
                     return Math.round( offsetX / barSegmentOffset );
                 } else if ( handlePosition === 'right' ) {
@@ -179,9 +194,9 @@ var timeline = function( StoneEraService ) {
             initHandles();
             initHandleLink();
 
-            $( '.timeline__selector-handle' ).on( 'mousedown', initHandleMovement );
-            $( window ).on( 'mousemove', moveHandle )
-            $( window ).on( 'mouseup', stopHandleMovement );
+            $( '.timeline__selector-handle' ).on( 'mousedown touchstart', initHandleMovement );
+            $( window ).on( 'mousemove touchmove', moveHandle )
+            $( window ).on( 'mouseup touchend', stopHandleMovement );
         }
     };
 }
