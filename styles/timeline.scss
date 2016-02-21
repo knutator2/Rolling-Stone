@@ -75,4 +75,24 @@
 .timeline__selector-label-icon {
 	height: 30px;
 	max-width: 30px;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.timeline__textbox {
+	bottom: 105%;
+	display: none;
+	position: absolute;
+	width: calc(100% - 20px);
+}
+
+.timeline__textbox-body {
+	background-color: $color-grey-light;
+	border-radius: 5px;
+	margin: 0 auto;
+	max-width: 600px;
+	padding: 20px 28px;
+	text-align: center;
 }

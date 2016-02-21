@@ -1,5 +1,9 @@
 <div class="timeline">
-
+    <div class="timeline__textbox">
+        <div class="timeline__textbox-body">
+            <span class="timeline__textbox-text">qwertzu sd sudgz ugs uzgz g</span>
+        </div>
+    </div>
     <div class="timeline__selector">
         <div class="timeline__selector-body">
             <div class="timeline__selector-time-labels"></div>
@@ -17,11 +21,9 @@
             </div>
         </div>
         <div class="timeline__selector-label-wrapper">
-            <div class="timeline__selector-label" ng-repeat="item in eraData" data-era-id="{{item.id}}">
-                <svg class="timeline__selector-label-icon" width="100%" height="100%">
-                    <image xlink:href="{{item.icon}}" src="{{item.icon}}" width="100%" height="100%"/>
-                </svg>
-            </div>
+            <timelineicon ng-repeat="item in eraData"
+                era-item="item">
+            </timelineicon>
         </div>
     </div>
 </div>
