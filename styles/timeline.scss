@@ -5,7 +5,7 @@
 .timeline__selector {
 	background-color: $color-grey-light;
 	border-radius: 5px;
-	padding: 20px;
+	padding: 20px 28px;
 }
 
 .timeline__selector-body {
@@ -56,4 +56,23 @@
 	background-color: $color-black;
 	height: 4px;
 	width: 2px;
+}
+
+.timeline__selector-label-wrapper {
+	@include display-flex;
+	@include flex-direction(row);
+	@include justify-content(space-between);
+
+	height: 25px;
+	margin-left: -16px;
+	margin-top: 20px;
+	width: calc(100% + 32px);
+}
+
+.timeline__selector-label {
+}
+
+.timeline__selector-label-icon {
+	height: 30px;
+	max-width: 30px;
 }
