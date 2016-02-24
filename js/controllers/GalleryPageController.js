@@ -26,21 +26,26 @@ var GalleryPageController = function( $scope, $http, StoneDataService, StoneEraS
     };
 
     // load stone data
-    var loadStoneData = function() {
-        var allStonesPromise = StoneDataService.getAllStones();
+    $scope.getStoneData = function( filterStart, filterEnd ) {
+        var allStonesPromise = StoneDataService.getAllStones( filterStart, filterEnd );
 
         allStonesPromise.then( function( result ) {
             $scope.stoneData = result;
         });
     };
 
-    loadStoneData();
+    $scope.getStoneData();
 
     // load era metadata
     StoneEraService.getErasLength()
         .then( function( result ) {
             $scope.timelineIndexes = { start: 0,  end: result-1 };
         });
+
+    // watch timeline selector for changes
+    $scope.$watch( 'timelineIndexes', function() {
+        $scope.getStoneData( $scope.timelineIndexes.start, $scope.timelineIndexes.end );
+    }, true );
 }
 
 module.exports = GalleryPageController;
