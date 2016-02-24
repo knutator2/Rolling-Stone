@@ -3,6 +3,7 @@
 }
 
 .gallery__body {
+    @include align-content(flex-start);
     @include display-flex;
     @include flex-wrap(wrap);
     @include flex-direction(column);
