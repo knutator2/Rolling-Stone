@@ -1,1 +1,24 @@
-<div>The gallery will be here soon!</div>
+<div class="page__wrapper page__wrapper--off-canvas"
+	ng-class="{
+		'page__wrapper--off-canvas-active-left' : overlayLeftIsActive,
+		'page__wrapper--off-canvas-active-bottom': overlayBottomIsActive
+	}">
+	<detailoverlay
+		class="page__part--off-canvas-left"
+		item="currentItem">
+	</detailoverlay>
+
+	<div class="page__part--off-canvas-main gallery" ng-click="dismissSelection();">
+        <div class="gallery__body">
+            <div class="gallery__image-wrapper" ng-repeat="item in stoneData">
+                <img class="gallery__image" ng-attr-src="img/medium/{{ item.img }}" ng-click="selectItem( $event, item );"/>
+            </div>
+        </div>
+	</div>
+
+	<div class="page__part--off-canvas-bottom">
+		<timeline
+			timeline-indexes="timelineIndexes">
+		</timeline>
+	</div>
+</div>

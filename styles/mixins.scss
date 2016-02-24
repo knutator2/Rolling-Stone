@@ -12,8 +12,20 @@
     }
 }
 
+@mixin screenHeightBreakpointSmall {
+    @media (min-height: $screenHeightBreakpointSmall) {
+        @content;
+    }
+}
+
 @mixin screenHeightBreakpointMedium {
     @media (min-height: $screenHeightBreakpointMedium) {
+        @content;
+    }
+}
+
+@mixin screenHeightBreakpointLarge {
+    @media (min-height: $screenHeightBreakpointLarge) {
         @content;
     }
 }

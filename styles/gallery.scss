@@ -1,0 +1,49 @@
+.gallery {
+    overflow: auto;
+}
+
+.gallery__body {
+    @include display-flex;
+    @include flex-wrap(wrap);
+    @include flex-direction(column);
+
+    height: calc(100% - 140px);
+    padding: 10px;
+}
+
+.gallery__image-wrapper {
+    display: inline-block;
+    height: calc((100% - 40px) / 2);
+    max-width: 180px;
+    min-width: 140px;
+    padding: 10px;
+    width: 30%;
+
+    @include screenHeightBreakpointSmall {
+        height: calc((100% - 60px) / 3);
+        max-width: 240px;
+        min-width: 200px;
+    }
+
+    @include screenHeightBreakpointMedium {
+        height: calc((100% - 80px) / 4);
+        max-width: 280px;
+    }
+
+    @include screenHeightBreakpointLarge {
+        height: calc((100% - 100px) / 5);
+        max-width: 330px;
+    }
+}
+
+.gallery__image {
+    border-radius: 5px;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+
+    &:hover {
+        object-fit: none;
+    }
+}
