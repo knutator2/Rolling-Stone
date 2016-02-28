@@ -25,10 +25,11 @@ var timeline = function( StoneEraService ) {
             var $currentHandle,
                 $opposingHandle,
                 initialPosX,
-                $selectorBar = $( '.timeline__selector-bar' );
+                $selectorBar;
 
             var initHandles = function() {
                 $( '.timeline__selector-handle' ).data( 'pos-x', 0 );
+                $selectorBar = $( '.timeline__selector-bar' );
             }
 
             var initHandleMovement = function( event ) {
@@ -40,6 +41,8 @@ var timeline = function( StoneEraService ) {
                     : event.clientX;
                 var $handle = $( event.target );
                 $handle.data( 'isMoving', true );
+
+                $selectorBar = $( '.timeline__selector-bar' );
                 $currentHandle = $handle;
                 $opposingHandle = $handle.siblings( '.timeline__selector-handle' );
                 initialOffsetX = ( $currentHandle.data( 'pos-x' ) )
@@ -104,6 +107,8 @@ var timeline = function( StoneEraService ) {
                     $currentHandle = undefined;
                     $opposingHandle = undefined;
                     initialPosX = undefined;
+                    $selectorBar = undefined;
+
                 } else {
                     return;
                 }
