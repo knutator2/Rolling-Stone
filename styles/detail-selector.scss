@@ -22,11 +22,12 @@
     margin-bottom: 15px;
     position: relative;
 
-    // TODO: Define and add animations for entering and leaving
-    .ng-enter {
+    &.ng-leave {
+        animation: none;
     }
 
-    .ng-leave {
+    &.ng-enter {
+        animation: fadeIn 0.3s linear;
     }
 
     &:hover {

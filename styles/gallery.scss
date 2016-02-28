@@ -22,6 +22,14 @@
     padding: 10px;
     width: 30%;
 
+    &.ng-leave {
+        animation: none;
+    }
+
+    &.ng-enter {
+        animation: fadeIn 1.2s ease-in-out;
+    }
+
     @include screenHeightBreakpointSmall {
         height: calc((100% - 60px) / 3);
         max-width: 240px;
