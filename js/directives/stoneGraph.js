@@ -1,5 +1,5 @@
 
-var d3 = require( 'd3' );
+var d3 = require( '../../node_modules/d3/d3.min.js' );
 var $ = require( 'jquery' );
 var _ = require( 'underscore' );
 
