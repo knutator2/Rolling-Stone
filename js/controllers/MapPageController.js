@@ -26,7 +26,7 @@ var MapPageController = function( $scope, $http, $q, StoneDataService, StoneEraS
     $scope.dismissSelection = function( event ) {
         $scope.overlayLeftIsActive = false;
         $scope.selectorIsActive = false;
-        $scope.UiHeader.removeClass( 'compressed' );
+        $scope.UiHeader.removeClass( 'header--compressed' );
     };
 
     $scope.toggleOverlayBottom = function() {
@@ -151,7 +151,7 @@ var MapPageController = function( $scope, $http, $q, StoneDataService, StoneEraS
         $scope.selectorIsActive = true;
 
         $scope.currentItem = args.leafletObject.options.stones[0];
-        $scope.UiHeader.addClass('compressed');
+        $scope.UiHeader.addClass('header--compressed');
 
         if (args.leafletObject.options.stones.length > 1) {
             $scope.selectorItems = args.leafletObject.options.stones;

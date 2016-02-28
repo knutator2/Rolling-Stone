@@ -5,6 +5,7 @@ $color-grey-dark:   #4A4A4A;
 $color-grey-light:  #D7D7D7;
 $color-white:       #FFFFFF;
 $color-black:       #000000;
+$color-text:        #111111;
 
 // z-index
 $z-index-1: 1;
@@ -35,20 +36,3 @@ $heightHeader: 62px;
 $pagePartLeftWidthLarge: 320px;
 $pagePartLeftWidthMedium: 50%;
 $pagePartLeftWidthSmall: 90%;
-
-// spaces
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;

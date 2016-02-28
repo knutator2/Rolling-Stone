@@ -17,12 +17,12 @@ var GalleryPageController = function( $scope, $http, StoneDataService, StoneEraS
 
         $scope.currentItem = item;
         $scope.overlayLeftIsActive = true;
-        $scope.UiHeader.addClass( 'compressed' );
+        $scope.UiHeader.addClass( 'header--compressed' );
     };
 
     $scope.dismissSelection = function() {
         $scope.overlayLeftIsActive = false;
-        $scope.UiHeader.removeClass( 'compressed' );
+        $scope.UiHeader.removeClass( 'header--compressed' );
     };
 
     // load stone data

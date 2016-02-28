@@ -13,7 +13,7 @@ require( 'angular-leaflet-directive' );
 var app = angular.module('Rapakiwi', ['StoneService', 'ngRoute', 'ngAnimate', 'leaflet-directive']);
 
 // Routing
-app.config( function($routeProvider) {
+app.config( function( $routeProvider ) {
     $routeProvider
         .when('/', {
             templateUrl: 'js/views/map.html',
