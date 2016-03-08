@@ -14,12 +14,13 @@
     padding: 10px;
 }
 
-.gallery__image-wrapper {
+.gallery__image-item {
     display: inline-block;
     height: calc((100% - 40px) / 2);
+    margin: 10px;
     max-width: 180px;
     min-width: 140px;
-    padding: 10px;
+    overflow: hidden;
     width: 30%;
 
     &.ng-leave {
@@ -47,14 +48,28 @@
     }
 }
 
-.gallery__image {
+.gallery__image-wrapper {
     border-radius: 5px;
-    display: block;
     height: 100%;
-    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: $z-index-2;
+}
+
+.gallery__image {
+    @include transform(translate(-50%, -50%) scale(1));
+    @include transition(transform 0.3s ease);
+
+    backface-visibility: hidden;
+    display: block;
+    left: 50%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
     width: 100%;
 
     &:hover {
-        object-fit: none;
+        @include transform(translate(-50%, -50%) scale(2));
     }
 }

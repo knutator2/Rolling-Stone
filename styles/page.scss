@@ -39,6 +39,7 @@
         bottom: 0;
         position: absolute;
         width: 100%;
+        z-index: $z-index-3;
     }
 
     .page__part--off-canvas-bottom-handle {
