@@ -10,11 +10,11 @@
     @include flex-wrap(wrap);
     @include flex-direction(column);
 
-    height: calc(100% - 140px);
-    padding: 10px;
+    height: calc(100% - 200px);
+    padding: 60px 10px 10px;
 }
 
-.gallery__image-item {
+.gallery__item {
     display: inline-block;
     height: calc((100% - 40px) / 2);
     margin: 10px;
@@ -46,6 +46,25 @@
         height: calc((100% - 100px) / 5);
         max-width: 330px;
     }
+}
+
+.gallery__item--headline {
+    height: 100%;
+    margin: 0;
+    min-width: 0;
+    overflow: visible;
+    padding: 0 0 0 30px;
+    position: relative;
+    width: 0;
+}
+
+.gallery__section-headline {
+    color: $color-grey-light;
+    font-size: 40px;
+    font-weight: bold;
+    left: 40px;
+    position: absolute;
+    top: -55px;
 }
 
 .gallery__image-wrapper {

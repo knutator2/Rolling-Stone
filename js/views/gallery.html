@@ -10,11 +10,14 @@
 
 	<div class="page__part--off-canvas-main gallery" ng-click="dismissSelection();">
         <div class="gallery__body">
-            <div class="gallery__image-item" ng-repeat="item in stoneData">
-				<div class="gallery__image-wrapper">
+			<div class="gallery__item" ng-repeat="item in stoneData" ng-class="{'gallery__item--headline' : item.type == 'sectionHeadline'}">
+				<h2 class="gallery__section-headline" ng-if="item.type == 'sectionHeadline'">
+					{{item.headline}}
+				</h2>
+				<div class="gallery__image-wrapper" ng-if="item.type != 'sectionHeadline'">
 					<img class="gallery__image" ng-attr-src="img/medium/{{ item.img }}" ng-click="selectItem( $event, item );"/>
 				</div>
-            </div>
+			</div>
         </div>
 	</div>
 

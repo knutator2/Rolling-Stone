@@ -1,4 +1,5 @@
 var $ = require( 'jquery' );
+var _ = require( 'underscore' );
 
 var GalleryPageController = function( $scope, $http, StoneDataService, StoneEraService ) {
 
@@ -7,6 +8,7 @@ var GalleryPageController = function( $scope, $http, StoneDataService, StoneEraS
     $scope.overlayBottomIsActive = true;
     $scope.stoneData = undefined;
     $scope.timelineIndexes = { start: undefined, end: undefined };
+    $scope.orderByMaterial = true;
 
     // UI Elements
     $scope.UiHeader = $( 'header' );
@@ -27,10 +29,30 @@ var GalleryPageController = function( $scope, $http, StoneDataService, StoneEraS
 
     // load stone data
     $scope.getStoneData = function( filterStart, filterEnd ) {
-        var allStonesPromise = StoneDataService.getAllStones( filterStart, filterEnd );
+        var stoneDataPromise;
 
-        allStonesPromise.then( function( result ) {
-            $scope.stoneData = result;
+        if ( $scope.orderByMaterial ) {
+            stoneDataPromise = StoneDataService.getAllStonesGroupedByMaterial( filterStart, filterEnd );
+        }
+        else {
+            stoneDataPromise = StoneDataService.getAllStonesGroupedByEra( filterStart, filterEnd );
+        }
+
+        stoneDataPromise.then( function( result ) {
+            _.each( result, function( group ) {
+                var headlineItem = {};
+
+                headlineItem.type = 'sectionHeadline';
+                headlineItem.headline = ( $scope.orderByMaterial ) ? group[0].material : group[0].geological_era ;
+
+                group.unshift( headlineItem );
+            });
+
+            var concatenatedArray = result.reduce( function(a, b) {
+                return a.concat(b);
+            }, []);
+
+            $scope.stoneData = concatenatedArray;
         });
     };
 
