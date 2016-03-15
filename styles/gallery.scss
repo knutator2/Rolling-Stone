@@ -4,6 +4,14 @@
     overflow: auto;
 }
 
+.gallery__order-button {
+    height: 40px;
+    position: fixed;
+    right: 10px;
+    top: 72px;
+    width: 40px;
+}
+
 .gallery__body {
     @include align-content(flex-start);
     @include display-flex;
@@ -56,6 +64,10 @@
     padding: 0 0 0 30px;
     position: relative;
     width: 0;
+}
+
+.gallery__item--hidden {
+    visibility: hidden;
 }
 
 .gallery__section-headline {

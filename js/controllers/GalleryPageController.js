@@ -1,7 +1,7 @@
 var $ = require( 'jquery' );
 var _ = require( 'underscore' );
 
-var GalleryPageController = function( $scope, $http, StoneDataService, StoneEraService ) {
+var GalleryPageController = function( $scope, $http, $timeout, StoneDataService, StoneEraService ) {
 
     // Properties
     $scope.overlayLeftIsActive = false;
@@ -11,7 +11,8 @@ var GalleryPageController = function( $scope, $http, StoneDataService, StoneEraS
     $scope.orderByMaterial = true;
 
     // UI Elements
-    $scope.UiHeader = $( 'header' );
+    $scope.$UiHeader = $( 'header' );
+    $scope.$gallery = $( '.gallery' );
 
     // Event Handlers
     $scope.selectItem = function( $event, item ) {
@@ -19,13 +20,16 @@ var GalleryPageController = function( $scope, $http, StoneDataService, StoneEraS
 
         $scope.currentItem = item;
         $scope.overlayLeftIsActive = true;
-        $scope.UiHeader.addClass( 'header--compressed' );
     };
 
     $scope.dismissSelection = function() {
         $scope.overlayLeftIsActive = false;
-        $scope.UiHeader.removeClass( 'header--compressed' );
     };
+
+    $scope.toggleGalleryOrder = function() {
+        $scope.orderByMaterial = !$scope.orderByMaterial;
+        $scope.getStoneData( $scope.timelineIndexes.start, $scope.timelineIndexes.end );
+    }
 
     // load stone data
     $scope.getStoneData = function( filterStart, filterEnd ) {
@@ -68,6 +72,27 @@ var GalleryPageController = function( $scope, $http, StoneDataService, StoneEraS
     $scope.$watch( 'timelineIndexes', function() {
         $scope.getStoneData( $scope.timelineIndexes.start, $scope.timelineIndexes.end );
     }, true );
+
+    $timeout( function () {
+        $scope.$UiHeader.addClass( 'header--compressed' );
+    }, 1000);
+
+    // hide gallery items that are not on screen for performance enhancement
+    $scope.$gallery.on( 'scroll.gallery', function( event ) {
+        var currentViewportLeft = event.target.scrollLeft,
+            currentViewportRight = currentViewportLeft + window.innerWidth,
+            galleryItems = document.querySelectorAll( '.gallery__item' ),
+            itemWidth = galleryItems[1].offsetWidth;
+
+        _.forEach( galleryItems, function( element ) {
+            if ( (element.offsetLeft + itemWidth) < currentViewportLeft || element.offsetLeft > currentViewportRight ) {
+                 $( element ).addClass( 'gallery__item--hidden' );
+            }
+            else {
+                $( element ).removeClass( 'gallery__item--hidden' );
+            }
+        });
+    });
 }
 
 module.exports = GalleryPageController;

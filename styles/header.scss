@@ -9,16 +9,16 @@
 }
 
 .header_logo {
+    @include transition(height 0.3s ease-in, width 0.3s ease-in);
+
     background-image: url("../img/assets/Logo_ohne_text.svg");
+    background-repeat: no-repeat;
     width: 100px;
     height: 112px;
     background-size: contain;
     z-index: $z-index-7;
     position: absolute;
     left: 20px;
-
-    transition: height 0.3s ease-in, width 0.3s ease-in;
-    background-repeat: no-repeat;
 
     .header--compressed & {
         width: 50px;
