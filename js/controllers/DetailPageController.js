@@ -11,10 +11,23 @@ require( 'slick-carousel' );
 // var app.controller("DetailController", ['$scope', '$routeParams', 'StonesService',
 var DetailPageController = function( $scope, $routeParams, StoneDataService ) {
 
+
+
     $scope.name = "BLUBB";
+    $scope.stoneData = undefined;
 
-    $( '.your-class' ).slick({
 
+
+    var getAllStonePromise = StoneDataService.getAllStones();
+
+    getAllStonePromise.then( function( result ) {
+        $scope.stoneData = result;
+
+        setTimeout( function() {
+            $( '.your-class' ).slick({
+
+            });
+        }, 3000 );
     });
 
     // $scope.currentStone = {};
