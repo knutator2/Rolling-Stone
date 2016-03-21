@@ -33,7 +33,7 @@ app.config( function( $routeProvider ) {
         })
         .when('/detail', {
             templateUrl: 'js/views/detail.html',
-            controller: 'DetailController'
+            controller: 'DetailPageController'
         });
 });
 

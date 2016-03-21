@@ -10,14 +10,12 @@
     "build:js": "browserify js/app.js | uglifyjs > js/bundle.js",
     "prebuild:sass": "npm run sass-vendor-copy",
     "build:sass": "sass --compass styles/main.scss:styles/main.css --style compressed",
-    "build:copy":
-        "cp index.html build/index.html && cp -r img build/img && mkdir build/js/ && cp js/bundle.js build/js/bundle.js && cp js/geo_era.json build/js/geo_era.json && cp js/metadata.json build/js/metadata.json && mkdir build/js/views && cp js/views/*.html build/js/views && mkdir build/js/directives && cp js/directives/*.html build/js/directives && mkdir build/styles && cp styles/main.css build/styles/main.css",
+    "build:copy": "cp index.html build/index.html && cp -r img build/img && mkdir build/js/ && cp js/bundle.js build/js/bundle.js && cp js/geo_era.json build/js/geo_era.json && cp js/metadata.json build/js/metadata.json && mkdir build/js/views && cp js/views/*.html build/js/views && mkdir build/js/directives && cp js/directives/*.html build/js/directives && mkdir build/styles && cp styles/main.css build/styles/main.css",
     "dev": "npm run sass-vendor-copy && npm run dev:js-watch & npm run dev:sass-watch & npm run dev:local-server",
     "dev:js-watch": "watchify js/app.js -o js/bundle.js -v",
     "dev:sass-watch": "sass --compass --watch styles/main.scss:styles/main.css",
     "dev:local-server": "http-server -s .",
-    "sass-vendor-copy":
-        "mkdir -p styles/vendor/leaflet && cp node_modules/leaflet/dist/leaflet.css styles/vendor/leaflet/leaflet.scss && cp node_modules/leaflet.fullscreen/Control.FullScreen.css styles/vendor/leaflet/Control.FullScreen.scss"
+    "sass-vendor-copy": "mkdir -p styles/vendor/leaflet && cp node_modules/leaflet/dist/leaflet.css styles/vendor/leaflet/leaflet.scss && cp node_modules/leaflet.fullscreen/Control.FullScreen.css styles/vendor/leaflet/Control.FullScreen.scss && mkdir -p styles/vendor/slick  && cp node_modules/slick-carousel/slick/slick.scss styles/vendor/slick/slick.scss"
   },
   "repository": {
     "type": "git",
@@ -42,6 +40,7 @@
     "leaflet-easybutton": "^1.1.2",
     "leaflet.fullscreen": "^1.3.0",
     "modernizr": "^3.1.0",
+    "slick-carousel": "^1.5.9",
     "underscore": "^1.8.3"
   },
   "devDependencies": {

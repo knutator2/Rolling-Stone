@@ -1,17 +1,28 @@
 'use strict';
 
+var $ = require( 'jquery' );
+require( 'slick-carousel' );
+
+
 // var DetailController = function($scope) {
 //     $scope.name = "DetailTEST";
 // }
 
 // var app.controller("DetailController", ['$scope', '$routeParams', 'StonesService',
-var DetailController = function( $scope, $routeParams, StoneDataService ) {
+var DetailPageController = function( $scope, $routeParams, StoneDataService ) {
 
     $scope.name = "BLUBB";
-    // $scope.currentStone = {};
-    var qwertz = StoneDataService.getStoneById(parseInt($routeParams.stoneId,10));
 
-    console.log( qwertz );
+    $( '.your-class' ).slick({
+
+    });
+
+    // $scope.currentStone = {};
+    //var qwertz = StoneDataService.getStoneById(parseInt($routeParams.stoneId,10));
+
+    //console.log( qwertz );
+
+
     //
     // qwertz.then(function(response) {
     //     $scope.currentStone = response;
@@ -35,4 +46,4 @@ var DetailController = function( $scope, $routeParams, StoneDataService ) {
 // ]);
 
 
-module.exports = DetailController;
+module.exports = DetailPageController;
