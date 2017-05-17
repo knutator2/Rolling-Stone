@@ -1,0 +1,19 @@
+{
+    "plugins": [
+        "stylelint-order"
+    ],
+    "processors": ["stylelint-processor-html"],
+    "extends": "stylelint-config-standard",
+    "rules": {
+        "color-hex-case": "lower",
+        "color-hex-length": "long",
+        "string-quotes": "double",
+        "length-zero-no-unit": true,
+        "indentation": 4,
+        "no-duplicate-selectors": true,
+        "max-nesting-depth": 2,
+        "no-extra-semicolons": true,
+        "no-eol-whitespace": true,
+        "order/properties-alphabetical-order": true
+    }
+}
