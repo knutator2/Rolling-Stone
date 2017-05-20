@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Rapakiwi</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        
+
     </style>
 </head>
+
 <body>
     <div id="app">
-      {{ message }}
-      <hello></hello>
+        <header>{{ message }}
+            <router-link to="/map">Karte</router-link>
+            <router-link to="/gallery">Galerie</router-link>
+            <router-link to="/graph">Graph</router-link>
+        </header>
+        <router-view></router-view>
+        <hello></hello>
     </div>
     <script src="dist/bundle.js"></script>
 </body>
+
 </html>
