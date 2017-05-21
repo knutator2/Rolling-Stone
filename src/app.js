@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 // HOT MODULE RELOADING
 if (module.hot) {
-  module.hot.accept()
+    module.hot.accept()
 }
 
 // COMPONENTS
@@ -15,19 +15,19 @@ Vue.component('map-page', require('./components/Map/MapPage.vue'))
 Vue.use(VueRouter)
 
 const routes = [
-    {path: '/', component: require('./components/Gallery/GalleryPage.vue')},
-    {path: '/gallery', component: require('./components/Gallery/GalleryPage.vue')},
-    {path: '/map', component: require('./components/Map/MapPage.vue')}
+    { path: '/', component: require('./components/Gallery/GalleryPage.vue') },
+    { path: '/gallery', component: require('./components/Gallery/GalleryPage.vue') },
+    { path: '/map', component: require('./components/Map/MapPage.vue') }
 ]
 
 const router = new VueRouter({
     routes
 })
 
-var app = new Vue({
-  el: '#app',
-  router,
-  data: {
-    message: 'Hello Vue!'
-  }
+new Vue({
+    el: '#app',
+    router,
+    data: {
+        message: 'Hello Vue!'
+    }
 })
