@@ -8,7 +8,8 @@ if (module.hot) {
 }
 
 // COMPONENTS
-Vue.component('hello', require('./components/Hello.vue'))
+Vue.component('hello', require('./components/Hello.vue')) // TODO: Remove dummy component
+Vue.component('top-menu', require('./components/Header/Header.vue'))
 Vue.component('gallery-page', require('./components/Gallery/GalleryPage.vue'))
 Vue.component('map-page', require('./components/Map/MapPage.vue'))
 
