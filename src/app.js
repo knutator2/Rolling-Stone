@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import store from './store.js'
 
 // HOT MODULE RELOADING
 if (module.hot) {
@@ -27,6 +28,7 @@ const router = new VueRouter({
 var app = new Vue({
   el: '#app',
   router,
+  store,
   data: {
     message: 'Hello Vue!'
   }
