@@ -12,3 +12,20 @@
         font-size: 100px;
     }
 }
+
+html,
+body {
+    height: 100vh;
+    min-width: 320px;
+    width: 100vw;
+}
+
+main {
+    background-color: $color-background;
+    height: 100%;
+    position: relative;
+}
+
+.content-wrapper {
+    padding-top: 60px; //TODO: Find a universal way for this (regarding the map and the gallery, etc.)
+}

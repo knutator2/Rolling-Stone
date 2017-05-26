@@ -12,11 +12,13 @@
 </head>
 
 <body>
-    <div id="app">
+    <main id="app">
         <top-menu>{{ message }}</top-menu>
-        <router-view></router-view>
-        <hello></hello>
-    </div>
+        <div class="content-wrapper">
+            <router-view></router-view>
+            <hello></hello>
+        </div>
+    </main>
     <script src="dist/bundle.js"></script>
 </body>
 

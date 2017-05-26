@@ -17,6 +17,15 @@
     }
 </script>
 
-<style>
+<style lang="scss">
+    @import "../../styles/variables";
+
+    .header {
+        background-color: $color-white;
+        height: 46px;
+        position: absolute;
+        top: 10px;
+        width: 100%;
+    }
 
 </style>
