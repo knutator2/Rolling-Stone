@@ -39,6 +39,10 @@ const config = {
                     }
                     // other vue-loader options go here
                 }
+            },
+            {
+                test: /\.scss$|.css$/,
+                loader: 'style-loader!css-loader!postcss-loader!sass-loader'
             }
         ]
     },

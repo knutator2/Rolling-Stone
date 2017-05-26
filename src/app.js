@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import store from './store.js'
+import './styles/styles.scss'
 
 // HOT MODULE RELOADING
 if (module.hot) {

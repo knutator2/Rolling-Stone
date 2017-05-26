@@ -1,0 +1,14 @@
+// GENERAL SCSS STYLES
+
+@import "~normalize.css/normalize";
+
+@import "./variables";
+
+.dummy-remove-this {
+    color: $color-main;
+    font-size: 50px;
+
+    .div {
+        font-size: 100px;
+    }
+}

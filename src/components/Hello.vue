@@ -15,9 +15,11 @@
     }
 </script>
 
-<style>
+<style lang="scss">
+    @import "../styles/variables";
+
     .test {
-        color: blue;
+        color: $color-main;
     }
 
     .test_stuff {
